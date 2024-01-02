@@ -1,0 +1,1593 @@
+ID,Code,Category
+1,U+1F600,Smileys & Emotion
+2,U+1F603,Smileys & Emotion
+3,U+1F604,Smileys & Emotion
+4,U+1F601,Smileys & Emotion
+5,U+1F606,Smileys & Emotion
+6,U+1F605,Smileys & Emotion
+7,U+1F923,Smileys & Emotion
+8,U+1F602,Smileys & Emotion
+9,U+1F642,Smileys & Emotion
+10,U+1F643,Smileys & Emotion
+11,U+1FAE0,Smileys & Emotion
+12,U+1F609,Smileys & Emotion
+13,U+1F60A,Smileys & Emotion
+14,U+1F607,Smileys & Emotion
+15,U+1F970,Smileys & Emotion
+16,U+1F60D,Smileys & Emotion
+17,U+1F929,Smileys & Emotion
+18,U+1F618,Smileys & Emotion
+19,U+1F617,Smileys & Emotion
+20,U+263A,Smileys & Emotion
+21,U+1F61A,Smileys & Emotion
+22,U+1F619,Smileys & Emotion
+23,U+1F972,Smileys & Emotion
+24,U+1F60B,Smileys & Emotion
+25,U+1F61B,Smileys & Emotion
+26,U+1F61C,Smileys & Emotion
+27,U+1F92A,Smileys & Emotion
+28,U+1F61D,Smileys & Emotion
+29,U+1F911,Smileys & Emotion
+30,U+1F917,Smileys & Emotion
+31,U+1F92D,Smileys & Emotion
+32,U+1FAE2,Smileys & Emotion
+33,U+1FAE3,Smileys & Emotion
+34,U+1F92B,Smileys & Emotion
+35,U+1F914,Smileys & Emotion
+36,U+1FAE1,Smileys & Emotion
+37,U+1F910,Smileys & Emotion
+38,U+1F928,Smileys & Emotion
+39,U+1F610,Smileys & Emotion
+40,U+1F611,Smileys & Emotion
+41,U+1F636,Smileys & Emotion
+42,U+1FAE5,Smileys & Emotion
+43,U+1F636 U+200D U+1F32B U+FE0F,Smileys & Emotion
+44,U+1F60F,Smileys & Emotion
+45,U+1F612,Smileys & Emotion
+46,U+1F644,Smileys & Emotion
+47,U+1F62C,Smileys & Emotion
+48,U+1F62E U+200D U+1F4A8,Smileys & Emotion
+49,U+1F925,Smileys & Emotion
+50,U+1F60C,Smileys & Emotion
+51,U+1F614,Smileys & Emotion
+52,U+1F62A,Smileys & Emotion
+53,U+1F924,Smileys & Emotion
+54,U+1F634,Smileys & Emotion
+55,U+1F637,Smileys & Emotion
+56,U+1F912,Smileys & Emotion
+57,U+1F915,Smileys & Emotion
+58,U+1F922,Smileys & Emotion
+59,U+1F92E,Smileys & Emotion
+60,U+1F927,Smileys & Emotion
+61,U+1F975,Smileys & Emotion
+62,U+1F976,Smileys & Emotion
+63,U+1F974,Smileys & Emotion
+64,U+1F635,Smileys & Emotion
+65,U+1F635 U+200D U+1F4AB,Smileys & Emotion
+66,U+1F92F,Smileys & Emotion
+67,U+1F920,Smileys & Emotion
+68,U+1F973,Smileys & Emotion
+69,U+1F978,Smileys & Emotion
+70,U+1F60E,Smileys & Emotion
+71,U+1F913,Smileys & Emotion
+72,U+1F9D0,Smileys & Emotion
+73,U+1F615,Smileys & Emotion
+74,U+1FAE4,Smileys & Emotion
+75,U+1F61F,Smileys & Emotion
+76,U+1F641,Smileys & Emotion
+77,U+2639,Smileys & Emotion
+78,U+1F62E,Smileys & Emotion
+79,U+1F62F,Smileys & Emotion
+80,U+1F632,Smileys & Emotion
+81,U+1F633,Smileys & Emotion
+82,U+1F97A,Smileys & Emotion
+83,U+1F979,Smileys & Emotion
+84,U+1F626,Smileys & Emotion
+85,U+1F627,Smileys & Emotion
+86,U+1F628,Smileys & Emotion
+87,U+1F630,Smileys & Emotion
+88,U+1F625,Smileys & Emotion
+89,U+1F622,Smileys & Emotion
+90,U+1F62D,Smileys & Emotion
+91,U+1F631,Smileys & Emotion
+92,U+1F616,Smileys & Emotion
+93,U+1F623,Smileys & Emotion
+94,U+1F61E,Smileys & Emotion
+95,U+1F613,Smileys & Emotion
+96,U+1F629,Smileys & Emotion
+97,U+1F62B,Smileys & Emotion
+98,U+1F971,Smileys & Emotion
+99,U+1F624,Smileys & Emotion
+100,U+1F621,Smileys & Emotion
+101,U+1F620,Smileys & Emotion
+102,U+1F92C,Smileys & Emotion
+103,U+1F608,Smileys & Emotion
+104,U+1F47F,Smileys & Emotion
+105,U+1F480,Smileys & Emotion
+106,U+2620,Smileys & Emotion
+107,U+1F4A9,Smileys & Emotion
+108,U+1F921,Smileys & Emotion
+109,U+1F479,Smileys & Emotion
+110,U+1F47A,Smileys & Emotion
+111,U+1F47B,Smileys & Emotion
+112,U+1F47D,Smileys & Emotion
+113,U+1F47E,Smileys & Emotion
+114,U+1F916,Smileys & Emotion
+115,U+1F63A,Smileys & Emotion
+116,U+1F638,Smileys & Emotion
+117,U+1F639,Smileys & Emotion
+118,U+1F63B,Smileys & Emotion
+119,U+1F63C,Smileys & Emotion
+120,U+1F63D,Smileys & Emotion
+121,U+1F640,Smileys & Emotion
+122,U+1F63F,Smileys & Emotion
+123,U+1F63E,Smileys & Emotion
+124,U+1F648,Smileys & Emotion
+125,U+1F649,Smileys & Emotion
+126,U+1F64A,Smileys & Emotion
+127,U+1F48B,Smileys & Emotion
+128,U+1F48C,Smileys & Emotion
+129,U+1F498,Smileys & Emotion
+130,U+1F49D,Smileys & Emotion
+131,U+1F496,Smileys & Emotion
+132,U+1F497,Smileys & Emotion
+133,U+1F493,Smileys & Emotion
+134,U+1F49E,Smileys & Emotion
+135,U+1F495,Smileys & Emotion
+136,U+1F49F,Smileys & Emotion
+137,U+2763,Smileys & Emotion
+138,U+1F494,Smileys & Emotion
+139,U+2764 U+FE0F U+200D U+1F525,Smileys & Emotion
+140,U+2764 U+FE0F U+200D U+1FA79,Smileys & Emotion
+141,U+2764,Smileys & Emotion
+142,U+1F9E1,Smileys & Emotion
+143,U+1F49B,Smileys & Emotion
+144,U+1F49A,Smileys & Emotion
+145,U+1F499,Smileys & Emotion
+146,U+1F49C,Smileys & Emotion
+147,U+1F90E,Smileys & Emotion
+148,U+1F5A4,Smileys & Emotion
+149,U+1F90D,Smileys & Emotion
+150,U+1F4AF,Smileys & Emotion
+151,U+1F4A2,Smileys & Emotion
+152,U+1F4A5,Smileys & Emotion
+153,U+1F4AB,Smileys & Emotion
+154,U+1F4A6,Smileys & Emotion
+155,U+1F4A8,Smileys & Emotion
+156,U+1F573,Smileys & Emotion
+157,U+1F4A3,Smileys & Emotion
+158,U+1F4AC,Smileys & Emotion
+159,U+1F441 U+FE0F U+200D U+1F5E8 U+FE0F,Smileys & Emotion
+160,U+1F5E8,Smileys & Emotion
+161,U+1F5EF,Smileys & Emotion
+162,U+1F4AD,Smileys & Emotion
+163,U+1F4A4,Smileys & Emotion
+164,U+1F44B #skin_1,People & Body
+165,U+1F91A #skin_1,People & Body
+166,U+1F590 #skin_1,People & Body
+167,U+270B #skin_1,People & Body
+168,U+1F596 #skin_1,People & Body
+169,U+1FAF1 #skin_1,People & Body
+170,U+1FAF2 #skin_1,People & Body
+171,U+1FAF3 #skin_1,People & Body
+172,U+1FAF4 #skin_1,People & Body
+173,U+1F44C #skin_1,People & Body
+174,U+1F90C #skin_1,People & Body
+175,U+1F90F #skin_1,People & Body
+176,U+270C #skin_1,People & Body
+177,U+1F91E #skin_1,People & Body
+178,U+1FAF0 #skin_1,People & Body
+179,U+1F91F #skin_1,People & Body
+180,U+1F918 #skin_1,People & Body
+181,U+1F919 #skin_1,People & Body
+182,U+1F448 #skin_1,People & Body
+183,U+1F449 #skin_1,People & Body
+184,U+1F446 #skin_1,People & Body
+185,U+1F595 #skin_1,People & Body
+186,U+1F447 #skin_1,People & Body
+187,U+261D #skin_1,People & Body
+188,U+1FAF5 #skin_1,People & Body
+189,U+1F44D #skin_1,People & Body
+190,U+1F44E #skin_1,People & Body
+191,U+270A #skin_1,People & Body
+192,U+1F44A #skin_1,People & Body
+193,U+1F91B #skin_1,People & Body
+194,U+1F91C #skin_1,People & Body
+195,U+1F44F #skin_1,People & Body
+196,U+1F64C #skin_1,People & Body
+197,U+1FAF6 #skin_1,People & Body
+198,U+1F450 #skin_1,People & Body
+199,U+1F932 #skin_1,People & Body
+200,U+1F91D #skin_1,People & Body
+201,U+1F64F #skin_1,People & Body
+202,U+270D #skin_1,People & Body
+203,U+1F485 #skin_1,People & Body
+204,U+1F933 #skin_1,People & Body
+205,U+1F4AA #skin_1,People & Body
+206,U+1F9BE,People & Body
+207,U+1F9BF,People & Body
+208,U+1F9B5 #skin_1,People & Body
+209,U+1F9B6 #skin_1,People & Body
+210,U+1F442 #skin_1,People & Body
+211,U+1F9BB #skin_1,People & Body
+212,U+1F443 #skin_1,People & Body
+213,U+1F9E0,People & Body
+214,U+1FAC0,People & Body
+215,U+1FAC1,People & Body
+216,U+1F9B7,People & Body
+217,U+1F9B4,People & Body
+218,U+1F440,People & Body
+219,U+1F441,People & Body
+220,U+1F445,People & Body
+221,U+1F444,People & Body
+222,U+1FAE6,People & Body
+223,U+1F476 #skin_1,People & Body
+224,U+1F9D2 #skin_1,People & Body
+225,U+1F466 #skin_1,People & Body
+226,U+1F467 #skin_1,People & Body
+227,U+1F9D1 #skin_1,People & Body
+228,U+1F471 #skin_1,People & Body
+229,U+1F468 #skin_1,People & Body
+230,U+1F9D4 #skin_1,People & Body
+231,U+1F9D4 #skin_1 U+200D U+2642 U+FE0F,People & Body
+232,U+1F9D4 #skin_1 U+200D U+2640 U+FE0F,People & Body
+233,U+1F468 #skin_1 U+200D U+1F9B0,People & Body
+234,U+1F468 #skin_1 U+200D U+1F9B1,People & Body
+235,U+1F468 #skin_1 U+200D U+1F9B3,People & Body
+236,U+1F468 #skin_1 U+200D U+1F9B2,People & Body
+237,U+1F469 #skin_1,People & Body
+238,U+1F469 #skin_1 U+200D U+1F9B0,People & Body
+239,U+1F9D1 #skin_1 U+200D U+1F9B0,People & Body
+240,U+1F469 #skin_1 U+200D U+1F9B1,People & Body
+241,U+1F9D1 #skin_1 U+200D U+1F9B1,People & Body
+242,U+1F469 #skin_1 U+200D U+1F9B3,People & Body
+243,U+1F9D1 #skin_1 U+200D U+1F9B3,People & Body
+244,U+1F469 #skin_1 U+200D U+1F9B2,People & Body
+245,U+1F9D1 #skin_1 U+200D U+1F9B2,People & Body
+246,U+1F471 #skin_1 U+200D U+2640 U+FE0F,People & Body
+247,U+1F471 #skin_1 U+200D U+2642 U+FE0F,People & Body
+248,U+1F9D3 #skin_1,People & Body
+249,U+1F474 #skin_1,People & Body
+250,U+1F475 #skin_1,People & Body
+251,U+1F64D #skin_1,People & Body
+252,U+1F64D #skin_1 U+200D U+2642 U+FE0F,People & Body
+253,U+1F64D #skin_1 U+200D U+2640 U+FE0F,People & Body
+254,U+1F64E #skin_1,People & Body
+255,U+1F64E #skin_1 U+200D U+2642 U+FE0F,People & Body
+256,U+1F64E #skin_1 U+200D U+2640 U+FE0F,People & Body
+257,U+1F645 #skin_1,People & Body
+258,U+1F645 #skin_1 U+200D U+2642 U+FE0F,People & Body
+259,U+1F645 #skin_1 U+200D U+2640 U+FE0F,People & Body
+260,U+1F646 #skin_1,People & Body
+261,U+1F646 #skin_1 U+200D U+2642 U+FE0F,People & Body
+262,U+1F646 #skin_1 U+200D U+2640 U+FE0F,People & Body
+263,U+1F481 #skin_1,People & Body
+264,U+1F481 #skin_1 U+200D U+2642 U+FE0F,People & Body
+265,U+1F481 #skin_1 U+200D U+2640 U+FE0F,People & Body
+266,U+1F64B #skin_1,People & Body
+267,U+1F64B #skin_1 U+200D U+2642 U+FE0F,People & Body
+268,U+1F64B #skin_1 U+200D U+2640 U+FE0F,People & Body
+269,U+1F9CF #skin_1,People & Body
+270,U+1F9CF #skin_1 U+200D U+2642 U+FE0F,People & Body
+271,U+1F9CF #skin_1 U+200D U+2640 U+FE0F,People & Body
+272,U+1F647 #skin_1,People & Body
+273,U+1F647 #skin_1 U+200D U+2642 U+FE0F,People & Body
+274,U+1F647 #skin_1 U+200D U+2640 U+FE0F,People & Body
+275,U+1F926 #skin_1,People & Body
+276,U+1F926 #skin_1 U+200D U+2642 U+FE0F,People & Body
+277,U+1F926 #skin_1 U+200D U+2640 U+FE0F,People & Body
+278,U+1F937 #skin_1,People & Body
+279,U+1F937 #skin_1 U+200D U+2642 U+FE0F,People & Body
+280,U+1F937 #skin_1 U+200D U+2640 U+FE0F,People & Body
+281,U+1F9D1 #skin_1 U+200D U+2695 U+FE0F,People & Body
+282,U+1F468 #skin_1 U+200D U+2695 U+FE0F,People & Body
+283,U+1F469 #skin_1 U+200D U+2695 U+FE0F,People & Body
+284,U+1F9D1 #skin_1 U+200D U+1F393,People & Body
+285,U+1F468 #skin_1 U+200D U+1F393,People & Body
+286,U+1F469 #skin_1 U+200D U+1F393,People & Body
+287,U+1F9D1 #skin_1 U+200D U+1F3EB,People & Body
+288,U+1F468 #skin_1 U+200D U+1F3EB,People & Body
+289,U+1F469 #skin_1 U+200D U+1F3EB,People & Body
+290,U+1F9D1 #skin_1 U+200D U+2696 U+FE0F,People & Body
+291,U+1F468 #skin_1 U+200D U+2696 U+FE0F,People & Body
+292,U+1F469 #skin_1 U+200D U+2696 U+FE0F,People & Body
+293,U+1F9D1 #skin_1 U+200D U+1F33E,People & Body
+294,U+1F468 #skin_1 U+200D U+1F33E,People & Body
+295,U+1F469 #skin_1 U+200D U+1F33E,People & Body
+296,U+1F9D1 #skin_1 U+200D U+1F373,People & Body
+297,U+1F468 #skin_1 U+200D U+1F373,People & Body
+298,U+1F469 #skin_1 U+200D U+1F373,People & Body
+299,U+1F9D1 #skin_1 U+200D U+1F527,People & Body
+300,U+1F468 #skin_1 U+200D U+1F527,People & Body
+301,U+1F469 #skin_1 U+200D U+1F527,People & Body
+302,U+1F9D1 #skin_1 U+200D U+1F3ED,People & Body
+303,U+1F468 #skin_1 U+200D U+1F3ED,People & Body
+304,U+1F469 #skin_1 U+200D U+1F3ED,People & Body
+305,U+1F9D1 #skin_1 U+200D U+1F4BC,People & Body
+306,U+1F468 #skin_1 U+200D U+1F4BC,People & Body
+307,U+1F469 #skin_1 U+200D U+1F4BC,People & Body
+308,U+1F9D1 #skin_1 U+200D U+1F52C,People & Body
+309,U+1F468 #skin_1 U+200D U+1F52C,People & Body
+310,U+1F469 #skin_1 U+200D U+1F52C,People & Body
+311,U+1F9D1 #skin_1 U+200D U+1F4BB,People & Body
+312,U+1F468 #skin_1 U+200D U+1F4BB,People & Body
+313,U+1F469 #skin_1 U+200D U+1F4BB,People & Body
+314,U+1F9D1 #skin_1 U+200D U+1F3A4,People & Body
+315,U+1F468 #skin_1 U+200D U+1F3A4,People & Body
+316,U+1F469 #skin_1 U+200D U+1F3A4,People & Body
+317,U+1F9D1 #skin_1 U+200D U+1F3A8,People & Body
+318,U+1F468 #skin_1 U+200D U+1F3A8,People & Body
+319,U+1F469 #skin_1 U+200D U+1F3A8,People & Body
+320,U+1F9D1 #skin_1 U+200D U+2708 U+FE0F,People & Body
+321,U+1F468 #skin_1 U+200D U+2708 U+FE0F,People & Body
+322,U+1F469 #skin_1 U+200D U+2708 U+FE0F,People & Body
+323,U+1F9D1 #skin_1 U+200D U+1F680,People & Body
+324,U+1F468 #skin_1 U+200D U+1F680,People & Body
+325,U+1F469 #skin_1 U+200D U+1F680,People & Body
+326,U+1F9D1 #skin_1 U+200D U+1F692,People & Body
+327,U+1F468 #skin_1 U+200D U+1F692,People & Body
+328,U+1F469 #skin_1 U+200D U+1F692,People & Body
+329,U+1F46E #skin_1,People & Body
+330,U+1F46E #skin_1 U+200D U+2642 U+FE0F,People & Body
+331,U+1F46E #skin_1 U+200D U+2640 U+FE0F,People & Body
+332,U+1F575 #skin_1,People & Body
+333,U+1F575 #skin_1 U+200D U+2642 U+FE0F,People & Body
+334,U+1F575 #skin_1 U+200D U+2640 U+FE0F,People & Body
+335,U+1F482 #skin_1,People & Body
+336,U+1F482 #skin_1 U+200D U+2642 U+FE0F,People & Body
+337,U+1F482 #skin_1 U+200D U+2640 U+FE0F,People & Body
+338,U+1F977 #skin_1,People & Body
+339,U+1F477 #skin_1,People & Body
+340,U+1F477 #skin_1 U+200D U+2642 U+FE0F,People & Body
+341,U+1F477 #skin_1 U+200D U+2640 U+FE0F,People & Body
+342,U+1FAC5 #skin_1,People & Body
+343,U+1F934 #skin_1,People & Body
+344,U+1F478 #skin_1,People & Body
+345,U+1F473 #skin_1,People & Body
+346,U+1F473 #skin_1 U+200D U+2642 U+FE0F,People & Body
+347,U+1F473 #skin_1 U+200D U+2640 U+FE0F,People & Body
+348,U+1F472 #skin_1,People & Body
+349,U+1F9D5 #skin_1,People & Body
+350,U+1F935 #skin_1,People & Body
+351,U+1F935 #skin_1 U+200D U+2642 U+FE0F,People & Body
+352,U+1F935 #skin_1 U+200D U+2640 U+FE0F,People & Body
+353,U+1F470 #skin_1,People & Body
+354,U+1F470 #skin_1 U+200D U+2642 U+FE0F,People & Body
+355,U+1F470 #skin_1 U+200D U+2640 U+FE0F,People & Body
+356,U+1F930 #skin_1,People & Body
+357,U+1FAC3 #skin_1,People & Body
+358,U+1FAC4 #skin_1,People & Body
+359,U+1F931 #skin_1,People & Body
+360,U+1F469 #skin_1 U+200D U+1F37C,People & Body
+361,U+1F468 #skin_1 U+200D U+1F37C,People & Body
+362,U+1F9D1 #skin_1 U+200D U+1F37C,People & Body
+363,U+1F47C #skin_1,People & Body
+364,U+1F385 #skin_1,People & Body
+365,U+1F936 #skin_1,People & Body
+366,U+1F9D1 #skin_1 U+200D U+1F384,People & Body
+367,U+1F9B8 #skin_1,People & Body
+368,U+1F9B8 #skin_1 U+200D U+2642 U+FE0F,People & Body
+369,U+1F9B8 #skin_1 U+200D U+2640 U+FE0F,People & Body
+370,U+1F9B9 #skin_1,People & Body
+371,U+1F9B9 #skin_1 U+200D U+2642 U+FE0F,People & Body
+372,U+1F9B9 #skin_1 U+200D U+2640 U+FE0F,People & Body
+373,U+1F9D9 #skin_1,People & Body
+374,U+1F9D9 #skin_1 U+200D U+2642 U+FE0F,People & Body
+375,U+1F9D9 #skin_1 U+200D U+2640 U+FE0F,People & Body
+376,U+1F9DA #skin_1,People & Body
+377,U+1F9DA #skin_1 U+200D U+2642 U+FE0F,People & Body
+378,U+1F9DA #skin_1 U+200D U+2640 U+FE0F,People & Body
+379,U+1F9DB #skin_1,People & Body
+380,U+1F9DB #skin_1 U+200D U+2642 U+FE0F,People & Body
+381,U+1F9DB #skin_1 U+200D U+2640 U+FE0F,People & Body
+382,U+1F9DC #skin_1,People & Body
+383,U+1F9DC #skin_1 U+200D U+2642 U+FE0F,People & Body
+384,U+1F9DC #skin_1 U+200D U+2640 U+FE0F,People & Body
+385,U+1F9DD #skin_1,People & Body
+386,U+1F9DD #skin_1 U+200D U+2642 U+FE0F,People & Body
+387,U+1F9DD #skin_1 U+200D U+2640 U+FE0F,People & Body
+388,U+1F9DE,People & Body
+389,U+1F9DE U+200D U+2642 U+FE0F,People & Body
+390,U+1F9DE U+200D U+2640 U+FE0F,People & Body
+391,U+1F9DF,People & Body
+392,U+1F9DF U+200D U+2642 U+FE0F,People & Body
+393,U+1F9DF U+200D U+2640 U+FE0F,People & Body
+394,U+1F9CC,People & Body
+395,U+1F486 #skin_1,People & Body
+396,U+1F486 #skin_1 U+200D U+2642 U+FE0F,People & Body
+397,U+1F486 #skin_1 U+200D U+2640 U+FE0F,People & Body
+398,U+1F487 #skin_1,People & Body
+399,U+1F487 #skin_1 U+200D U+2642 U+FE0F,People & Body
+400,U+1F487 #skin_1 U+200D U+2640 U+FE0F,People & Body
+401,U+1F6B6 #skin_1,People & Body
+402,U+1F6B6 #skin_1 U+200D U+2642 U+FE0F,People & Body
+403,U+1F6B6 #skin_1 U+200D U+2640 U+FE0F,People & Body
+404,U+1F9CD #skin_1,People & Body
+405,U+1F9CD #skin_1 U+200D U+2642 U+FE0F,People & Body
+406,U+1F9CD #skin_1 U+200D U+2640 U+FE0F,People & Body
+407,U+1F9CE #skin_1,People & Body
+408,U+1F9CE #skin_1 U+200D U+2642 U+FE0F,People & Body
+409,U+1F9CE #skin_1 U+200D U+2640 U+FE0F,People & Body
+410,U+1F9D1 #skin_1 U+200D U+1F9AF,People & Body
+411,U+1F468 #skin_1 U+200D U+1F9AF,People & Body
+412,U+1F469 #skin_1 U+200D U+1F9AF,People & Body
+413,U+1F9D1 #skin_1 U+200D U+1F9BC,People & Body
+414,U+1F468 #skin_1 U+200D U+1F9BC,People & Body
+415,U+1F469 #skin_1 U+200D U+1F9BC,People & Body
+416,U+1F9D1 #skin_1 U+200D U+1F9BD,People & Body
+417,U+1F468 #skin_1 U+200D U+1F9BD,People & Body
+418,U+1F469 #skin_1 U+200D U+1F9BD,People & Body
+419,U+1F3C3 #skin_1,People & Body
+420,U+1F3C3 #skin_1 U+200D U+2642 U+FE0F,People & Body
+421,U+1F3C3 #skin_1 U+200D U+2640 U+FE0F,People & Body
+422,U+1F483 #skin_1,People & Body
+423,U+1F57A #skin_1,People & Body
+424,U+1F574 #skin_1,People & Body
+425,U+1F46F,People & Body
+426,U+1F46F U+200D U+2642 U+FE0F,People & Body
+427,U+1F46F U+200D U+2640 U+FE0F,People & Body
+428,U+1F9D6 #skin_1,People & Body
+429,U+1F9D6 #skin_1 U+200D U+2642 U+FE0F,People & Body
+430,U+1F9D6 #skin_1 U+200D U+2640 U+FE0F,People & Body
+431,U+1F9D7 #skin_1,People & Body
+432,U+1F9D7 #skin_1 U+200D U+2642 U+FE0F,People & Body
+433,U+1F9D7 #skin_1 U+200D U+2640 U+FE0F,People & Body
+434,U+1F93A,People & Body
+435,U+1F3C7 #skin_1,People & Body
+436,U+26F7,People & Body
+437,U+1F3C2 #skin_1,People & Body
+438,U+1F3CC #skin_1,People & Body
+439,U+1F3CC #skin_1 U+FE0F U+200D U+2642 U+FE0F,People & Body
+440,U+1F3CC #skin_1 U+FE0F U+200D U+2640 U+FE0F,People & Body
+441,U+1F3C4 #skin_1,People & Body
+442,U+1F3C4 #skin_1 U+200D U+2642 U+FE0F,People & Body
+443,U+1F3C4 #skin_1 U+200D U+2640 U+FE0F,People & Body
+444,U+1F6A3 #skin_1,People & Body
+445,U+1F6A3 #skin_1 U+200D U+2642 U+FE0F,People & Body
+446,U+1F6A3 #skin_1 U+200D U+2640 U+FE0F,People & Body
+447,U+1F3CA #skin_1,People & Body
+448,U+1F3CA #skin_1 U+200D U+2642 U+FE0F,People & Body
+449,U+1F3CA #skin_1 U+200D U+2640 U+FE0F,People & Body
+450,U+26F9 #skin_1,People & Body
+451,U+26F9 #skin_1 U+FE0F U+200D U+2642 U+FE0F,People & Body
+452,U+26F9 #skin_1 U+FE0F U+200D U+2640 U+FE0F,People & Body
+453,U+1F3CB #skin_1,People & Body
+454,U+1F3CB #skin_1 U+FE0F U+200D U+2642 U+FE0F,People & Body
+455,U+1F3CB #skin_1 U+FE0F U+200D U+2640 U+FE0F,People & Body
+456,U+1F6B4 #skin_1,People & Body
+457,U+1F6B4 #skin_1 U+200D U+2642 U+FE0F,People & Body
+458,U+1F6B4 #skin_1 U+200D U+2640 U+FE0F,People & Body
+459,U+1F6B5 #skin_1,People & Body
+460,U+1F6B5 #skin_1 U+200D U+2642 U+FE0F,People & Body
+461,U+1F6B5 #skin_1 U+200D U+2640 U+FE0F,People & Body
+462,U+1F938 #skin_1,People & Body
+463,U+1F938 #skin_1 U+200D U+2642 U+FE0F,People & Body
+464,U+1F938 #skin_1 U+200D U+2640 U+FE0F,People & Body
+465,U+1F93C,People & Body
+466,U+1F93C U+200D U+2642 U+FE0F,People & Body
+467,U+1F93C U+200D U+2640 U+FE0F,People & Body
+468,U+1F93D #skin_1,People & Body
+469,U+1F93D #skin_1 U+200D U+2642 U+FE0F,People & Body
+470,U+1F93D #skin_1 U+200D U+2640 U+FE0F,People & Body
+471,U+1F93E #skin_1,People & Body
+472,U+1F93E #skin_1 U+200D U+2642 U+FE0F,People & Body
+473,U+1F93E #skin_1 U+200D U+2640 U+FE0F,People & Body
+474,U+1F939 #skin_1,People & Body
+475,U+1F939 #skin_1 U+200D U+2642 U+FE0F,People & Body
+476,U+1F939 #skin_1 U+200D U+2640 U+FE0F,People & Body
+477,U+1F9D8 #skin_1,People & Body
+478,U+1F9D8 #skin_1 U+200D U+2642 U+FE0F,People & Body
+479,U+1F9D8 #skin_1 U+200D U+2640 U+FE0F,People & Body
+480,U+1F6C0 #skin_1,People & Body
+481,U+1F6CC #skin_1,People & Body
+482,U+1F9D1 #skin_1 U+200D U+1F91D U+200D U+1F9D1 #skin_2,People & Body
+483,U+1F46D #skin_1,People & Body
+484,U+1F46B #skin_1,People & Body
+485,U+1F46C #skin_1,People & Body
+486,U+1F48F #skin_1,People & Body
+487,U+1F469 #skin_1 U+200D U+2764 U+FE0F U+200D U+1F48B U+200D U+1F468 #skin_2,People & Body
+488,U+1F468 #skin_1 U+200D U+2764 U+FE0F U+200D U+1F48B U+200D U+1F468 #skin_2,People & Body
+489,U+1F469 #skin_1 U+200D U+2764 U+FE0F U+200D U+1F48B U+200D U+1F469 #skin_2,People & Body
+490,U+1F491 #skin_1,People & Body
+491,U+1F469 #skin_1 U+200D U+2764 U+FE0F U+200D U+1F468 #skin_2,People & Body
+492,U+1F468 #skin_1 U+200D U+2764 U+FE0F U+200D U+1F468 #skin_2,People & Body
+493,U+1F469 #skin_1 U+200D U+2764 U+FE0F U+200D U+1F469 #skin_2,People & Body
+494,U+1F46A,People & Body
+495,U+1F468 U+200D U+1F469 U+200D U+1F466,People & Body
+496,U+1F468 U+200D U+1F469 U+200D U+1F467,People & Body
+497,U+1F468 U+200D U+1F469 U+200D U+1F467 U+200D U+1F466,People & Body
+498,U+1F468 U+200D U+1F469 U+200D U+1F466 U+200D U+1F466,People & Body
+499,U+1F468 U+200D U+1F469 U+200D U+1F467 U+200D U+1F467,People & Body
+500,U+1F468 U+200D U+1F468 U+200D U+1F466,People & Body
+501,U+1F468 U+200D U+1F468 U+200D U+1F467,People & Body
+502,U+1F468 U+200D U+1F468 U+200D U+1F467 U+200D U+1F466,People & Body
+503,U+1F468 U+200D U+1F468 U+200D U+1F466 U+200D U+1F466,People & Body
+504,U+1F468 U+200D U+1F468 U+200D U+1F467 U+200D U+1F467,People & Body
+505,U+1F469 U+200D U+1F469 U+200D U+1F466,People & Body
+506,U+1F469 U+200D U+1F469 U+200D U+1F467,People & Body
+507,U+1F469 U+200D U+1F469 U+200D U+1F467 U+200D U+1F466,People & Body
+508,U+1F469 U+200D U+1F469 U+200D U+1F466 U+200D U+1F466,People & Body
+509,U+1F469 U+200D U+1F469 U+200D U+1F467 U+200D U+1F467,People & Body
+510,U+1F468 U+200D U+1F466,People & Body
+511,U+1F468 U+200D U+1F466 U+200D U+1F466,People & Body
+512,U+1F468 U+200D U+1F467,People & Body
+513,U+1F468 U+200D U+1F467 U+200D U+1F466,People & Body
+514,U+1F468 U+200D U+1F467 U+200D U+1F467,People & Body
+515,U+1F469 U+200D U+1F466,People & Body
+516,U+1F469 U+200D U+1F466 U+200D U+1F466,People & Body
+517,U+1F469 U+200D U+1F467,People & Body
+518,U+1F469 U+200D U+1F467 U+200D U+1F466,People & Body
+519,U+1F469 U+200D U+1F467 U+200D U+1F467,People & Body
+520,U+1F5E3,People & Body
+521,U+1F464,People & Body
+522,U+1F465,People & Body
+523,U+1FAC2,People & Body
+524,U+1F463,People & Body
+525,U+1F9B0,People & Body
+526,U+1F9B1,People & Body
+527,U+1F9B3,People & Body
+528,U+1F9B2,People & Body
+529,U+1F435,Animals & Nature
+530,U+1F412,Animals & Nature
+531,U+1F98D,Animals & Nature
+532,U+1F9A7,Animals & Nature
+533,U+1F436,Animals & Nature
+534,U+1F415,Animals & Nature
+535,U+1F9AE,Animals & Nature
+536,U+1F415 U+200D U+1F9BA,Animals & Nature
+537,U+1F429,Animals & Nature
+538,U+1F43A,Animals & Nature
+539,U+1F98A,Animals & Nature
+540,U+1F99D,Animals & Nature
+541,U+1F431,Animals & Nature
+542,U+1F408,Animals & Nature
+543,U+1F408 U+200D U+2B1B,Animals & Nature
+544,U+1F981,Animals & Nature
+545,U+1F42F,Animals & Nature
+546,U+1F405,Animals & Nature
+547,U+1F406,Animals & Nature
+548,U+1F434,Animals & Nature
+549,U+1F40E,Animals & Nature
+550,U+1F984,Animals & Nature
+551,U+1F993,Animals & Nature
+552,U+1F98C,Animals & Nature
+553,U+1F9AC,Animals & Nature
+554,U+1F42E,Animals & Nature
+555,U+1F402,Animals & Nature
+556,U+1F403,Animals & Nature
+557,U+1F404,Animals & Nature
+558,U+1F437,Animals & Nature
+559,U+1F416,Animals & Nature
+560,U+1F417,Animals & Nature
+561,U+1F43D,Animals & Nature
+562,U+1F40F,Animals & Nature
+563,U+1F411,Animals & Nature
+564,U+1F410,Animals & Nature
+565,U+1F42A,Animals & Nature
+566,U+1F42B,Animals & Nature
+567,U+1F999,Animals & Nature
+568,U+1F992,Animals & Nature
+569,U+1F418,Animals & Nature
+570,U+1F9A3,Animals & Nature
+571,U+1F98F,Animals & Nature
+572,U+1F99B,Animals & Nature
+573,U+1F42D,Animals & Nature
+574,U+1F401,Animals & Nature
+575,U+1F400,Animals & Nature
+576,U+1F439,Animals & Nature
+577,U+1F430,Animals & Nature
+578,U+1F407,Animals & Nature
+579,U+1F43F,Animals & Nature
+580,U+1F9AB,Animals & Nature
+581,U+1F994,Animals & Nature
+582,U+1F987,Animals & Nature
+583,U+1F43B,Animals & Nature
+584,U+1F43B U+200D U+2744 U+FE0F,Animals & Nature
+585,U+1F428,Animals & Nature
+586,U+1F43C,Animals & Nature
+587,U+1F9A5,Animals & Nature
+588,U+1F9A6,Animals & Nature
+589,U+1F9A8,Animals & Nature
+590,U+1F998,Animals & Nature
+591,U+1F9A1,Animals & Nature
+592,U+1F43E,Animals & Nature
+593,U+1F983,Animals & Nature
+594,U+1F414,Animals & Nature
+595,U+1F413,Animals & Nature
+596,U+1F423,Animals & Nature
+597,U+1F424,Animals & Nature
+598,U+1F425,Animals & Nature
+599,U+1F426,Animals & Nature
+600,U+1F427,Animals & Nature
+601,U+1F54A,Animals & Nature
+602,U+1F985,Animals & Nature
+603,U+1F986,Animals & Nature
+604,U+1F9A2,Animals & Nature
+605,U+1F989,Animals & Nature
+606,U+1F9A4,Animals & Nature
+607,U+1FAB6,Animals & Nature
+608,U+1F9A9,Animals & Nature
+609,U+1F99A,Animals & Nature
+610,U+1F99C,Animals & Nature
+611,U+1F438,Animals & Nature
+612,U+1F40A,Animals & Nature
+613,U+1F422,Animals & Nature
+614,U+1F98E,Animals & Nature
+615,U+1F40D,Animals & Nature
+616,U+1F432,Animals & Nature
+617,U+1F409,Animals & Nature
+618,U+1F995,Animals & Nature
+619,U+1F996,Animals & Nature
+620,U+1F433,Animals & Nature
+621,U+1F40B,Animals & Nature
+622,U+1F42C,Animals & Nature
+623,U+1F9AD,Animals & Nature
+624,U+1F41F,Animals & Nature
+625,U+1F420,Animals & Nature
+626,U+1F421,Animals & Nature
+627,U+1F988,Animals & Nature
+628,U+1F419,Animals & Nature
+629,U+1F41A,Animals & Nature
+630,U+1FAB8,Animals & Nature
+631,U+1F40C,Animals & Nature
+632,U+1F98B,Animals & Nature
+633,U+1F41B,Animals & Nature
+634,U+1F41C,Animals & Nature
+635,U+1F41D,Animals & Nature
+636,U+1FAB2,Animals & Nature
+637,U+1F41E,Animals & Nature
+638,U+1F997,Animals & Nature
+639,U+1FAB3,Animals & Nature
+640,U+1F577,Animals & Nature
+641,U+1F578,Animals & Nature
+642,U+1F982,Animals & Nature
+643,U+1F99F,Animals & Nature
+644,U+1FAB0,Animals & Nature
+645,U+1FAB1,Animals & Nature
+646,U+1F9A0,Animals & Nature
+647,U+1F490,Animals & Nature
+648,U+1F338,Animals & Nature
+649,U+1F4AE,Animals & Nature
+650,U+1FAB7,Animals & Nature
+651,U+1F3F5,Animals & Nature
+652,U+1F339,Animals & Nature
+653,U+1F940,Animals & Nature
+654,U+1F33A,Animals & Nature
+655,U+1F33B,Animals & Nature
+656,U+1F33C,Animals & Nature
+657,U+1F337,Animals & Nature
+658,U+1F331,Animals & Nature
+659,U+1FAB4,Animals & Nature
+660,U+1F332,Animals & Nature
+661,U+1F333,Animals & Nature
+662,U+1F334,Animals & Nature
+663,U+1F335,Animals & Nature
+664,U+1F33E,Animals & Nature
+665,U+1F33F,Animals & Nature
+666,U+2618,Animals & Nature
+667,U+1F340,Animals & Nature
+668,U+1F341,Animals & Nature
+669,U+1F342,Animals & Nature
+670,U+1F343,Animals & Nature
+671,U+1FAB9,Animals & Nature
+672,U+1FABA,Animals & Nature
+673,U+1F347,Food & Drink
+674,U+1F348,Food & Drink
+675,U+1F349,Food & Drink
+676,U+1F34A,Food & Drink
+677,U+1F34B,Food & Drink
+678,U+1F34C,Food & Drink
+679,U+1F34D,Food & Drink
+680,U+1F96D,Food & Drink
+681,U+1F34E,Food & Drink
+682,U+1F34F,Food & Drink
+683,U+1F350,Food & Drink
+684,U+1F351,Food & Drink
+685,U+1F352,Food & Drink
+686,U+1F353,Food & Drink
+687,U+1FAD0,Food & Drink
+688,U+1F95D,Food & Drink
+689,U+1F345,Food & Drink
+690,U+1FAD2,Food & Drink
+691,U+1F965,Food & Drink
+692,U+1F951,Food & Drink
+693,U+1F346,Food & Drink
+694,U+1F954,Food & Drink
+695,U+1F955,Food & Drink
+696,U+1F33D,Food & Drink
+697,U+1F336,Food & Drink
+698,U+1FAD1,Food & Drink
+699,U+1F952,Food & Drink
+700,U+1F96C,Food & Drink
+701,U+1F966,Food & Drink
+702,U+1F9C4,Food & Drink
+703,U+1F9C5,Food & Drink
+704,U+1F344,Food & Drink
+705,U+1F95C,Food & Drink
+706,U+1FAD8,Food & Drink
+707,U+1F330,Food & Drink
+708,U+1F35E,Food & Drink
+709,U+1F950,Food & Drink
+710,U+1F956,Food & Drink
+711,U+1FAD3,Food & Drink
+712,U+1F968,Food & Drink
+713,U+1F96F,Food & Drink
+714,U+1F95E,Food & Drink
+715,U+1F9C7,Food & Drink
+716,U+1F9C0,Food & Drink
+717,U+1F356,Food & Drink
+718,U+1F357,Food & Drink
+719,U+1F969,Food & Drink
+720,U+1F953,Food & Drink
+721,U+1F354,Food & Drink
+722,U+1F35F,Food & Drink
+723,U+1F355,Food & Drink
+724,U+1F32D,Food & Drink
+725,U+1F96A,Food & Drink
+726,U+1F32E,Food & Drink
+727,U+1F32F,Food & Drink
+728,U+1FAD4,Food & Drink
+729,U+1F959,Food & Drink
+730,U+1F9C6,Food & Drink
+731,U+1F95A,Food & Drink
+732,U+1F373,Food & Drink
+733,U+1F958,Food & Drink
+734,U+1F372,Food & Drink
+735,U+1FAD5,Food & Drink
+736,U+1F963,Food & Drink
+737,U+1F957,Food & Drink
+738,U+1F37F,Food & Drink
+739,U+1F9C8,Food & Drink
+740,U+1F9C2,Food & Drink
+741,U+1F96B,Food & Drink
+742,U+1F371,Food & Drink
+743,U+1F358,Food & Drink
+744,U+1F359,Food & Drink
+745,U+1F35A,Food & Drink
+746,U+1F35B,Food & Drink
+747,U+1F35C,Food & Drink
+748,U+1F35D,Food & Drink
+749,U+1F360,Food & Drink
+750,U+1F362,Food & Drink
+751,U+1F363,Food & Drink
+752,U+1F364,Food & Drink
+753,U+1F365,Food & Drink
+754,U+1F96E,Food & Drink
+755,U+1F361,Food & Drink
+756,U+1F95F,Food & Drink
+757,U+1F960,Food & Drink
+758,U+1F961,Food & Drink
+759,U+1F980,Food & Drink
+760,U+1F99E,Food & Drink
+761,U+1F990,Food & Drink
+762,U+1F991,Food & Drink
+763,U+1F9AA,Food & Drink
+764,U+1F366,Food & Drink
+765,U+1F367,Food & Drink
+766,U+1F368,Food & Drink
+767,U+1F369,Food & Drink
+768,U+1F36A,Food & Drink
+769,U+1F382,Food & Drink
+770,U+1F370,Food & Drink
+771,U+1F9C1,Food & Drink
+772,U+1F967,Food & Drink
+773,U+1F36B,Food & Drink
+774,U+1F36C,Food & Drink
+775,U+1F36D,Food & Drink
+776,U+1F36E,Food & Drink
+777,U+1F36F,Food & Drink
+778,U+1F37C,Food & Drink
+779,U+1F95B,Food & Drink
+780,U+2615,Food & Drink
+781,U+1FAD6,Food & Drink
+782,U+1F375,Food & Drink
+783,U+1F376,Food & Drink
+784,U+1F37E,Food & Drink
+785,U+1F377,Food & Drink
+786,U+1F378,Food & Drink
+787,U+1F379,Food & Drink
+788,U+1F37A,Food & Drink
+789,U+1F37B,Food & Drink
+790,U+1F942,Food & Drink
+791,U+1F943,Food & Drink
+792,U+1FAD7,Food & Drink
+793,U+1F964,Food & Drink
+794,U+1F9CB,Food & Drink
+795,U+1F9C3,Food & Drink
+796,U+1F9C9,Food & Drink
+797,U+1F9CA,Food & Drink
+798,U+1F962,Food & Drink
+799,U+1F37D,Food & Drink
+800,U+1F374,Food & Drink
+801,U+1F944,Food & Drink
+802,U+1F52A,Food & Drink
+803,U+1FAD9,Food & Drink
+804,U+1F3FA,Food & Drink
+805,U+1F30D,Travel & Places
+806,U+1F30E,Travel & Places
+807,U+1F30F,Travel & Places
+808,U+1F310,Travel & Places
+809,U+1F5FA,Travel & Places
+810,U+1F5FE,Travel & Places
+811,U+1F9ED,Travel & Places
+812,U+1F3D4,Travel & Places
+813,U+26F0,Travel & Places
+814,U+1F30B,Travel & Places
+815,U+1F5FB,Travel & Places
+816,U+1F3D5,Travel & Places
+817,U+1F3D6,Travel & Places
+818,U+1F3DC,Travel & Places
+819,U+1F3DD,Travel & Places
+820,U+1F3DE,Travel & Places
+821,U+1F3DF,Travel & Places
+822,U+1F3DB,Travel & Places
+823,U+1F3D7,Travel & Places
+824,U+1F9F1,Travel & Places
+825,U+1FAA8,Travel & Places
+826,U+1FAB5,Travel & Places
+827,U+1F6D6,Travel & Places
+828,U+1F3D8,Travel & Places
+829,U+1F3DA,Travel & Places
+830,U+1F3E0,Travel & Places
+831,U+1F3E1,Travel & Places
+832,U+1F3E2,Travel & Places
+833,U+1F3E3,Travel & Places
+834,U+1F3E4,Travel & Places
+835,U+1F3E5,Travel & Places
+836,U+1F3E6,Travel & Places
+837,U+1F3E8,Travel & Places
+838,U+1F3E9,Travel & Places
+839,U+1F3EA,Travel & Places
+840,U+1F3EB,Travel & Places
+841,U+1F3EC,Travel & Places
+842,U+1F3ED,Travel & Places
+843,U+1F3EF,Travel & Places
+844,U+1F3F0,Travel & Places
+845,U+1F492,Travel & Places
+846,U+1F5FC,Travel & Places
+847,U+1F5FD,Travel & Places
+848,U+26EA,Travel & Places
+849,U+1F54C,Travel & Places
+850,U+1F6D5,Travel & Places
+851,U+1F54D,Travel & Places
+852,U+26E9,Travel & Places
+853,U+1F54B,Travel & Places
+854,U+26F2,Travel & Places
+855,U+26FA,Travel & Places
+856,U+1F301,Travel & Places
+857,U+1F303,Travel & Places
+858,U+1F3D9,Travel & Places
+859,U+1F304,Travel & Places
+860,U+1F305,Travel & Places
+861,U+1F306,Travel & Places
+862,U+1F307,Travel & Places
+863,U+1F309,Travel & Places
+864,U+2668,Travel & Places
+865,U+1F3A0,Travel & Places
+866,U+1F6DD,Travel & Places
+867,U+1F3A1,Travel & Places
+868,U+1F3A2,Travel & Places
+869,U+1F488,Travel & Places
+870,U+1F3AA,Travel & Places
+871,U+1F682,Travel & Places
+872,U+1F683,Travel & Places
+873,U+1F684,Travel & Places
+874,U+1F685,Travel & Places
+875,U+1F686,Travel & Places
+876,U+1F687,Travel & Places
+877,U+1F688,Travel & Places
+878,U+1F689,Travel & Places
+879,U+1F68A,Travel & Places
+880,U+1F69D,Travel & Places
+881,U+1F69E,Travel & Places
+882,U+1F68B,Travel & Places
+883,U+1F68C,Travel & Places
+884,U+1F68D,Travel & Places
+885,U+1F68E,Travel & Places
+886,U+1F690,Travel & Places
+887,U+1F691,Travel & Places
+888,U+1F692,Travel & Places
+889,U+1F693,Travel & Places
+890,U+1F694,Travel & Places
+891,U+1F695,Travel & Places
+892,U+1F696,Travel & Places
+893,U+1F697,Travel & Places
+894,U+1F698,Travel & Places
+895,U+1F699,Travel & Places
+896,U+1F6FB,Travel & Places
+897,U+1F69A,Travel & Places
+898,U+1F69B,Travel & Places
+899,U+1F69C,Travel & Places
+900,U+1F3CE,Travel & Places
+901,U+1F3CD,Travel & Places
+902,U+1F6F5,Travel & Places
+903,U+1F9BD,Travel & Places
+904,U+1F9BC,Travel & Places
+905,U+1F6FA,Travel & Places
+906,U+1F6B2,Travel & Places
+907,U+1F6F4,Travel & Places
+908,U+1F6F9,Travel & Places
+909,U+1F6FC,Travel & Places
+910,U+1F68F,Travel & Places
+911,U+1F6E3,Travel & Places
+912,U+1F6E4,Travel & Places
+913,U+1F6E2,Travel & Places
+914,U+26FD,Travel & Places
+915,U+1F6DE,Travel & Places
+916,U+1F6A8,Travel & Places
+917,U+1F6A5,Travel & Places
+918,U+1F6A6,Travel & Places
+919,U+1F6D1,Travel & Places
+920,U+1F6A7,Travel & Places
+921,U+2693,Travel & Places
+922,U+1F6DF,Travel & Places
+923,U+26F5,Travel & Places
+924,U+1F6F6,Travel & Places
+925,U+1F6A4,Travel & Places
+926,U+1F6F3,Travel & Places
+927,U+26F4,Travel & Places
+928,U+1F6E5,Travel & Places
+929,U+1F6A2,Travel & Places
+930,U+2708,Travel & Places
+931,U+1F6E9,Travel & Places
+932,U+1F6EB,Travel & Places
+933,U+1F6EC,Travel & Places
+934,U+1FA82,Travel & Places
+935,U+1F4BA,Travel & Places
+936,U+1F681,Travel & Places
+937,U+1F69F,Travel & Places
+938,U+1F6A0,Travel & Places
+939,U+1F6A1,Travel & Places
+940,U+1F6F0,Travel & Places
+941,U+1F680,Travel & Places
+942,U+1F6F8,Travel & Places
+943,U+1F6CE,Travel & Places
+944,U+1F9F3,Travel & Places
+945,U+231B,Travel & Places
+946,U+23F3,Travel & Places
+947,U+231A,Travel & Places
+948,U+23F0,Travel & Places
+949,U+23F1,Travel & Places
+950,U+23F2,Travel & Places
+951,U+1F570,Travel & Places
+952,U+1F55B,Travel & Places
+953,U+1F567,Travel & Places
+954,U+1F550,Travel & Places
+955,U+1F55C,Travel & Places
+956,U+1F551,Travel & Places
+957,U+1F55D,Travel & Places
+958,U+1F552,Travel & Places
+959,U+1F55E,Travel & Places
+960,U+1F553,Travel & Places
+961,U+1F55F,Travel & Places
+962,U+1F554,Travel & Places
+963,U+1F560,Travel & Places
+964,U+1F555,Travel & Places
+965,U+1F561,Travel & Places
+966,U+1F556,Travel & Places
+967,U+1F562,Travel & Places
+968,U+1F557,Travel & Places
+969,U+1F563,Travel & Places
+970,U+1F558,Travel & Places
+971,U+1F564,Travel & Places
+972,U+1F559,Travel & Places
+973,U+1F565,Travel & Places
+974,U+1F55A,Travel & Places
+975,U+1F566,Travel & Places
+976,U+1F311,Travel & Places
+977,U+1F312,Travel & Places
+978,U+1F313,Travel & Places
+979,U+1F314,Travel & Places
+980,U+1F315,Travel & Places
+981,U+1F316,Travel & Places
+982,U+1F317,Travel & Places
+983,U+1F318,Travel & Places
+984,U+1F319,Travel & Places
+985,U+1F31A,Travel & Places
+986,U+1F31B,Travel & Places
+987,U+1F31C,Travel & Places
+988,U+1F321,Travel & Places
+989,U+2600,Travel & Places
+990,U+1F31D,Travel & Places
+991,U+1F31E,Travel & Places
+992,U+1FA90,Travel & Places
+993,U+2B50,Travel & Places
+994,U+1F31F,Travel & Places
+995,U+1F320,Travel & Places
+996,U+1F30C,Travel & Places
+997,U+2601,Travel & Places
+998,U+26C5,Travel & Places
+999,U+26C8,Travel & Places
+1000,U+1F324,Travel & Places
+1001,U+1F325,Travel & Places
+1002,U+1F326,Travel & Places
+1003,U+1F327,Travel & Places
+1004,U+1F328,Travel & Places
+1005,U+1F329,Travel & Places
+1006,U+1F32A,Travel & Places
+1007,U+1F32B,Travel & Places
+1008,U+1F32C,Travel & Places
+1009,U+1F300,Travel & Places
+1010,U+1F308,Travel & Places
+1011,U+1F302,Travel & Places
+1012,U+2602,Travel & Places
+1013,U+2614,Travel & Places
+1014,U+26F1,Travel & Places
+1015,U+26A1,Travel & Places
+1016,U+2744,Travel & Places
+1017,U+2603,Travel & Places
+1018,U+26C4,Travel & Places
+1019,U+2604,Travel & Places
+1020,U+1F525,Travel & Places
+1021,U+1F4A7,Travel & Places
+1022,U+1F30A,Travel & Places
+1023,U+1F383,Activities
+1024,U+1F384,Activities
+1025,U+1F386,Activities
+1026,U+1F387,Activities
+1027,U+1F9E8,Activities
+1028,U+2728,Activities
+1029,U+1F388,Activities
+1030,U+1F389,Activities
+1031,U+1F38A,Activities
+1032,U+1F38B,Activities
+1033,U+1F38D,Activities
+1034,U+1F38E,Activities
+1035,U+1F38F,Activities
+1036,U+1F390,Activities
+1037,U+1F391,Activities
+1038,U+1F9E7,Activities
+1039,U+1F380,Activities
+1040,U+1F381,Activities
+1041,U+1F397,Activities
+1042,U+1F39F,Activities
+1043,U+1F3AB,Activities
+1044,U+1F396,Activities
+1045,U+1F3C6,Activities
+1046,U+1F3C5,Activities
+1047,U+1F947,Activities
+1048,U+1F948,Activities
+1049,U+1F949,Activities
+1050,U+26BD,Activities
+1051,U+26BE,Activities
+1052,U+1F94E,Activities
+1053,U+1F3C0,Activities
+1054,U+1F3D0,Activities
+1055,U+1F3C8,Activities
+1056,U+1F3C9,Activities
+1057,U+1F3BE,Activities
+1058,U+1F94F,Activities
+1059,U+1F3B3,Activities
+1060,U+1F3CF,Activities
+1061,U+1F3D1,Activities
+1062,U+1F3D2,Activities
+1063,U+1F94D,Activities
+1064,U+1F3D3,Activities
+1065,U+1F3F8,Activities
+1066,U+1F94A,Activities
+1067,U+1F94B,Activities
+1068,U+1F945,Activities
+1069,U+26F3,Activities
+1070,U+26F8,Activities
+1071,U+1F3A3,Activities
+1072,U+1F93F,Activities
+1073,U+1F3BD,Activities
+1074,U+1F3BF,Activities
+1075,U+1F6F7,Activities
+1076,U+1F94C,Activities
+1077,U+1F3AF,Activities
+1078,U+1FA80,Activities
+1079,U+1FA81,Activities
+1080,U+1F3B1,Activities
+1081,U+1F52E,Activities
+1082,U+1FA84,Activities
+1083,U+1F9FF,Activities
+1084,U+1FAAC,Activities
+1085,U+1F3AE,Activities
+1086,U+1F579,Activities
+1087,U+1F3B0,Activities
+1088,U+1F3B2,Activities
+1089,U+1F9E9,Activities
+1090,U+1F9F8,Activities
+1091,U+1FA85,Activities
+1092,U+1FAA9,Activities
+1093,U+1FA86,Activities
+1094,U+2660,Activities
+1095,U+2665,Activities
+1096,U+2666,Activities
+1097,U+2663,Activities
+1098,U+265F,Activities
+1099,U+1F0CF,Activities
+1100,U+1F004,Activities
+1101,U+1F3B4,Activities
+1102,U+1F3AD,Activities
+1103,U+1F5BC,Activities
+1104,U+1F3A8,Activities
+1105,U+1F9F5,Activities
+1106,U+1FAA1,Activities
+1107,U+1F9F6,Activities
+1108,U+1FAA2,Activities
+1109,U+1F453,Objects
+1110,U+1F576,Objects
+1111,U+1F97D,Objects
+1112,U+1F97C,Objects
+1113,U+1F9BA,Objects
+1114,U+1F454,Objects
+1115,U+1F455,Objects
+1116,U+1F456,Objects
+1117,U+1F9E3,Objects
+1118,U+1F9E4,Objects
+1119,U+1F9E5,Objects
+1120,U+1F9E6,Objects
+1121,U+1F457,Objects
+1122,U+1F458,Objects
+1123,U+1F97B,Objects
+1124,U+1FA71,Objects
+1125,U+1FA72,Objects
+1126,U+1FA73,Objects
+1127,U+1F459,Objects
+1128,U+1F45A,Objects
+1129,U+1F45B,Objects
+1130,U+1F45C,Objects
+1131,U+1F45D,Objects
+1132,U+1F6CD,Objects
+1133,U+1F392,Objects
+1134,U+1FA74,Objects
+1135,U+1F45E,Objects
+1136,U+1F45F,Objects
+1137,U+1F97E,Objects
+1138,U+1F97F,Objects
+1139,U+1F460,Objects
+1140,U+1F461,Objects
+1141,U+1FA70,Objects
+1142,U+1F462,Objects
+1143,U+1F451,Objects
+1144,U+1F452,Objects
+1145,U+1F3A9,Objects
+1146,U+1F393,Objects
+1147,U+1F9E2,Objects
+1148,U+1FA96,Objects
+1149,U+26D1,Objects
+1150,U+1F4FF,Objects
+1151,U+1F484,Objects
+1152,U+1F48D,Objects
+1153,U+1F48E,Objects
+1154,U+1F507,Objects
+1155,U+1F508,Objects
+1156,U+1F509,Objects
+1157,U+1F50A,Objects
+1158,U+1F4E2,Objects
+1159,U+1F4E3,Objects
+1160,U+1F4EF,Objects
+1161,U+1F514,Objects
+1162,U+1F515,Objects
+1163,U+1F3BC,Objects
+1164,U+1F3B5,Objects
+1165,U+1F3B6,Objects
+1166,U+1F399,Objects
+1167,U+1F39A,Objects
+1168,U+1F39B,Objects
+1169,U+1F3A4,Objects
+1170,U+1F3A7,Objects
+1171,U+1F4FB,Objects
+1172,U+1F3B7,Objects
+1173,U+1FA97,Objects
+1174,U+1F3B8,Objects
+1175,U+1F3B9,Objects
+1176,U+1F3BA,Objects
+1177,U+1F3BB,Objects
+1178,U+1FA95,Objects
+1179,U+1F941,Objects
+1180,U+1FA98,Objects
+1181,U+1F4F1,Objects
+1182,U+1F4F2,Objects
+1183,U+260E,Objects
+1184,U+1F4DE,Objects
+1185,U+1F4DF,Objects
+1186,U+1F4E0,Objects
+1187,U+1F50B,Objects
+1188,U+1FAAB,Objects
+1189,U+1F50C,Objects
+1190,U+1F4BB,Objects
+1191,U+1F5A5,Objects
+1192,U+1F5A8,Objects
+1193,U+2328,Objects
+1194,U+1F5B1,Objects
+1195,U+1F5B2,Objects
+1196,U+1F4BD,Objects
+1197,U+1F4BE,Objects
+1198,U+1F4BF,Objects
+1199,U+1F4C0,Objects
+1200,U+1F9EE,Objects
+1201,U+1F3A5,Objects
+1202,U+1F39E,Objects
+1203,U+1F4FD,Objects
+1204,U+1F3AC,Objects
+1205,U+1F4FA,Objects
+1206,U+1F4F7,Objects
+1207,U+1F4F8,Objects
+1208,U+1F4F9,Objects
+1209,U+1F4FC,Objects
+1210,U+1F50D,Objects
+1211,U+1F50E,Objects
+1212,U+1F56F,Objects
+1213,U+1F4A1,Objects
+1214,U+1F526,Objects
+1215,U+1F3EE,Objects
+1216,U+1FA94,Objects
+1217,U+1F4D4,Objects
+1218,U+1F4D5,Objects
+1219,U+1F4D6,Objects
+1220,U+1F4D7,Objects
+1221,U+1F4D8,Objects
+1222,U+1F4D9,Objects
+1223,U+1F4DA,Objects
+1224,U+1F4D3,Objects
+1225,U+1F4D2,Objects
+1226,U+1F4C3,Objects
+1227,U+1F4DC,Objects
+1228,U+1F4C4,Objects
+1229,U+1F4F0,Objects
+1230,U+1F5DE,Objects
+1231,U+1F4D1,Objects
+1232,U+1F516,Objects
+1233,U+1F3F7,Objects
+1234,U+1F4B0,Objects
+1235,U+1FA99,Objects
+1236,U+1F4B4,Objects
+1237,U+1F4B5,Objects
+1238,U+1F4B6,Objects
+1239,U+1F4B7,Objects
+1240,U+1F4B8,Objects
+1241,U+1F4B3,Objects
+1242,U+1F9FE,Objects
+1243,U+1F4B9,Objects
+1244,U+2709,Objects
+1245,U+1F4E7,Objects
+1246,U+1F4E8,Objects
+1247,U+1F4E9,Objects
+1248,U+1F4E4,Objects
+1249,U+1F4E5,Objects
+1250,U+1F4E6,Objects
+1251,U+1F4EB,Objects
+1252,U+1F4EA,Objects
+1253,U+1F4EC,Objects
+1254,U+1F4ED,Objects
+1255,U+1F4EE,Objects
+1256,U+1F5F3,Objects
+1257,U+270F,Objects
+1258,U+2712,Objects
+1259,U+1F58B,Objects
+1260,U+1F58A,Objects
+1261,U+1F58C,Objects
+1262,U+1F58D,Objects
+1263,U+1F4DD,Objects
+1264,U+1F4BC,Objects
+1265,U+1F4C1,Objects
+1266,U+1F4C2,Objects
+1267,U+1F5C2,Objects
+1268,U+1F4C5,Objects
+1269,U+1F4C6,Objects
+1270,U+1F5D2,Objects
+1271,U+1F5D3,Objects
+1272,U+1F4C7,Objects
+1273,U+1F4C8,Objects
+1274,U+1F4C9,Objects
+1275,U+1F4CA,Objects
+1276,U+1F4CB,Objects
+1277,U+1F4CC,Objects
+1278,U+1F4CD,Objects
+1279,U+1F4CE,Objects
+1280,U+1F587,Objects
+1281,U+1F4CF,Objects
+1282,U+1F4D0,Objects
+1283,U+2702,Objects
+1284,U+1F5C3,Objects
+1285,U+1F5C4,Objects
+1286,U+1F5D1,Objects
+1287,U+1F512,Objects
+1288,U+1F513,Objects
+1289,U+1F50F,Objects
+1290,U+1F510,Objects
+1291,U+1F511,Objects
+1292,U+1F5DD,Objects
+1293,U+1F528,Objects
+1294,U+1FA93,Objects
+1295,U+26CF,Objects
+1296,U+2692,Objects
+1297,U+1F6E0,Objects
+1298,U+1F5E1,Objects
+1299,U+2694,Objects
+1300,U+1F52B,Objects
+1301,U+1FA83,Objects
+1302,U+1F3F9,Objects
+1303,U+1F6E1,Objects
+1304,U+1FA9A,Objects
+1305,U+1F527,Objects
+1306,U+1FA9B,Objects
+1307,U+1F529,Objects
+1308,U+2699,Objects
+1309,U+1F5DC,Objects
+1310,U+2696,Objects
+1311,U+1F9AF,Objects
+1312,U+1F517,Objects
+1313,U+26D3,Objects
+1314,U+1FA9D,Objects
+1315,U+1F9F0,Objects
+1316,U+1F9F2,Objects
+1317,U+1FA9C,Objects
+1318,U+2697,Objects
+1319,U+1F9EA,Objects
+1320,U+1F9EB,Objects
+1321,U+1F9EC,Objects
+1322,U+1F52C,Objects
+1323,U+1F52D,Objects
+1324,U+1F4E1,Objects
+1325,U+1F489,Objects
+1326,U+1FA78,Objects
+1327,U+1F48A,Objects
+1328,U+1FA79,Objects
+1329,U+1FA7C,Objects
+1330,U+1FA7A,Objects
+1331,U+1FA7B,Objects
+1332,U+1F6AA,Objects
+1333,U+1F6D7,Objects
+1334,U+1FA9E,Objects
+1335,U+1FA9F,Objects
+1336,U+1F6CF,Objects
+1337,U+1F6CB,Objects
+1338,U+1FA91,Objects
+1339,U+1F6BD,Objects
+1340,U+1FAA0,Objects
+1341,U+1F6BF,Objects
+1342,U+1F6C1,Objects
+1343,U+1FAA4,Objects
+1344,U+1FA92,Objects
+1345,U+1F9F4,Objects
+1346,U+1F9F7,Objects
+1347,U+1F9F9,Objects
+1348,U+1F9FA,Objects
+1349,U+1F9FB,Objects
+1350,U+1FAA3,Objects
+1351,U+1F9FC,Objects
+1352,U+1FAE7,Objects
+1353,U+1FAA5,Objects
+1354,U+1F9FD,Objects
+1355,U+1F9EF,Objects
+1356,U+1F6D2,Objects
+1357,U+1F6AC,Objects
+1358,U+26B0,Objects
+1359,U+1FAA6,Objects
+1360,U+26B1,Objects
+1361,U+1F5FF,Objects
+1362,U+1FAA7,Objects
+1363,U+1FAAA,Objects
+1364,U+1F3E7,Symbols
+1365,U+1F6AE,Symbols
+1366,U+1F6B0,Symbols
+1367,U+267F,Symbols
+1368,U+1F6B9,Symbols
+1369,U+1F6BA,Symbols
+1370,U+1F6BB,Symbols
+1371,U+1F6BC,Symbols
+1372,U+1F6BE,Symbols
+1373,U+1F6C2,Symbols
+1374,U+1F6C3,Symbols
+1375,U+1F6C4,Symbols
+1376,U+1F6C5,Symbols
+1377,U+26A0,Symbols
+1378,U+1F6B8,Symbols
+1379,U+26D4,Symbols
+1380,U+1F6AB,Symbols
+1381,U+1F6B3,Symbols
+1382,U+1F6AD,Symbols
+1383,U+1F6AF,Symbols
+1384,U+1F6B1,Symbols
+1385,U+1F6B7,Symbols
+1386,U+1F4F5,Symbols
+1387,U+1F51E,Symbols
+1388,U+2622,Symbols
+1389,U+2623,Symbols
+1390,U+2B06,Symbols
+1391,U+2197,Symbols
+1392,U+27A1,Symbols
+1393,U+2198,Symbols
+1394,U+2B07,Symbols
+1395,U+2199,Symbols
+1396,U+2B05,Symbols
+1397,U+2196,Symbols
+1398,U+2195,Symbols
+1399,U+2194,Symbols
+1400,U+21A9,Symbols
+1401,U+21AA,Symbols
+1402,U+2934,Symbols
+1403,U+2935,Symbols
+1404,U+1F503,Symbols
+1405,U+1F504,Symbols
+1406,U+1F519,Symbols
+1407,U+1F51A,Symbols
+1408,U+1F51B,Symbols
+1409,U+1F51C,Symbols
+1410,U+1F51D,Symbols
+1411,U+1F6D0,Symbols
+1412,U+269B,Symbols
+1413,U+1F549,Symbols
+1414,U+2721,Symbols
+1415,U+2638,Symbols
+1416,U+262F,Symbols
+1417,U+271D,Symbols
+1418,U+2626,Symbols
+1419,U+262A,Symbols
+1420,U+262E,Symbols
+1421,U+1F54E,Symbols
+1422,U+1F52F,Symbols
+1423,U+2648,Symbols
+1424,U+2649,Symbols
+1425,U+264A,Symbols
+1426,U+264B,Symbols
+1427,U+264C,Symbols
+1428,U+264D,Symbols
+1429,U+264E,Symbols
+1430,U+264F,Symbols
+1431,U+2650,Symbols
+1432,U+2651,Symbols
+1433,U+2652,Symbols
+1434,U+2653,Symbols
+1435,U+26CE,Symbols
+1436,U+1F500,Symbols
+1437,U+1F501,Symbols
+1438,U+1F502,Symbols
+1439,U+25B6,Symbols
+1440,U+23E9,Symbols
+1441,U+23ED,Symbols
+1442,U+23EF,Symbols
+1443,U+25C0,Symbols
+1444,U+23EA,Symbols
+1445,U+23EE,Symbols
+1446,U+1F53C,Symbols
+1447,U+23EB,Symbols
+1448,U+1F53D,Symbols
+1449,U+23EC,Symbols
+1450,U+23F8,Symbols
+1451,U+23F9,Symbols
+1452,U+23FA,Symbols
+1453,U+23CF,Symbols
+1454,U+1F3A6,Symbols
+1455,U+1F505,Symbols
+1456,U+1F506,Symbols
+1457,U+1F4F6,Symbols
+1458,U+1F4F3,Symbols
+1459,U+1F4F4,Symbols
+1460,U+2640,Symbols
+1461,U+2642,Symbols
+1462,U+26A7,Symbols
+1463,U+2716,Symbols
+1464,U+2795,Symbols
+1465,U+2796,Symbols
+1466,U+2797,Symbols
+1467,U+1F7F0,Symbols
+1468,U+267E,Symbols
+1469,U+203C,Symbols
+1470,U+2049,Symbols
+1471,U+2753,Symbols
+1472,U+2754,Symbols
+1473,U+2755,Symbols
+1474,U+2757,Symbols
+1475,U+3030,Symbols
+1476,U+1F4B1,Symbols
+1477,U+1F4B2,Symbols
+1478,U+2695,Symbols
+1479,U+267B,Symbols
+1480,U+269C,Symbols
+1481,U+1F531,Symbols
+1482,U+1F4DB,Symbols
+1483,U+1F530,Symbols
+1484,U+2B55,Symbols
+1485,U+2705,Symbols
+1486,U+2611,Symbols
+1487,U+2714,Symbols
+1488,U+274C,Symbols
+1489,U+274E,Symbols
+1490,U+27B0,Symbols
+1491,U+27BF,Symbols
+1492,U+303D,Symbols
+1493,U+2733,Symbols
+1494,U+2734,Symbols
+1495,U+2747,Symbols
+1496,U+00A9,Symbols
+1497,U+00AE,Symbols
+1498,U+2122,Symbols
+1499,U+0023 U+FE0F U+20E3,Symbols
+1500,U+002A U+FE0F U+20E3,Symbols
+1501,U+0030 U+FE0F U+20E3,Symbols
+1502,U+0031 U+FE0F U+20E3,Symbols
+1503,U+0032 U+FE0F U+20E3,Symbols
+1504,U+0033 U+FE0F U+20E3,Symbols
+1505,U+0034 U+FE0F U+20E3,Symbols
+1506,U+0035 U+FE0F U+20E3,Symbols
+1507,U+0036 U+FE0F U+20E3,Symbols
+1508,U+0037 U+FE0F U+20E3,Symbols
+1509,U+0038 U+FE0F U+20E3,Symbols
+1510,U+0039 U+FE0F U+20E3,Symbols
+1511,U+1F51F,Symbols
+1512,U+1F520,Symbols
+1513,U+1F521,Symbols
+1514,U+1F522,Symbols
+1515,U+1F523,Symbols
+1516,U+1F524,Symbols
+1517,U+1F170,Symbols
+1518,U+1F18E,Symbols
+1519,U+1F171,Symbols
+1520,U+1F191,Symbols
+1521,U+1F192,Symbols
+1522,U+1F193,Symbols
+1523,U+2139,Symbols
+1524,U+1F194,Symbols
+1525,U+24C2,Symbols
+1526,U+1F195,Symbols
+1527,U+1F196,Symbols
+1528,U+1F17E,Symbols
+1529,U+1F197,Symbols
+1530,U+1F17F,Symbols
+1531,U+1F198,Symbols
+1532,U+1F199,Symbols
+1533,U+1F19A,Symbols
+1534,U+1F201,Symbols
+1535,U+1F202,Symbols
+1536,U+1F237,Symbols
+1537,U+1F236,Symbols
+1538,U+1F22F,Symbols
+1539,U+1F250,Symbols
+1540,U+1F239,Symbols
+1541,U+1F21A,Symbols
+1542,U+1F232,Symbols
+1543,U+1F251,Symbols
+1544,U+1F238,Symbols
+1545,U+1F234,Symbols
+1546,U+1F233,Symbols
+1547,U+3297,Symbols
+1548,U+3299,Symbols
+1549,U+1F23A,Symbols
+1550,U+1F235,Symbols
+1551,U+1F534,Symbols
+1552,U+1F7E0,Symbols
+1553,U+1F7E1,Symbols
+1554,U+1F7E2,Symbols
+1555,U+1F535,Symbols
+1556,U+1F7E3,Symbols
+1557,U+1F7E4,Symbols
+1558,U+26AB,Symbols
+1559,U+26AA,Symbols
+1560,U+1F7E5,Symbols
+1561,U+1F7E7,Symbols
+1562,U+1F7E8,Symbols
+1563,U+1F7E9,Symbols
+1564,U+1F7E6,Symbols
+1565,U+1F7EA,Symbols
+1566,U+1F7EB,Symbols
+1567,U+2B1B,Symbols
+1568,U+2B1C,Symbols
+1569,U+25FC,Symbols
+1570,U+25FB,Symbols
+1571,U+25FE,Symbols
+1572,U+25FD,Symbols
+1573,U+25AA,Symbols
+1574,U+25AB,Symbols
+1575,U+1F536,Symbols
+1576,U+1F537,Symbols
+1577,U+1F538,Symbols
+1578,U+1F539,Symbols
+1579,U+1F53A,Symbols
+1580,U+1F53B,Symbols
+1581,U+1F4A0,Symbols
+1582,U+1F518,Symbols
+1583,U+1F533,Symbols
+1584,U+1F532,Symbols
+1585,U+1F3C1,Objects
+1586,U+1F6A9,Objects
+1587,U+1F38C,Objects
+1588,U+1F3F4,Objects
+1589,U+1F3F3,Objects
+1590,U+1F3F3 U+FE0F U+200D U+1F308,Objects
+1591,U+1F3F3 U+FE0F U+200D U+26A7 U+FE0F,Objects
+1592,U+1F3F4 U+200D U+2620 U+FE0F,Objects

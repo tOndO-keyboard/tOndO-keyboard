@@ -1,0 +1,80 @@
+<resources>
+    <string name="game_view_content_description">tOndO keyboard</string>
+    <string name="app_name">tOndO keyboard</string>
+    <string name="my_keyboard">tOndO keyboard</string>
+    <string name="acra_notification_title">tOndO keyboard detected an error</string>
+    <string name="acra_notification_text">Select OK to send a bug report</string>
+    <string name="acra_notification_channel">Bug Report</string>
+    <string name="acra_mail_to">tondo.keyboard@justfunnygames.com</string>
+    <string name="main_activity_enable_button_text">ENABLE\nTONDO</string>
+    <string name="main_activity_choose_button_text">SELECT\nTONDO</string>
+    <string name="main_activity_edit_text_hint">TRY\nTONDO</string>
+    <string name="title_activity_settings">tOndO keyboard Settings</string>
+    <string name="coming_soon_toast">Coming Soon</string>
+    <string name="preferences_title_input_type">Input mode</string>
+    <string name="preferences_title_theme_type">Theme</string>
+    <string name="preferences_title_experimental_category">Experimental</string>
+    <string name="preferences_title_enable_suggestion">Enable suggestions</string>
+    <string name="preferences_title_suggestion_language">Suggestions language</string>
+    <string name="suggestion_language_default_value">en_US</string>
+
+    <string name="preferences_pro_version_category_title">Pro version</string>
+    <string name="preferences_pro_version_title">Unlock the Pro version</string>
+    <string name="preferences_pro_version_summary">\nUnlimited number of changes in the keyboard customization code;\n\nEnable CTRL+A to select all;\n\nMore emojis available in the recently used category;\n\nPossibility of pinning a larger number of clipboards.</string>
+    <string name="preferences_base_settings_category_title">Base settings</string>
+    <string name="preferences_title_show_popup">Show pop-ups</string>
+    <string name="preferences_title_disable_automatic_capitalization">Disable automatic capitalization</string>
+    <string name="preferences_title_action_bar_on_bottom">Action bar on bottom</string>
+    <string name="preferences_title_haptic_feedback_duration">Haptic feedback duration</string>
+    <string name="preferences_summary_haptic_feedback_duration">in milliseconds</string>
+    <string name="preferences_summary_external_glyph_selection_distance_factor">in percent</string>
+    <string name="preferences_title_external_glyph_selection_distance_factor">Outer glyph selection distance</string>
+    <string name="preferences_character_customization">Character customization</string>
+    <string name="character_customization_default_value">EQWRT*\nUYFGH\'&quot;\nIJLP:^\nA@()DS#\n Z,.VCX\nOB!?KMN\n\n$/123*\n£4567\'&quot;\n€890:^\n[@()]%#\n ;,.&amp;>&lt;\n_~!?-+=\n\n•\\|½⅓²\nβαδεγ»«\nπλΣΔρ°\n✓₿{}¥§¶\n ®™¢©≥≤\n×√∞∙÷±≠</string>
+    <string name="preferences_summary_character_customization_edit_text_key">CharacterCustomizationString</string>
+    <string name="preferences_summary_character_customization_edit_text_dialog_title">Keyboard customization code</string>
+    <string name="preferences_summary_character_customization_edit_text_dialog_message">Change characters in the code to customize the keyboard</string>
+    <string name="preferences_summary_character_customization_reset">Reset keyboard customization code</string>
+    <string name="preferences_summary_character_customization_reset_dialog_title">Are you sure you want to reset the customization code to the default value?</string>
+    <string name="preferences_summary_character_customization_edit_text_dialog_summary">Max 6 changes.\nUnlock the pro version for unlimited editing.</string>
+    <string name="preferences_summary_character_customization_reset_dialog_message">You will lose all your current changes.</string>
+    <string name="preferences_summary_character_customization_edit_text_dialog_toast">You can edit a maximum of 6 characters. Unlock the pro version for unlimited editing.</string>
+    <string name="preferences_summary_character_customization_reset_dialog_ok">OK</string>
+    <string name="preferences_summary_character_customization_reset_dialog_cancel">CANCEL</string>
+    <string name="diacritics_customization_default_value">A áàãāªą àáâäåæ 1 1\nB ḃḅḇƀ ḃḅḇƀ 1 2\nC çćĉčċ çćĉčċ 1 2\nD ðḋḍḏđ ðḋḍḏđ 1 2\nE éèēəęǝ èéêëėɛ 1 1\nF 5ƒḟᵮ ƒḟᵮ 1 2\nG 6ġǵĝǧǥ ġǵĝǧǥ 1 2\nH 7ħĥȟ ħĥȟ 1 2\nI íìīĭįĩ ìíîǐïị 1 1\nJ 8ĵǰɟ ĵǰɟ 1 2\nK ḱǩʞ ḱǩʞ 1 2\nL 9ĺḷƚłɫ ĺḷƚłɫ 1 2\nM ḿṁṃᵯɯ ḿṁṃᵯɯ 1 2\nN ñńǹňᵰṅ ñńǹňᵰṅ 1 2\nO óòõōǒº òóôöøœ 1 1\nP 0ṕṗƥᵽ ṕṗƥᵽ 1 2\nQ ɋʠ ɋʠ 1 2\nR 2ŕřṙɍɹ ŕřṙɍɹ 1 2\nS ßşśṥŝš ßşśṥŝš 1 2\nT 3ṫţŧẗʇ þṫţŧẗʇ 1 2\nU úùũūǔ ùúûüů 1 1\nV ṽṿᶌⱴʋʌ ṽṿᶌⱴʋʌ 1 2\nW 1ẃẁŵẘẅ ẃẁŵẘẅ 1 2\nX ẍẋᶍ ẍẋᶍ 1 2\nY 4ẏȳẙỹɏ ýẏȳẙỹɏ 1 2\nZ źẑžżƶᵶ źẑžżƶᵶ 1 2\nÔ ő ő 1 1\nÛ ű ű 1 1\n. :&amp;%+- …;!,? 1 1\n1 ¹½⅓¼⅕ ₁⅙⅐⅛⅑⅒ 1 1\n2 ²₂⅔⅖ ²₂⅔⅖ 1 2\n3 ³₃⅗¾⅜ ³₃⅗¾⅜ 1 2\n4 ⁴₄⅘ ⁴₄⅘ 1 2\n5 ⁵₅⅝⅚ ⁵₅⅝⅚ 1 2\n6 ⁶₆₆ ⁶₆₆ 1 2\n7 ⁷₇⅞ ⁷₇⅞ 1 2\n8 ⁸₈∞ ⁸₈∞ 1 2\n9 ⁹₉ ⁹₉ 1 2\n0 ⁰₀∅ⁿ ⁰₀∅ⁿ 1 2\n# №♯﹟＃†‡ №♯﹟＃†‡ 1 2\n€ £$¢₿¥₽ £$¢₿¥₽ 1 2\n- —_–⁻₋· —_–⁻₋· 1 2\n+ ±×÷⅀⁺₊ ±×÷⅀⁺₊ 1 2\n( [&lt;{«‹⁽₍ [&lt;{«‹⁽₍ 1 2\n) ]&gt;}»›⁾₎ ]&gt;}»›⁾₎ 1 2\n* ⁂★†‡●• ⁂★†‡●• 1 2\n&quot; „“”«» „“”«» 1 2\n&apos; ‘’`‹› ‘’`‹› 1 2\n! ¡‽¿⸘ ¡‽¿⸘ 1 2\n? ¿‽¡⸘ ¿‽¡⸘ 1 2\n· ♪♫☆♀♂ ♪♫☆♀♂ 1 2\n• ♪♫☆♀♂ ♪♫☆♀♂ 1 2\n● ♪♫☆♀♂ ♪♫☆♀♂ 1 2\nπ ΩΠμ ΩΠμ 1 2\n¶ §※◊∎ §※◊∎ 1 2\n$ ¢₿£€¥¤ ¢₿£€¥¤ 1 2\n£ ₤ƒ₺₹₿¤ ₤ƒ₺₹₿¤ 1 2\n^ ←↑↓→☞ ←↑↓→☞ 1 2\n° ª′″ ª′″ 1 2\n= ∞≠≈~⁼₌ ∞≠≈~⁼₌ 1 2\n{ ([&lt;«‹ ([&lt;«‹ 1 2\n} )]&gt;»› )]&gt;»› 1 2\n% ‰℅‱ ‰℅‱ 1 2\n&lt; «≤‹ «≤‹ 1 2\n&gt; »≥› »≥› 1 2\n@ ©®℗™℠ ©®℗™℠ 1 2\n, ;.: ;.: 1 2\n/ \|‖¦ \|‖¦ 1 2\n: ÷·•● ÷·•● 1 2\n] ({&lt;«‹ ({&lt;«‹ 1 2\n[ ({&lt;«‹ ({&lt;«‹ 1 2\n&amp; @əɛ®™ @əɛ®™ 1 2\n~ ≈≠- ≈≠- 1 2\n_ ‒–—― ‒–—― 1 2\n✓ ✔☑✗✘×☒ ✔☑✗✘×☒ 1 2\n✗ ✓✔☑×✘☒ ✓✔☑×✘☒ 1 2\n× ✓✔☑✗✘☒ ✓✔☑✗✘☒ 1 2</string>
+    <string name="preferences_summary_diacritics_customization_edit_text_key">DiacriticsCustomizationString</string>
+    <string name="preferences_summary_diacritics_customization_edit_text_dialog_title">Diacriticizers customization code</string>
+    <string name="preferences_summary_diacritics_customization_edit_text_dialog_message">Change characters in the code to customize the diacriticizers</string>
+    <string name="preferences_summary_diacritics_customization_reset">Reset diacriticizers customization code</string>
+    <string name="preferences_summary_diacritics_customization_reset_dialog_title">Are you sure you want to reset the customization code to the default value?</string>
+    <string name="preferences_summary_diacritics_customization_reset_dialog_message">You will lose all your current changes.</string>
+    <string name="preferences_summary_diacritics_customization_reset_dialog_ok">OK</string>
+    <string name="preferences_summary_diacritics_customization_reset_dialog_cancel">CANCEL</string>
+    <string name="preferences_title_licenses_category">Licenses</string>
+
+    <string name="noto_emoji_license_attribution">Emoji artwork is provided by Google Fonts Noto Emoji, released by fonts.google.com on github.com/googlefonts/noto-emoji,  licensed under Apache License 2.0.</string>
+    <string name="suggester_license_attribution">Suggestions library WeCantSpell.Hunspell, licensed under an MPL, LGPL, and GPL tri-license and available at github.com/aarondandy/WeCantSpell.Hunspell. Dictionaries licensed under GNU GPL.</string>
+    <string name="diff_match_and_patch_license_attribution">Diff counter customization code Diff Match and Patch under the Apache License Version 2.0, relased by Google on github.com/google/diff-match-patch.</string>
+
+    <string name="recognition_error_network_timeout">Network operation timed out</string>
+    <string name="recognition_error_network">Unknown network error. Check your connection</string>
+    <string name="recognition_error_audio">Error in recording audio</string>
+    <string name="recognition_error_server">Server unavailable. Try again later</string>
+    <string name="recognition_error_client">Canceled recognition</string>
+    <string name="recognition_error_speech_timeout">Speech timeout</string>
+    <string name="recognition_error_no_match">No recognition result matched</string>
+    <string name="recognition_error_recognizer_busy">Unable to process your request. Try again later</string>
+    <string name="recognition_error_insufficient_permissions">Insufficient permissions. Make sure tOndO can access the microphone</string>
+    <string name="recognition_error_too_many_requests">Too many request</string>
+    <string name="recognition_error_server_disconnected">Server disconnected</string>
+    <string name="recognition_error_language_not_supported">Requested language is not available to be used with the current recognizer</string>
+    <string name="recognition_error_language_unavailable">Requested language is supported, but not available currently</string>
+    <string name="recognition_error_unknown">Unknown error. Try again</string>
+
+    <string name="pro_required_message">Unlock the Pro version</string>
+
+    <string name="macros_tutorial_left">Use the button above to paste the most recent text you copied! Or use a long press to pin it here!</string>
+    <string name="macros_tutorial_right">You can paste pinned text wherever you want, or long press it to remove it from your collection.</string>
+    <string name="macros_tutorial_pro">You have 6 notes at your disposal. Unlock the Pro version to increase the space to 20.</string>
+    <string name="too_many_macros_toast">Unlock the Pro version to get more notes.</string>
+</resources>

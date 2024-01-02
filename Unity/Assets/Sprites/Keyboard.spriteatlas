@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Keyboard
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: aca209799c6a8254abb16dc58f63386a, type: 3}
+    - {fileID: 2800000, guid: 5bdf1e7aef4b34e4e8bab38d2e17c648, type: 3}
+    - {fileID: 2800000, guid: 613d0c74626b5d24491ce47ba1b61c10, type: 3}
+    - {fileID: 2800000, guid: a9010547815d06c44acc22e778f29a7b, type: 3}
+    - {fileID: 2800000, guid: 91915be9646342b4281baa9365a7a81a, type: 3}
+    - {fileID: 2800000, guid: 27c3ee94655215c45aad2dc6fe669f34, type: 3}
+    - {fileID: 2800000, guid: 52a370663a5bda14596d3e7911d975cb, type: 3}
+    - {fileID: 2800000, guid: b402200c8d6a5cb4db632d6771101eb2, type: 3}
+    - {fileID: 2800000, guid: e55c203b6f9ae31468d2f84ae143d0cb, type: 3}
+    - {fileID: 2800000, guid: 09e14f4ffc2cf7e4e984bae52490436b, type: 3}
+    - {fileID: 2800000, guid: 837e86d3b0b064c4e93e4863bdd8383d, type: 3}
+    - {fileID: 2800000, guid: 13c67b26fbb6d284d9895746d5052bc3, type: 3}
+    - {fileID: 2800000, guid: 859553c761921614b980628d847a9ded, type: 3}
+    - {fileID: 2800000, guid: ebadb4ed4e37a1744981c6366e8570b7, type: 3}
+    - {fileID: 2800000, guid: a474eddee6e364e4ea02fcb5254df33b, type: 3}
+    - {fileID: 2800000, guid: b0872116886931c4ebb311b316d8fc66, type: 3}
+    - {fileID: 2800000, guid: aff19cb67ec96564fb066785070105f3, type: 3}
+    - {fileID: 2800000, guid: e5e2a25a2b4bf524aa2ea531cbfae186, type: 3}
+    - {fileID: 2800000, guid: e9d51c59a114f5f40994356ec9acbc30, type: 3}
+    - {fileID: 2800000, guid: cfb2cbc70ea1251479541fe366b6298f, type: 3}
+    - {fileID: 2800000, guid: 43692f747b9ea2e409e4bfb10e22a8fd, type: 3}
+    - {fileID: 2800000, guid: 66b2f04175c9b01449046a04cf030839, type: 3}
+    - {fileID: 2800000, guid: fc5bdd60857dc634d98cb4a65d06232c, type: 3}
+    - {fileID: 2800000, guid: e6aa438e1bba8374e9de65b11f31adeb, type: 3}
+    - {fileID: 2800000, guid: ad44af45a963fa84997bdd221088d87d, type: 3}
+    - {fileID: 2800000, guid: 2aa392c5d23ea1b44af478a2bf6e7a6b, type: 3}
+    - {fileID: 2800000, guid: 53138235a9746174c837c4abc77f5e5a, type: 3}
+    - {fileID: 2800000, guid: b6f8af02b661f784db2c0b3c4aaa78c2, type: 3}
+    - {fileID: 2800000, guid: 808d5ce874a8ba346b767abbb9d5a648, type: 3}
+    - {fileID: 2800000, guid: a7cecb31776d4ec4a99a8884ec563791, type: 3}
+    - {fileID: 2800000, guid: 46b9e1ca17948cf469e69f845e6f70f4, type: 3}
+    - {fileID: 2800000, guid: 97684e4f7e49e6d46a4cbb7bbd035407, type: 3}
+    - {fileID: 2800000, guid: aa6cf0ea9c39fc743ab70df4840d8778, type: 3}
+    - {fileID: 2800000, guid: f0e909a36b5956547b515528408eaab6, type: 3}
+    - {fileID: 2800000, guid: 3452a89e4c9c10f428e41011011ef59f, type: 3}
+    - {fileID: 2800000, guid: db8057fb8c1b57543b6e27ff9297e9ec, type: 3}
+    - {fileID: 2800000, guid: 3e121b97ee5d54647993119c293d4071, type: 3}
+    - {fileID: 2800000, guid: b6d70f4306dfc024b97ed2be63e073c8, type: 3}
+    - {fileID: 2800000, guid: 00735822d4b18984da48e44952663cfd, type: 3}
+    - {fileID: 2800000, guid: 64bbb9f5a7bf2ee4b8386e14152c5172, type: 3}
+    - {fileID: 2800000, guid: 8112726b6d911764f97eda9bd213032f, type: 3}
+    - {fileID: 2800000, guid: c0265d7600a68764db20789d598976c2, type: 3}
+    - {fileID: 2800000, guid: e90accf26dd6281489a547a991197e95, type: 3}
+    - {fileID: 2800000, guid: 63d9cd14a2b17ab499bb00953dde5e38, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: fc5bdd60857dc634d98cb4a65d06232c, type: 3}
+  - {fileID: 21300000, guid: a7cecb31776d4ec4a99a8884ec563791, type: 3}
+  - {fileID: 21300000, guid: 66b2f04175c9b01449046a04cf030839, type: 3}
+  - {fileID: 21300000, guid: b6f8af02b661f784db2c0b3c4aaa78c2, type: 3}
+  - {fileID: 21300000, guid: 00735822d4b18984da48e44952663cfd, type: 3}
+  - {fileID: 21300000, guid: e90accf26dd6281489a547a991197e95, type: 3}
+  - {fileID: 21300000, guid: b6d70f4306dfc024b97ed2be63e073c8, type: 3}
+  - {fileID: 21300000, guid: f0e909a36b5956547b515528408eaab6, type: 3}
+  - {fileID: 21300000, guid: 837e86d3b0b064c4e93e4863bdd8383d, type: 3}
+  - {fileID: 21300000, guid: 63d9cd14a2b17ab499bb00953dde5e38, type: 3}
+  - {fileID: 21300000, guid: 613d0c74626b5d24491ce47ba1b61c10, type: 3}
+  - {fileID: 21300000, guid: 43692f747b9ea2e409e4bfb10e22a8fd, type: 3}
+  - {fileID: 21300000, guid: 27c3ee94655215c45aad2dc6fe669f34, type: 3}
+  - {fileID: 21300000, guid: 53138235a9746174c837c4abc77f5e5a, type: 3}
+  - {fileID: 21300000, guid: ad44af45a963fa84997bdd221088d87d, type: 3}
+  - {fileID: 21300000, guid: 2aa392c5d23ea1b44af478a2bf6e7a6b, type: 3}
+  - {fileID: 21300000, guid: 64bbb9f5a7bf2ee4b8386e14152c5172, type: 3}
+  - {fileID: 21300000, guid: b0872116886931c4ebb311b316d8fc66, type: 3}
+  - {fileID: 21300000, guid: 13c67b26fbb6d284d9895746d5052bc3, type: 3}
+  - {fileID: 21300000, guid: 52a370663a5bda14596d3e7911d975cb, type: 3}
+  - {fileID: 21300000, guid: c0265d7600a68764db20789d598976c2, type: 3}
+  - {fileID: 21300000, guid: aff19cb67ec96564fb066785070105f3, type: 3}
+  - {fileID: 21300000, guid: a9010547815d06c44acc22e778f29a7b, type: 3}
+  - {fileID: 21300000, guid: 3e121b97ee5d54647993119c293d4071, type: 3}
+  - {fileID: 21300000, guid: 859553c761921614b980628d847a9ded, type: 3}
+  - {fileID: 21300000, guid: cfb2cbc70ea1251479541fe366b6298f, type: 3}
+  - {fileID: 21300000, guid: 808d5ce874a8ba346b767abbb9d5a648, type: 3}
+  - {fileID: 21300000, guid: e9d51c59a114f5f40994356ec9acbc30, type: 3}
+  - {fileID: 21300000, guid: aca209799c6a8254abb16dc58f63386a, type: 3}
+  - {fileID: 21300000, guid: 91915be9646342b4281baa9365a7a81a, type: 3}
+  - {fileID: 21300000, guid: e5e2a25a2b4bf524aa2ea531cbfae186, type: 3}
+  - {fileID: 21300000, guid: 5bdf1e7aef4b34e4e8bab38d2e17c648, type: 3}
+  - {fileID: 21300000, guid: 46b9e1ca17948cf469e69f845e6f70f4, type: 3}
+  - {fileID: 21300000, guid: aa6cf0ea9c39fc743ab70df4840d8778, type: 3}
+  - {fileID: 21300000, guid: e55c203b6f9ae31468d2f84ae143d0cb, type: 3}
+  - {fileID: 21300000, guid: 8112726b6d911764f97eda9bd213032f, type: 3}
+  - {fileID: 21300000, guid: db8057fb8c1b57543b6e27ff9297e9ec, type: 3}
+  - {fileID: 21300000, guid: b402200c8d6a5cb4db632d6771101eb2, type: 3}
+  - {fileID: 21300000, guid: ebadb4ed4e37a1744981c6366e8570b7, type: 3}
+  - {fileID: 21300000, guid: e6aa438e1bba8374e9de65b11f31adeb, type: 3}
+  - {fileID: 21300000, guid: 3452a89e4c9c10f428e41011011ef59f, type: 3}
+  - {fileID: 21300000, guid: a474eddee6e364e4ea02fcb5254df33b, type: 3}
+  - {fileID: 21300000, guid: 97684e4f7e49e6d46a4cbb7bbd035407, type: 3}
+  - {fileID: 21300000, guid: 09e14f4ffc2cf7e4e984bae52490436b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - needle
+  - settings
+  - move
+  - preview popup small bg
+  - ring
+  - rect_rounded
+  - symbols2
+  - shift double press
+  - CTRL_undo
+  - lock
+  - circle
+  - microphone
+  - CTRL_copy
+  - preview popup bg
+  - Option_Bar_shadow
+  - permanent buttons background shadow
+  - MACRO_delete
+  - double needle
+  - done_done
+  - CTRL_cut
+  - pin_icon
+  - emote
+  - circle_small
+  - symbols
+  - done_newline
+  - macro
+  - search
+  - keys
+  - ABC
+  - ctrl
+  - hide
+  - back
+  - shadow
+  - shadow_small
+  - CTRL_redo
+  - clipboard_icon
+  - space_bar
+  - CTRL_paste
+  - done_search
+  - Option_Bar
+  - shift
+  - done_send
+  - shadow_indent
+  - CTRL_select
+  m_Tag: Keyboard
+  m_IsVariant: 0

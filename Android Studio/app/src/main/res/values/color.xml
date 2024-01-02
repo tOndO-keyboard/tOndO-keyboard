@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="BackgroundLightGray">#EDEDED</color>
+    <color name="TextLightGray">#C1C1C1</color>
+    <color name="TextMediumGray">#828282</color>
+    <color name="TextDarkGray">#282828</color>
+    <color name="LightGreen">#C8ECE9</color>
+    <color name="DarkGreen">#61CFC2</color>
+    <color name="White">#FFFFFF</color>
+
+    <color name="KeyboardBackgroundLight">#F6F8F8</color>
+    <color name="KeyboardActionBarBackgroundLight">#61CFC2</color>
+    <color name="KeyboarActionBarDirectionalBackgroundLight">#666666</color>
+
+    <color name="KeyboardBackgroundDark">#585858</color>
+    <color name="KeyboardActionBarBackgroundDark">#00B2A9</color>
+    <color name="KeyboarActionBarDirectionalBackgroundDark">#C2C2C2</color>
+</resources>

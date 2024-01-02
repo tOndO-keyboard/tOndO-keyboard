@@ -1,0 +1,15 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="SettingsTheme" parent="Base.Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/DarkGreen</item>
+        <item name="colorAccent">@color/DarkGreen</item>
+        <item name="colorSecondary">@color/DarkGreen</item>
+    </style>
+
+</resources>

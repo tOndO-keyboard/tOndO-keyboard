@@ -1,0 +1,80 @@
+<resources>
+    <string name="game_view_content_description">tOndO keyboard</string>
+    <string name="app_name">tOndO keyboard</string>
+    <string name="my_keyboard">tOndO keyboard</string>
+    <string name="acra_notification_title">tOndO keyboard ha riscontrato un errore</string>
+    <string name="acra_notification_text">Premi OK per inviare una segnalazione di bug</string>
+    <string name="acra_notification_channel">Segnalazione di bug</string>
+    <string name="acra_mail_to">tondo.keyboard@justfunnygames.com</string>
+    <string name="main_activity_enable_button_text">ABILITA\nTONDO</string>
+    <string name="main_activity_choose_button_text">SELEZIONA\nTONDO</string>
+    <string name="main_activity_edit_text_hint">PROVA\nTONDO</string>
+    <string name="title_activity_settings">Impostazioni tOndO keyboard</string>
+    <string name="coming_soon_toast">Coming Soon</string>
+
+    <string name="preferences_pro_version_category_title">Versione Pro</string>
+    <string name="preferences_pro_version_title">Sblocca la versione Pro</string>
+    <string name="preferences_pro_version_summary">\nModifiche illimitate nel codice di personalizzazione della tastiera;\n\nCTRL+A abilitato;\n\nPiù emoji nella categoria utilizzata di recente;\n\nPossibilità di appuntare un numero maggiore di clipboard.</string>
+    <string name="preferences_base_settings_category_title">Impostazioni di base</string>
+    <string name="preferences_title_input_type">Modalità di input</string>
+    <string name="preferences_title_theme_type">Tema</string>
+    <string name="preferences_title_experimental_category">Sperimentali</string>
+    <string name="preferences_title_enable_suggestion">Attiva i suggerimenti</string>
+    <string name="preferences_title_suggestion_language">Lingua dei suggerimenti</string>
+    <string name="suggestion_language_default_value">it_IT</string>
+    <string name="preferences_title_show_popup">Mostra i pop-up</string>
+    <string name="preferences_title_disable_automatic_capitalization">Disabilita le maiuscole automatiche</string>
+    <string name="preferences_title_action_bar_on_bottom">Barra delle azioni in basso</string>
+    <string name="preferences_title_haptic_feedback_duration">Durata feedback aptico</string>
+    <string name="preferences_summary_haptic_feedback_duration">in millisecondi</string>
+    <string name="preferences_summary_external_glyph_selection_distance_factor">in percentuale</string>
+    <string name="preferences_title_external_glyph_selection_distance_factor">Distanza selezione glifi esterni</string>
+    <string name="preferences_character_customization">Personalizza caratteri</string>
+    <string name="character_customization_default_value">EQWRT*\nUYFGH\'&quot;\nIJLP:^\nA@()DS#\n Z,.VCX\nOB!?KMN\n\n$/123*\n£4567\'&quot;\n€890:^\n[@()]%#\n ;,.&amp;>&lt;\n_~!?-+=\n\n•\\|½⅓²\nβαδεγ»«\nπλΣΔρ°\n✓₿{}¥§¶\n ®™¢©≥≤\n×√∞∙÷±≠</string>
+    <string name="preferences_summary_character_customization_edit_text_key">CharacterCustomizationString</string>
+    <string name="preferences_summary_character_customization_edit_text_dialog_title">Codice personalizzazione tastiera</string>
+    <string name="preferences_summary_character_customization_edit_text_dialog_summary">Massimo 6 modifiche.\nSblocca la versione pro per modifiche illimitate.</string>
+    <string name="preferences_summary_character_customization_edit_text_dialog_message">Cambia i caratteri nel codice per personalizzare la tastiera</string>
+    <string name="preferences_summary_character_customization_edit_text_dialog_toast">Puoi modificare al massimo 6 caratteri. Sblocca la versione pro per modifiche illimitate.</string>
+    <string name="preferences_summary_character_customization_reset">Resetta codice personalizzazione tastiera</string>
+    <string name="preferences_summary_character_customization_reset_dialog_title">Sei sicuro di voler resettare il codice personalizzazione al valore di default?</string>
+    <string name="preferences_summary_character_customization_reset_dialog_message">Perderai tutte le tue modifiche.</string>
+    <string name="preferences_summary_character_customization_reset_dialog_ok">OK</string>
+    <string name="preferences_summary_character_customization_reset_dialog_cancel">ANNULLA</string>
+    <string name="diacritics_customization_default_value">A áàãāªą àáâäåæ 1 1\nB ḃḅḇƀ ḃḅḇƀ 1 2\nC çćĉčċ çćĉčċ 1 2\nD ðḋḍḏđ ðḋḍḏđ 1 2\nE éèēəęǝ èéêëėɛ 1 1\nF 5ƒḟᵮ ƒḟᵮ 1 2\nG 6ġǵĝǧǥ ġǵĝǧǥ 1 2\nH 7ħĥȟ ħĥȟ 1 2\nI íìīĭįĩ ìíîǐïị 1 1\nJ 8ĵǰɟ ĵǰɟ 1 2\nK ḱǩʞ ḱǩʞ 1 2\nL 9ĺḷƚłɫ ĺḷƚłɫ 1 2\nM ḿṁṃᵯɯ ḿṁṃᵯɯ 1 2\nN ñńǹňᵰṅ ñńǹňᵰṅ 1 2\nO óòõōǒº òóôöøœ 1 1\nP 0ṕṗƥᵽ ṕṗƥᵽ 1 2\nQ ɋʠ ɋʠ 1 2\nR 2ŕřṙɍɹ ŕřṙɍɹ 1 2\nS ßşśṥŝš ßşśṥŝš 1 2\nT 3ṫţŧẗʇ þṫţŧẗʇ 1 2\nU úùũūǔ ùúûüů 1 1\nV ṽṿᶌⱴʋʌ ṽṿᶌⱴʋʌ 1 2\nW 1ẃẁŵẘẅ ẃẁŵẘẅ 1 2\nX ẍẋᶍ ẍẋᶍ 1 2\nY 4ẏȳẙỹɏ ýẏȳẙỹɏ 1 2\nZ źẑžżƶᵶ źẑžżƶᵶ 1 2\nÔ ő ő 1 1\nÛ ű ű 1 1\n. :&amp;%+- …;!,? 1 1\n1 ¹½⅓¼⅕ ₁⅙⅐⅛⅑⅒ 1 1\n2 ²₂⅔⅖ ²₂⅔⅖ 1 2\n3 ³₃⅗¾⅜ ³₃⅗¾⅜ 1 2\n4 ⁴₄⅘ ⁴₄⅘ 1 2\n5 ⁵₅⅝⅚ ⁵₅⅝⅚ 1 2\n6 ⁶₆₆ ⁶₆₆ 1 2\n7 ⁷₇⅞ ⁷₇⅞ 1 2\n8 ⁸₈∞ ⁸₈∞ 1 2\n9 ⁹₉ ⁹₉ 1 2\n0 ⁰₀∅ⁿ ⁰₀∅ⁿ 1 2\n# №♯﹟＃†‡ №♯﹟＃†‡ 1 2\n€ £$¢₿¥₽ £$¢₿¥₽ 1 2\n- —_–⁻₋· —_–⁻₋· 1 2\n+ ±×÷⅀⁺₊ ±×÷⅀⁺₊ 1 2\n( [&lt;{«‹⁽₍ [&lt;{«‹⁽₍ 1 2\n) ]&gt;}»›⁾₎ ]&gt;}»›⁾₎ 1 2\n* ⁂★†‡●• ⁂★†‡●• 1 2\n&quot; „“”«» „“”«» 1 2\n&apos; ‘’`‹› ‘’`‹› 1 2\n! ¡‽¿⸘ ¡‽¿⸘ 1 2\n? ¿‽¡⸘ ¿‽¡⸘ 1 2\n· ♪♫☆♀♂ ♪♫☆♀♂ 1 2\n• ♪♫☆♀♂ ♪♫☆♀♂ 1 2\n● ♪♫☆♀♂ ♪♫☆♀♂ 1 2\nπ ΩΠμ ΩΠμ 1 2\n¶ §※◊∎ §※◊∎ 1 2\n$ ¢₿£€¥¤ ¢₿£€¥¤ 1 2\n£ ₤ƒ₺₹₿¤ ₤ƒ₺₹₿¤ 1 2\n^ ←↑↓→☞ ←↑↓→☞ 1 2\n° ª′″ ª′″ 1 2\n= ∞≠≈~⁼₌ ∞≠≈~⁼₌ 1 2\n{ ([&lt;«‹ ([&lt;«‹ 1 2\n} )]&gt;»› )]&gt;»› 1 2\n% ‰℅‱ ‰℅‱ 1 2\n&lt; «≤‹ «≤‹ 1 2\n&gt; »≥› »≥› 1 2\n@ ©®℗™℠ ©®℗™℠ 1 2\n, ;.: ;.: 1 2\n/ \|‖¦ \|‖¦ 1 2\n: ÷·•● ÷·•● 1 2\n] ({&lt;«‹ ({&lt;«‹ 1 2\n[ ({&lt;«‹ ({&lt;«‹ 1 2\n&amp; @əɛ®™ @əɛ®™ 1 2\n~ ≈≠- ≈≠- 1 2\n_ ‒–—― ‒–—― 1 2\n✓ ✔☑✗✘×☒ ✔☑✗✘×☒ 1 2\n✗ ✓✔☑×✘☒ ✓✔☑×✘☒ 1 2\n× ✓✔☑✗✘☒ ✓✔☑✗✘☒ 1 2</string>
+    <string name="preferences_summary_diacritics_customization_edit_text_key">DiacriticsCustomizationString</string>
+    <string name="preferences_summary_diacritics_customization_edit_text_dialog_title">Codice personalizzazione accentatori</string>
+    <string name="preferences_summary_diacritics_customization_edit_text_dialog_message">Cambia i caratteri nel codice per personalizzare gli accentatori</string>
+    <string name="preferences_summary_diacritics_customization_reset">Resetta codice personalizzazione accentatori</string>
+    <string name="preferences_summary_diacritics_customization_reset_dialog_title">Sei sicuro di voler resettare il codice personalizzazione al valore di default?</string>
+    <string name="preferences_summary_diacritics_customization_reset_dialog_message">Perderai tutte le tue modifiche.</string>
+    <string name="preferences_summary_diacritics_customization_reset_dialog_ok">OK</string>
+    <string name="preferences_summary_diacritics_customization_reset_dialog_cancel">ANNULLA</string>
+    <string name="preferences_title_licenses_category">Licenze</string>
+
+    <string name="noto_emoji_license_attribution">La grafica delle emoji è fornita da Google Fonts Noto Emoji, rilasciata da fonts.google.com su github.com/googlefonts/noto-emoji, con licenza Apache License 2.0.</string>
+    <string name="suggester_license_attribution">Libreria dei suggerimenti WeCantSpell.Hunspell usata sotto licenza MPL, LGPL, and GPL tri-license e disponibile su github.com/aarondandy/WeCantSpell.Hunspell. I dizionari usati sono sotto licenza GNU GPL.</string>
+    <string name="diff_match_and_patch_license_attribution">Contatore di differenze codice di personalizzazione Diff Match and Patch sotto licenza Apache 2.0, rilasciata da Google.com su github.com/google/diff-match-patch.</string>
+
+    <string name="recognition_error_network_timeout">Operazione di rete scaduta</string>
+    <string name="recognition_error_network">Errore di rete, controlla la connessione</string>
+    <string name="recognition_error_audio">Errore nel registrare l\'audio</string>
+    <string name="recognition_error_server">Serve non disponibile, prova più tardi</string>
+    <string name="recognition_error_client">Operazione cancellata</string>
+    <string name="recognition_error_speech_timeout">Speech timeout</string>
+    <string name="recognition_error_no_match">Nessun match riconosciuto</string>
+    <string name="recognition_error_recognizer_busy">Impossibile processare la richiesta</string>
+    <string name="recognition_error_insufficient_permissions">Permessi insufficienti, controllare che tOndO abbia accesso al microfono</string>
+    <string name="recognition_error_too_many_requests">Troppe richieste</string>
+    <string name="recognition_error_server_disconnected">Server disconnesso</string>
+    <string name="recognition_error_language_not_supported">La lingua richiesta non è disponibile per il riconoscitore corrente</string>
+    <string name="recognition_error_language_unavailable">La lingua richiesta è supportata, ma momentaneamente non disponibile</string>
+    <string name="recognition_error_unknown">Errore sconosciuto</string>
+
+    <string name="pro_required_message">Sblocca la versione Pro</string>
+
+    <string name="macros_tutorial_left">Usa il bottone qui sopra per incollare il testo copiato più di recente! O tieni premuto per appuntarlo qui!</string>
+    <string name="macros_tutorial_right">Puoi incollare i testi appuntati ovunque vuoi, o tenerli premuti per rimuoverli dalla lista.</string>
+    <string name="macros_tutorial_pro">Hai a disposizione 6 appunti. Sblocca la versione Pro per aumentare lo spazio a 20.</string>
+    <string name="too_many_macros_toast">Sblocca la versione Pro per avere più appunti.</string>
+</resources>

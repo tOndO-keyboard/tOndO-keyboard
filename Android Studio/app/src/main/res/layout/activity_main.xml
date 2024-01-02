@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="#61cfc2">
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp" />
+
+
+        <TextView
+            android:id="@+id/versionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/White" />
+
+        <Button
+            android:id="@+id/buttonSendEmail"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/send_debug_btn" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:paddingLeft="25dp"
+        android:paddingTop="25dp"
+        android:paddingRight="25dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/app_name"
+            android:foregroundGravity="bottom"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/buttonEnableKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/info_btn_bg"
+            android:text="@string/main_activity_enable_button_text"
+            android:textColor="@color/White"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonChooseKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/info_btn_bg"
+            android:text="@string/main_activity_choose_button_text"
+            android:textColor="@color/White"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="70dp"
+            android:layout_weight="1"
+            android:background="@color/BackgroundLightGray"
+            android:gravity="center"
+            android:hint="@string/main_activity_edit_text_hint"
+            android:inputType="text"
+            android:textColor="@color/TextDarkGray"
+            android:textColorHint="@color/TextLightGray" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/buttonShop"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shop_btn_bg"
+                android:enabled="false"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="8" />
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:gravity="left">
+
+            <Button
+                android:id="@+id/buttonSettings"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/settings_btn_bg" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

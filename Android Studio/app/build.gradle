@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+static def versionCodeDate() {
+    return new Date().format("yyyy.MM.dd_HH.mm")
+}
+
+android {
+    signingConfigs {
+        release {
+        }
+    }
+    compileSdkVersion 33
+    buildToolsVersion '29.0.2'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 33
+
+        versionCode 13
+        versionName ""
+    }
+    buildTypes {
+        debug {
+            buildConfigField "Boolean", "DEBUG_MODE", "true"
+
+            versionNameSuffix versionCodeDate()
+
+            setProperty("archivesBaseName", "tOndO_keyboard_" + versionNameSuffix)
+
+            dependencies {
+                def acraVersion = '5.7.0'
+                implementation "ch.acra:acra-mail:$acraVersion"
+                implementation "ch.acra:acra-notification:$acraVersion"
+            }
+        }
+        release {
+            buildConfigField "Boolean", "DEBUG_MODE", "false"
+
+            versionNameSuffix "1.0.2"
+
+            setProperty("archivesBaseName", "tOndO_keyboard_" + versionNameSuffix)
+
+            minifyEnabled false
+            shrinkResources false
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            ndk {
+                debugSymbolLevel 'SYMBOL_TABLE'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation project(':unityLibrary')
+    implementation fileTree(dir: project(':unityLibrary').getProjectDir().toString() + ('\\libs'), include: ['*.jar'])
+    implementation 'androidx.preference:preference:1.1.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.android.billingclient:billing:5.1.0'
+    implementation 'com.google.guava:guava:31.1-android'
+
+}
+
+android.applicationVariants.all { variant ->
+    variant.outputs.all {
+        outputFileName = "tOndO_keyboard_${variant.versionName}-${variant.name}.apk"
+    }
+}
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.4'
+    }
+}

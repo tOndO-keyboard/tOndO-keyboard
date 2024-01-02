@@ -1,0 +1,130 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.foschia.tondokeyboard.ShoppingPreferenceCategory
+        app:title="@string/preferences_pro_version_category_title"
+        app:icon="@drawable/ic_baseline_shopping_cart_24"
+        app:enabled="false"
+        app:isPreferenceVisible="false">
+        <Preference
+            android:key="preference_pro_Version"
+            app:title="@string/preferences_pro_version_title"
+            app:summary="@string/preferences_pro_version_summary" />
+
+    </com.foschia.tondokeyboard.ShoppingPreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/preferences_base_settings_category_title"
+        app:icon="@drawable/ic_baseline_settings_24">
+        <ListPreference
+            app:defaultValue="2"
+            app:entries="@array/input_type_entries"
+            app:entryValues="@array/input_type_values"
+            app:key="InputType"
+            app:title="@string/preferences_title_input_type"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="@integer/theme_type_default_value"
+            app:entries="@array/theme_type_entries"
+            app:entryValues="@array/theme_type_values"
+            app:key="ThemeType"
+            app:title="@string/preferences_title_theme_type"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="ShowPopupPreview"
+            app:title="@string/preferences_title_show_popup" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="DisableAutomaticCapitalization"
+            app:title="@string/preferences_title_disable_automatic_capitalization" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="TopBarWentBottom"
+            app:title="@string/preferences_title_action_bar_on_bottom" />
+
+        <SeekBarPreference
+            app:defaultValue="10"
+            app:key="VibrationMilliseconds"
+            app:min="0"
+            android:max="50"
+            app:showSeekBarValue="true"
+            app:summary="@string/preferences_summary_haptic_feedback_duration"
+            app:title="@string/preferences_title_haptic_feedback_duration" />
+
+        <SeekBarPreference
+            app:defaultValue="7"
+            app:key="ExternalGlyphSelectionDistanceFactor"
+            app:min="1"
+            android:max="50"
+            app:showSeekBarValue="true"
+            app:summary="@string/preferences_summary_external_glyph_selection_distance_factor"
+            app:title="@string/preferences_title_external_glyph_selection_distance_factor" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/preferences_character_customization"
+        app:icon="@drawable/ic_baseline_edit_24">
+
+        <com.foschia.tondokeyboard.CharacterCustomizationEditTextPreference
+            app:key="@string/preferences_summary_character_customization_edit_text_key"
+            app:title="@string/preferences_summary_character_customization_edit_text_dialog_title"
+            app:summary="@string/preferences_summary_character_customization_edit_text_dialog_summary"
+            app:persistent="true"
+            app:dialogTitle="@string/preferences_summary_character_customization_edit_text_dialog_title"
+            app:dialogMessage="@string/preferences_summary_character_customization_edit_text_dialog_message"
+            app:defaultValue="@string/character_customization_default_value" />
+
+        <com.foschia.tondokeyboard.CharacterCustomizationDialogPreference app:title="@string/preferences_summary_character_customization_reset" />
+
+        <com.foschia.tondokeyboard.DiacriticsCustomizationEditTextPreference
+            app:key="@string/preferences_summary_diacritics_customization_edit_text_key"
+            app:title="@string/preferences_summary_diacritics_customization_edit_text_dialog_title"
+            app:persistent="true"
+            app:dialogTitle="@string/preferences_summary_diacritics_customization_edit_text_dialog_title"
+            app:dialogMessage="@string/preferences_summary_diacritics_customization_edit_text_dialog_message"
+            app:defaultValue="@string/diacritics_customization_default_value" />
+
+        <com.foschia.tondokeyboard.DiacriticsCustomizationDialogPreference app:title="@string/preferences_summary_diacritics_customization_reset" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/preferences_title_experimental_category"
+        app:icon="@drawable/ic_baseline_science_24">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="EnableSuggestions"
+            app:title="@string/preferences_title_enable_suggestion" />
+
+        <ListPreference
+            app:dependency="EnableSuggestions"
+            app:defaultValue="@string/suggestion_language_default_value"
+            app:entries="@array/dictionaries_entries"
+            app:entryValues="@array/dictionaries_values"
+            app:key="SuggestionsLanguage"
+            app:title="@string/preferences_title_suggestion_language"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/preferences_title_licenses_category"
+        app:icon="@drawable/ic_baseline_account_balance_24">
+        <Preference
+            app:persistent="false"
+            app:summary="@string/noto_emoji_license_attribution" />
+        <Preference
+            app:persistent="false"
+            app:summary="@string/suggester_license_attribution" />
+        <Preference
+            app:persistent="false"
+            app:summary="@string/diff_match_and_patch_license_attribution" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

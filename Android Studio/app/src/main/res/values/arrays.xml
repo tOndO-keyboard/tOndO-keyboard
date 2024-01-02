@@ -1,0 +1,37 @@
+<resources>
+    <string-array name="input_type_entries">
+        <item>Joystick</item>
+        <item>Needle</item>
+    </string-array>
+
+    <string-array name="input_type_values">
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="theme_type_entries">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <string-array name="theme_type_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="dictionaries_entries">
+        <item>Deutsche</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Français</item>
+        <item>Italiano</item>
+    </string-array>
+
+    <string-array name="dictionaries_values">
+        <item>de_DE</item>
+        <item>en_US</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>it_IT</item>
+    </string-array>
+</resources>
