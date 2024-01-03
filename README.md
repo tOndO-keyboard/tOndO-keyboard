@@ -222,7 +222,7 @@ We love silly things.
 
 
 
-## License
+## Licenses
 
 tOndO keyboard project is licensed under Apache License 2.0.
 
