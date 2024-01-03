@@ -1,6 +1,6 @@
 # tOndO-keyboard
 
-[![tOndO animation](.github/what_is_tOndO.gif)]
+![tOndO animation](.github/what_is_tOndO.gif)
 
 ## What is tOndO keyboard?
 
@@ -82,7 +82,7 @@ Unity would also allow developing a cross-platform front-end, but that's reveale
 
 
 
-[![tOndO UI evolution animation](.github/UI_evolution.gif)]
+![tOndO UI evolution animation](.github/UI_evolution.gif)
 
 
 
