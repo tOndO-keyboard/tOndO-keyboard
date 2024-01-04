@@ -23,7 +23,7 @@ tOndO keyboard is an alternative mobile input method designed to reach a few obj
 In 2010 8pen came out for Android, and its [video presentation](https://youtu.be/q3OuCR0EpGo) reported an idea that stuck with us since then:  \
 _[…] the keyboard was conceived to roughly match the size of human hands: the design worked well and still does […]. This is not the case on today's mobile devices where it is squeezed into barely a couple of inches: not only is it impossible to use two hands but even with a single finger it can be difficult to hit the right key._
 
-![8pen presentation animation](.github/8pen_presentation.gif)
+[![8pen presentation animation](.github/8pen_presentation.gif)](https://youtu.be/q3OuCR0EpGo)
 
 Just using a shrunken standard keyboard layout for mobile devices always was, at least, lazy as design.
 
