@@ -52,13 +52,13 @@ It usually takes 2 or 3 weeks of continuous usage before it stops being so annoy
 
 Sure!
 
-Current record is 72 WPM and is held by Riccardo Foschi. It was scored on [monkeytype.com](monkeytype.com) in English on a 30 seconds duration trial with 10-ish tentative.
+Current record is 72 WPM and is held by Riccardo Foschi. It was scored on [monkeytype.com](https://monkeytype.com) in English on a 30 seconds duration trial with 10-ish tentative.
 
 [Video proof here](https://youtu.be/zXWKaaur8ZE).
 
 We believe the record could be challenged quite easily with a little bit of training: if you can beat it, share the video or send it to us, and we will share it.
 
-[Here is another tentative](https://youtu.be/4T443q3Aax0) scoring 71 WPM on [10fastfingers.com](10fastfingers.com) in Italian (Riccardo mother tongue) on a 60 seconds duration trial.
+[Here is another tentative](https://youtu.be/4T443q3Aax0) scoring 71 WPM on [10fastfingers.com](https://10fastfingers.com) in Italian (Riccardo mother tongue) on a 60 seconds duration trial.
 
 
 ## Why is there only an Android version? When will it land on iOS?
@@ -101,7 +101,7 @@ Anyway, if you are already familiar with a non-QWERTY layout and would like to u
 
 ## Do you know this other quirk input method? What tOndO was inspired from?
 
-We did probably try out every mobile input method and got inspiration from many of them: we already cited 8pen (that was brought back to life by [8vim](https://github.com/8VIM/8VIM) project) and [MessagEase](https://www.exideas.com) (which we were long time users), we love [Gboard](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin) and [SwiftKey](swiftkey.com), we checked out Katakana keyboard, [Minuum](http://minuum.com/), [Keyboard 69 (Nintype)](https://apps.apple.com/us/app/nintype/id796959534), [NovaKey](https://github.com/vcantu/NovaKey), [Multiling O Keyboard](https://play.google.com/store/apps/details?id=kl.ime.oh), [Typewise](https://www.typewise.app/)…
+We did probably try out every mobile input method and got inspiration from many of them: we already cited 8pen (that was brought back to life by [8vim](https://github.com/8VIM/8VIM) project) and [MessagEase](https://www.exideas.com) (which we were long time users), we love [Gboard](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin) and [SwiftKey](https://swiftkey.com), we checked out Katakana keyboard, [Minuum](http://minuum.com/), [Keyboard 69 (Nintype)](https://apps.apple.com/us/app/nintype/id796959534), [NovaKey](https://github.com/vcantu/NovaKey), [Multiling O Keyboard](https://play.google.com/store/apps/details?id=kl.ime.oh), [Typewise](https://www.typewise.app/)…
 
 
 ## Why does an ominous pop-up appear when I enable tOndO keyboard from Android settings?
@@ -135,7 +135,7 @@ You can find "Keyboard customization code" under "Character customization" in tO
 
 You can also easily copy and paste the customization code in order to keep it for future usage or to share it with someone else. 
 
-If you created an interesting layout and feel like sharing it with the community, please do so on [r/tOndOkeyboard](www.reddit.com/r/tOndOkeyboard).
+If you created an interesting layout and feel like sharing it with the community, please do so on [r/tOndOkeyboard](https://www.reddit.com/r/tOndOkeyboard).
 
 
 ## What unlocking the Pro version would give me?
@@ -238,9 +238,9 @@ See repo's [LICENSE.md](/LICENSE.md) file.
 
 
 
-* Emoji artwork is provided by Google Fonts Noto Emoji, released by fonts.google.com on [github.com/googlefonts/noto-emoji](github.com/googlefonts/noto-emoji),  licensed under Apache License 2.0.
-* Suggestions library WeCantSpell.Hunspell, licensed under an MPL, LGPL, and GPL tri-license and available at [github.com/aarondandy/WeCantSpell.Hunspell](github.com/aarondandy/WeCantSpell.Hunspell). Dictionaries licensed under GNU GPL.
-* Diff counter customization code Diff Match and Patch under the Apache License Version 2.0, relased by Google on [github.com/google/diff-match-patch](github.com/google/diff-match-patch).
+* Emoji artwork is provided by Google Fonts Noto Emoji, released by fonts.google.com on [github.com/googlefonts/noto-emoji](https://github.com/googlefonts/noto-emoji),  licensed under Apache License 2.0.
+* Suggestions library WeCantSpell.Hunspell, licensed under an MPL, LGPL, and GPL tri-license and available at [github.com/aarondandy/WeCantSpell.Hunspell](https://github.com/aarondandy/WeCantSpell.Hunspell). Dictionaries licensed under GNU GPL.
+* Diff counter customization code Diff Match and Patch under the Apache License Version 2.0, relased by Google on [github.com/google/diff-match-patch](https://github.com/google/diff-match-patch).
 
 
 ## Contacts
