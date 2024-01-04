@@ -96,7 +96,7 @@ We placed vowels in button centers to make them easy to find, furthermore they a
 
 Layouts like Dvorak are optimized for 10 fingers and their advantages writing on a small device would probably be quite small. Moreover, Dvorak (and also frequency-based layouts, like MessagEase ANIHORTES) are optimized for English and could not give many improvements for other languages.
 
-Anyway, if you are already familiar with a non-QWERTY layout and would like to use it also on tOndO, each letter in the keyboard is customizable so that anyone can create its own layout. Custom layout can be easily exported and imported just copying and pasting the customization code: if you created a layout you are proud of and feel like to share it, please do it on [tOndO Subreddit](www.reddit.com/r/tOndOkeyboard).
+Anyway, if you are already familiar with a non-QWERTY layout and would like to use it also on tOndO, each letter in the keyboard is customizable so that anyone can create its own layout. Custom layout can be easily exported and imported just copying and pasting the customization code: if you created a layout you are proud of and feel like to share it, please do it on [tOndO Subreddit](https://www.reddit.com/r/tOndOkeyboard).
 
 
 ## Do you know this other quirk input method? What tOndO was inspired from?
