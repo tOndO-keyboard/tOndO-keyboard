@@ -43,7 +43,7 @@ A few other input methods experimented with non-standard layouts, but we thought
 
 ## Who developed it?
 
-tOndO keyboard is designed and developed by @rikkarlo and @marcomandy as a side project. Just Funny Games (now [Funny Tales](https://funnytales.us/)) gave us a hand.
+tOndO keyboard is designed and developed by [@rikkarlo](https://github.com/rikkarlo) and [@marcomandy](https://github.com/marcomandy) as a side project. Just Funny Games (now [Funny Tales](https://funnytales.us/)) gave us a hand.
 
 
 ## Wasn’t it just a meme for [r/badUIbattles](https://www.reddit.com/r/badUIbattles/)?
