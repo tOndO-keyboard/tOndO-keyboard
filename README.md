@@ -216,6 +216,8 @@ I was starting to fear you would never ask! Thank you for the question.
 
 We love silly things.
 
+It was made in collaboration with our friend of [Collettivo Mandra](https://www.collettivomandra.it/).
+
 
 
 [![link to tOndO video presentation](.github/video_promotion_preview.png)](https://youtu.be/A1wtNIAO6UE)
