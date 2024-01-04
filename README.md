@@ -1,4 +1,15 @@
-# tOndO-keyboard
+# tOndO keyboard
+
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" 
+alt="Download from Google Play" 
+height="80">](https://play.google.com/store/apps/details?id=com.foschia.tondokeyboard)
+<!-- hopefully coming soon
+[<img src="https://f-droid.org/badge/get-it-on.png"
+alt="Get it on F-Droid"
+height="80">](https://f-droid.org/packages/com.foschia.tondokeyboard)
+-->
+
+A fast, accurate and easy to learn alternative mobile input method.
 
 ![tOndO animation](.github/what_is_tOndO.gif)
 
@@ -32,7 +43,7 @@ A few other input methods experimented with non-standard layouts, but we thought
 
 ## Who developed it?
 
-tOndO keyboard is designed and developed by [Riccardo Foschi](https://github.com/rikkarlo) and [Marco Mandia](https://github.com/marcomandy) as a side project. Just Funny Games (now [Funny Tales](https://funnytales.us/)) gave us a hand.
+tOndO keyboard is designed and developed by @rikkarlo and @marcomandy as a side project. Just Funny Games (now [Funny Tales](https://funnytales.us/)) gave us a hand.
 
 
 ## Wasn’t it just a meme for [r/badUIbattles](https://www.reddit.com/r/badUIbattles/)?
