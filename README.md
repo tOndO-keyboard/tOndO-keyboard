@@ -23,6 +23,8 @@ tOndO keyboard is an alternative mobile input method designed to reach a few obj
 In 2010 8pen came out for Android, and its [video presentation](https://youtu.be/q3OuCR0EpGo) reported an idea that stuck with us since then:  \
 _[…] the keyboard was conceived to roughly match the size of human hands: the design worked well and still does […]. This is not the case on today's mobile devices where it is squeezed into barely a couple of inches: not only is it impossible to use two hands but even with a single finger it can be difficult to hit the right key._
 
+![8pen presentation animation](.github/8pen_presentation.gif)
+
 Just using a shrunken standard keyboard layout for mobile devices always was, at least, lazy as design.
 
 A few other input methods experimented with non-standard layouts, but we thought they all were too difficult to learn or rely too much on autocompletion (or both) so we decided to create our own unorthodox design.
@@ -30,10 +32,10 @@ A few other input methods experimented with non-standard layouts, but we thought
 
 ## Who developed it?
 
-tOndO keyboard is designed and developed by Riccardo Foschi and Marco Mandia as a side project. Just Funny Games (now Funny Tales) gave us a hand.
+tOndO keyboard is designed and developed by [Riccardo Foschi](https://github.com/rikkarlo) and [Marco Mandia](https://github.com/marcomandy) as a side project. Just Funny Games (now [Funny Tales](https://funnytales.us/)) gave us a hand.
 
 
-## Wasn’t it just a meme for r/badUIbattles?
+## Wasn’t it just a meme for [r/badUIbattles](https://www.reddit.com/r/badUIbattles/)?
 
 Nope. We developed it unironically. \
 It happened that a few comments rightly pointed out to us that it seemed to belong there, so we also posted tOndO on r/badUIbattles.
@@ -50,20 +52,20 @@ It usually takes 2 or 3 weeks of continuous usage before it stops being so annoy
 
 Sure!
 
-Current record is 72 WPM and is held by Riccardo Foschi. It was scored on monkeytype.com in English on a 30 seconds duration trial with 10-ish tentative.
+Current record is 72 WPM and is held by Riccardo Foschi. It was scored on [monkeytype.com](monkeytype.com) in English on a 30 seconds duration trial with 10-ish tentative.
 
 [Video proof here](https://youtu.be/zXWKaaur8ZE).
 
 We believe the record could be challenged quite easily with a little bit of training: if you can beat it, share the video or send it to us, and we will share it.
 
-[Here is another tentative](https://youtu.be/4T443q3Aax0) scoring 71 WPM on 10fastfingers.com in Italian (Riccardo mother tongue) on a 60 seconds duration trial.
+[Here is another tentative](https://youtu.be/4T443q3Aax0) scoring 71 WPM on [10fastfingers.com](10fastfingers.com) in Italian (Riccardo mother tongue) on a 60 seconds duration trial.
 
 
 ## Why is there only an Android version? When will it land on iOS?
 
 tOndO's front-end was developed in Unity.
 
-On iOS, Unity occupies a lot more memory than necessary and the system has a very strict policy on memory allocation for app extensions (such as input methods).
+On iOS, [due to a known bug](https://issuetracker.unity3d.com/issues/ios-uaal-after-unloading-a-unity-scene-memory-remains-allocated-depending-on-how-much-memory-was-used-in-the-scene), Unity occupies a lot more memory than necessary and the system has a [very strict policy on memory allocation for app extensions](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionCreation.html) (such as input methods).
 
 As we never managed to decrement memory usage (or to increment memory availability) the only alternative seems to start developing the front-end from scratch using something different.
 
@@ -99,7 +101,7 @@ Anyway, if you are already familiar with a non-QWERTY layout and would like to u
 
 ## Do you know this other quirk input method? What tOndO was inspired from?
 
-We did probably try out every mobile input method and got inspiration from many of them: we already cited 8pen (that was brought back to life by 8vim project) and MessagEase (which we were long time users), we love Gboard and SwiftKey, we checked out Katakana keyboard, Minuum, Keyboard 69 (Nintype), NovaKey, Multiling O Keyboard, Typewise…
+We did probably try out every mobile input method and got inspiration from many of them: we already cited 8pen (that was brought back to life by [8vim](https://github.com/8VIM/8VIM) project) and [MessagEase](https://www.exideas.com) (which we were long time users), we love [Gboard](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin) and [SwiftKey](swiftkey.com), we checked out Katakana keyboard, [Minuum](http://minuum.com/), [Keyboard 69 (Nintype)](https://apps.apple.com/us/app/nintype/id796959534), [NovaKey](https://github.com/vcantu/NovaKey), [Multiling O Keyboard](https://play.google.com/store/apps/details?id=kl.ime.oh), [Typewise](https://www.typewise.app/)…
 
 
 ## Why does an ominous pop-up appear when I enable tOndO keyboard from Android settings?
@@ -112,6 +114,8 @@ Furthermore, all tOndO codebase is open source, you can check by yourself what i
 
 
 ## How do I type ñ or ß or any other accented letter or diacritic glyph?
+
+![How to type an ñ  animation](.github/how_to_type_n.gif)
 
 To input, for example, a “ñ”, type an “n”. A “ń” will appear in the top right spot of the top right button (in the darker niche): typing it will replace the “n” with the “ń”. If you instead select the “ń” and keep it selected for a few instants, the content of the top right button will change to contain other variants of “n”; you can now select “ñ” and type it: if you do so, the next time you will input a “n”, the top right spot of the top right button will display an “ñ” as default.
 
@@ -177,6 +181,8 @@ We have many more smaller features on our to-do list, and it’s possible we wil
 
 
 ## What’s the difference between joystick input mode and needle input mode?
+
+![Joystick vs Needle animation](.github/joystick_vs_needle.gif)
 
 It’s only an aesthetic difference: when you select a letter with joystick input mode activated, the button will slightly move in the direction of the letter you are selection, as if it was a joystick analog stick; if needle input mode is activated instead, the button will not move and a little colored line will come up from the button center and end in the selected letter, as if it was the needle of a compass.
 
