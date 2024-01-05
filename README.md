@@ -222,9 +222,11 @@ As the previous answer: for now, just write to us via any link in our contacts.
 Why not?! Get in touch with us and we will discuss it.
 
 
-## Do you accept donations?
+## Can I buy you a coffee?
 
-For now, the best way to give us a donation is to purchase the Pro version.
+There you go!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O5O1SZVCG)
 
 
 ## What about that silly video on your YouTube Channel?
@@ -256,4 +258,4 @@ See repo's [LICENSE.md](/LICENSE.md) file.
 
 ## Contacts
 
-[Linktree](https://linktr.ee/tOndO.keyboard) - [Reddit](https://www.reddit.com/r/tOndOkeyboard/) - [Google Play](https://play.google.com/store/apps/details?id=com.foschia.tondokeyboard) - [Instagram](https://instagram.com/tondo.keyboard) - [YouTube](https://www.youtube.com/@tOndO.keyboard) - [Mastodon](https://mastodon.social/@tOndOkeyboard) - [Facebook](https://www.facebook.com/tOndO.keyboard) - [TikTok](https://www.tiktok.com/@tondo.keyboard) - [Product Hunt](https://www.producthunt.com/posts/tondo-keyboard) - [Mail](mailto:tondo.keyboard@justfunnygames.com)
+[Linktree](https://linktr.ee/tOndO.keyboard) - [Reddit](https://www.reddit.com/r/tOndOkeyboard/) - [Google Play](https://play.google.com/store/apps/details?id=com.foschia.tondokeyboard) - [Instagram](https://instagram.com/tondo.keyboard) - [YouTube](https://www.youtube.com/@tOndO.keyboard) - [Mastodon](https://mastodon.social/@tOndOkeyboard) - [Facebook](https://www.facebook.com/tOndO.keyboard) - [TikTok](https://www.tiktok.com/@tondo.keyboard) - [Product Hunt](https://www.producthunt.com/posts/tondo-keyboard) - [Ko-fi](https://ko-fi.com/tondokeyboard) - [Mail](mailto:tOndO.keyboard@gmail.com)
