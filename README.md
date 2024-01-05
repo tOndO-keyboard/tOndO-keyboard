@@ -247,7 +247,7 @@ It was made in collaboration with our friend of [Collettivo Mandra](https://www.
 
 tOndO keyboard project is licensed under Apache License 2.0.
 
-See repo's [LICENSE.md](/LICENSE.md) file.
+See repo's [LICENSE](/LICENSE) file.
 
 
 
