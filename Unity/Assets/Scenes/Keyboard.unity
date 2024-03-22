@@ -194,8 +194,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputField: {fileID: 0}
-  _proOverride: 0
   _editorLandscape: 0
+  _editorIsPro: 1
 --- !u!4 &408880964
 Transform:
   m_ObjectHideFlags: 0
@@ -246,13 +246,12 @@ MonoBehaviour:
   verySticky: 0
   showPopupPreview: 1
   vibrationMillis: 10
+  externalGlyphSelectionDistanceFactor: 7
   topBarWentBottom: 0
   enableSuggestions: 0
   suggestionsLanguage: en_US
   disableAutomaticCapitalization: 0
-  characterCustomizationString: "EQWRT*\nUYFGH'\"\nIJLP:^\nA@()DS#\n Z,.VCX\nOB!?KMN\n\n$/123*\n\xA34567'\"\n\u20AC890:^\n[@()]%#\n
-    ;,.&><\n_~!?-+=\n\n\u2022\\|\xBD\u2153\xB2\n\u03B2\u03B1\u03B4\u03B5\u03B3\xBB\xAB\n\u03C0\u03BB\u03A3\u0394\u03C1\xB0\n\u2713\u20BF{}\xA5\xA7\xB6\n
-    \xAE\u2122\xA2\xA9\u2265\u2264\n\xD7\u221A\u221E\u2219\xF7\xB1\u2260"
+  characterCustomizationString: "EQWRT*\nUYFGH'\"\nIJLP:^\nA@()DS#\n Z,.VCX\nOB!?KMN\n\n$/123*\n\xA34567'\"\n\u20AC890:^\n[@()]%#\n;,.&><\n_~!?-+=\n\n\u2022\\|\xBD\u2153\xB2\n\u03B2\u03B1\u03B4\u03B5\u03B3\xBB\xAB\n\u03C0\u03BB\u03A3\u0394\u03C1\xB0\n\u2713\u20BF{}\xA5\xA7\xB6\n\xAE\u2122\xA2\xA9\u2265\u2264\n\xD7\u221A\u221E\u2219\xF7\xB1\u2260"
   diacriticsCustomizationString: "A \xE1\xE0\xE3\u0101\xAA\u0105 \xE0\xE1\xE2\xE4\xE5\xE6
     1 1\r\nB \u1E03\u1E05\u1E07\u0180 \u1E03\u1E05\u1E07\u0180 1 2\r\nC \xE7\u0107\u0109\u010D\u010B
     \xE7\u0107\u0109\u010D\u010B 1 2\r\nD \xF0\u1E0B\u1E0D\u1E0F\u0111 \xF0\u1E0B\u1E0D\u1E0F\u0111

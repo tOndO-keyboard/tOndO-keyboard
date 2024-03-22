@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public enum InputType { Needle, DoubleNeedle, Joystick };
+public enum InputType { Needle, DoubleNeedle, Joystick, NoThumbs };
 public enum ThemeType { FollowSystem, Light, Dark };
 
 public class SettingsManager : LazySingleIstanceMonoBehaviour<SettingsManager>
@@ -238,7 +238,11 @@ public class SettingsManager : LazySingleIstanceMonoBehaviour<SettingsManager>
 
     public void SetDoubleNeedle(Toggle t)
     {
-        if(t.isOn) inputType = InputType.DoubleNeedle;
+        if (t.isOn) inputType = InputType.DoubleNeedle;
+    }
+    public void SetNoThumbs(Toggle t)
+    {
+        if (t.isOn) inputType = InputType.NoThumbs;
     }
 
     public void SetJoystick(Toggle t)
