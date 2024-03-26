@@ -49,7 +49,7 @@ tOndO keyboard is designed and developed by [@rikkarlo](https://github.com/rikka
 ## Wasn’t it just a meme for [r/badUIbattles](https://www.reddit.com/r/badUIbattles/)?
 
 Nope. We developed it unironically. \
-It happened that a few comments rightly pointed out to us that it seemed to belong there, so we also posted tOndO on r/badUIbattles.
+It happened that a few comments rightly pointed out to us that it seemed to belong there, so we also [posted tOndO on r/badUIbattles](https://www.reddit.com/r/badUIbattles/comments/rk0ol1/tondo_keyboard/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button).
 
 
 ## How long will it take to learn to write with it?
@@ -112,7 +112,7 @@ Anyway, if you are already familiar with a non-QWERTY layout and would like to u
 
 ## Do you know this other quirk input method? What tOndO was inspired from?
 
-We did probably try out every mobile input method and got inspiration from many of them: we already cited 8pen (that was brought back to life by [8vim](https://github.com/8VIM/8VIM) project) and [MessagEase](https://www.exideas.com) (which we were long time users), we love [Gboard](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin) and [SwiftKey](https://swiftkey.com), we checked out Katakana keyboard, [Minuum](http://minuum.com/), [Keyboard 69 (Nintype)](https://apps.apple.com/us/app/nintype/id796959534), [NovaKey](https://github.com/vcantu/NovaKey), [Multiling O Keyboard](https://play.google.com/store/apps/details?id=kl.ime.oh), [Typewise](https://www.typewise.app/)…
+We did probably try out every mobile input method and got inspiration from many of them: we already cited 8pen (that was brought back to life by [8vim](https://github.com/8VIM/8VIM) project) and [MessagEase](https://www.exideas.com) (of which we were long time users and which has been brought back on track by [Thumb-Key](https://github.com/dessalines/thumb-key)), we love [Gboard](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin) and [SwiftKey](https://swiftkey.com), we checked out Katakana keyboard, [Minuum](http://minuum.com/), [Keyboard 69 (Nintype)](https://apps.apple.com/us/app/nintype/id796959534), [NovaKey](https://github.com/vcantu/NovaKey), [Multiling O Keyboard](https://play.google.com/store/apps/details?id=kl.ime.oh), [Typewise](https://www.typewise.app/), [HERO keyboard](https://herokeyboard.com)…
 
 
 ## Why does an ominous pop-up appear when I enable tOndO keyboard from Android settings?
