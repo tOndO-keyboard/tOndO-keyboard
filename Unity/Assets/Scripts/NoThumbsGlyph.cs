@@ -1,4 +1,5 @@
 ﻿using TMPro;
+using Tweens;
 using UnityEngine;
 using UnityEngine.UI;
 using static ShiftButton;
@@ -14,6 +15,16 @@ public class NoThumbsGlyph : MonoBehaviour
 
     [SerializeField]
     private bool isOnVeryTopRow;
+
+    private bool isUppercase = true;
+
+    protected NativeInterface nativeInterface;
+
+    public delegate void GlyphCommittedEventDelegate(string selectedGlyph);
+    public static event GlyphCommittedEventDelegate GlyphCommitted;
+
+    public delegate void GlyphCommittingEventDelegate(string precedingGlyph, string selectedGlyph);
+    public static event GlyphCommittingEventDelegate GlyphCommitting;
 
     public int AngularIndex
     {
@@ -40,6 +51,11 @@ public class NoThumbsGlyph : MonoBehaviour
     {
         settingsManager = SettingsManager.Instance;
 
+        nativeInterface = NativeInterface.Instance;
+
+        ShiftButton.ShiftChangedState += OnShiftStateChanged; 
+        NativeInterface.InputViewStarted += OnInputViewStarted;
+
         background = GetComponent<Image>();
         backgroundInitialColor = background.color;
 
@@ -51,6 +67,26 @@ public class NoThumbsGlyph : MonoBehaviour
         if (paletteElementColorApplier != null)
         {
             paletteElementColorApplier.GraphicColorChanged += OnThemeChanged;
+        }
+    }
+
+    private void OnInputViewStarted(string s = "")
+    {
+        SetCase(isUppercase);
+    }
+
+    private void OnShiftStateChanged(ShiftButton source, ShiftState state)
+    {
+        isUppercase = state != ShiftState.notPressed;
+        SetCase(isUppercase);
+    }
+
+    private void SetCase(bool upper)
+    {
+        char[] chars = GetLabel().ToCharArray();
+        if (chars.Length == 1 && char.IsLetter(chars[0]))
+        {
+            label.text = (upper ? GetLabel().ToUpper() : GetLabel().ToLower());
         }
     }
 
@@ -80,6 +116,13 @@ public class NoThumbsGlyph : MonoBehaviour
         temporaryLabelSet = false;
     }
 
+    public void OnTweenFillAmountFinished()
+    {
+        GlyphCommitting?.Invoke(nativeInterface.GetPrecedingCharacter(1), label.text);
+        nativeInterface.CommitString(label.text);
+        GlyphCommitted?.Invoke(label.text);
+    }
+
     public void SetHilight(bool hilight, bool useAlsoBackground = true, bool showPreviewPopup = true)
     {
         if (hilight)
@@ -102,6 +145,8 @@ public class NoThumbsGlyph : MonoBehaviour
                 if (previewPopupGameObject == null)
                 {
                     previewPopupGameObject = Instantiate(previewPopupPrefab);
+                    previewPopupGameObject.GetComponentInChildren<TweenFillAmount>().SetOnFinished(OnTweenFillAmountFinished);
+                    previewPopupGameObject.GetComponentInChildren<TweenFillAmount>().Play(true, true);
                 }
                 previewPopupGameObject.transform.SetParent(transform, false);
                 previewPopupGameObject.GetComponent<RectTransform>().anchoredPosition = Vector3.zero;
@@ -116,6 +161,7 @@ public class NoThumbsGlyph : MonoBehaviour
 
             if (previewPopupGameObject != null)
             {
+                previewPopupGameObject.GetComponentInChildren<TweenFillAmount>().Stop();
                 Destroy(previewPopupGameObject);
                 previewPopupGameObject = null;
             }

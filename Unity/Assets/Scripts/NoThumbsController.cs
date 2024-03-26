@@ -22,6 +22,7 @@ public class NoThumbsController : MonoBehaviour
     private void setCanvas()
     {
         bool active = SettingsManager.Instance.InputType == InputType.NoThumbs;
+        canvasGroup.gameObject.SetActive(active);
         canvasGroup.alpha = active ? 1 : 0;
         canvasGroup.interactable = active;
         canvasGroup.blocksRaycasts = active;

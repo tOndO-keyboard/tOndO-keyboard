@@ -36,6 +36,8 @@ public class ShiftButton : KeyboardButton
         ShiftButton.ShiftChangedState += OnShiftStateChanged;
         TondoAnalogStick.GlyphCommitted += OnGlyphCommitted;
         TondoAnalogStick.GlyphCommitting += OnGlyphCommitting;
+        NoThumbsGlyph.GlyphCommitted += OnGlyphCommitted;
+        NoThumbsGlyph.GlyphCommitting += OnGlyphCommitting;
         NativeInterface.InputViewStarted += OnInputViewStarted;
         NativeInterface.SetInputType += OnSetInputType;
         NativeInterface.CursorPositionChanged += OnCursorPositionChanged;
