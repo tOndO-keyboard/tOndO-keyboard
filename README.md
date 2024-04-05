@@ -198,11 +198,11 @@ We have many more smaller features on our to-do list, and it’s possible we wil
 It’s only an aesthetic difference: when you select a letter with joystick input mode activated, the button will slightly move in the direction of the letter you are selection, as if it was a joystick analog stick; if needle input mode is activated instead, the button will not move and a little colored line will come up from the button center and end in the selected letter, as if it was the needle of a compass.
 
 
-## Where did the Rotary dial and Onion wheel input mode end up?!
+## Where did the Rotary dial, Onion wheel and No thumbs input mode end up?!
 
 Those were only April’s Fools and were available only for a limited period of time.
 
-You can check screen recordings out [here](https://www.reddit.com/r/badUIbattles/comments/ttpiat/tondo_keyboard_new_update_out_today/?utm_source=share&utm_medium=web2x&context=3) and [here](https://www.reddit.com/r/badUIbattles/comments/128hnjt/another_tondo_keyboard_update_just_for_you_guys/?utm_source=share&utm_medium=web2x&context=3).
+You can check screen recordings out [here](https://www.reddit.com/r/badUIbattles/comments/ttpiat/tondo_keyboard_new_update_out_today), [here](https://www.reddit.com/r/badUIbattles/comments/128hnjt/another_tondo_keyboard_update_just_for_you_guys) and [here](https://www.reddit.com/r/badUIbattles/comments/1bt0908/no_thumbs_input_mode_for_tondo_keyboard).
 
 If you have any ideas for 2024 April’s Fool, let us know!
 
