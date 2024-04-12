@@ -242,6 +242,10 @@ It was made in collaboration with our friend of [Collettivo Mandra](https://www.
 [![link to tOndO video presentation](.github/video_promotion_preview.png)](https://youtu.be/A1wtNIAO6UE)
 
 
+## Web mentions
+
+[Here is](MENTIONS.md) a list of videos and articles that spoke about tOndO.
+
 
 ## Licenses
 
