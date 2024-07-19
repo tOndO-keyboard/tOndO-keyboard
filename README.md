@@ -1,13 +1,23 @@
 # tOndO keyboard
 
-[<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" 
-alt="Download from Google Play" 
-height="80">](https://play.google.com/store/apps/details?id=com.foschia.tondokeyboard)
+<a href="https://play.google.com/store/apps/details?id=com.foschia.tondokeyboard">
+<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+alt="Download from Google Play" align="center" height="80" /></a>
+
 <!-- hopefully coming soon
-[<img src="https://f-droid.org/badge/get-it-on.png"
-alt="Get it on F-Droid"
-height="80">](https://f-droid.org/packages/com.foschia.tondokeyboard)
+<a href="https://f-droid.org/packages/com.foschia.tondokeyboard">
+<img src="https://f-droid.org/badge/get-it-on.png"
+alt="Get it on F-Droid" align="center" height="80" /></a>
+
+<a href="https://github.com/tOndO-keyboard/tOndO-keyboard/releases">
+<img src="https://user-images.githubusercontent.com/69304392/148696068-0cfea65d-b18f-4685-82b5-329a330b1c0d.png"
+alt="Download from GitHub releases" align="center" height="80" /></a>
+
+<a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/tOndO-keyboard/tOndO-keyboard/">
+<img src="https://github.com/ImranR98/Obtainium/blob/main/assets/graphics/badge_obtainium.png"
+alt="Get it on Obtainium" align="center" height="54" /></a>
 -->
+
 
 A fast, accurate and easy to learn alternative mobile input method.
 
