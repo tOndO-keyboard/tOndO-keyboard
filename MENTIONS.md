@@ -12,6 +12,8 @@
 
 [El Androide Feliz - 10 nuevas apps para Android recién salidas del horno](https://elandroidefeliz.com/10-nuevas-apps-para-android-recien-salidas-del-horno-mayo-2023/)
 
+[El Androide Feliz - 10 joyas ocultas para Android que deberías probar (Octubre ‘24)](https://elandroidefeliz.com/10-joyas-ocultas-para-android-que-deberias-probar-octubre-24/)
+
 [Techenet - tOndO Keyboard: um novo mundo de teclados para o teu Android](https://www.techenet.com/2023/05/tondo-keyboard-um-novo-mundo-de-teclados-para-o-teu-android/)
 
 [La Vanguardia - Este teclado para Android no se parece a nada de lo que hayas visto](https://www.lavanguardia.com/andro4all/personalizacion/este-teclado-para-android-no-se-parece-a-nada-de-lo-que-hayas-visto)
