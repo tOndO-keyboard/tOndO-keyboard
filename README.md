@@ -214,7 +214,7 @@ Those were only April’s Fools and were available only for a limited period of 
 
 You can check screen recordings out [here](https://www.reddit.com/r/badUIbattles/comments/ttpiat/tondo_keyboard_new_update_out_today), [here](https://www.reddit.com/r/badUIbattles/comments/128hnjt/another_tondo_keyboard_update_just_for_you_guys) and [here](https://www.reddit.com/r/badUIbattles/comments/1bt0908/no_thumbs_input_mode_for_tondo_keyboard).
 
-If you have any ideas for 2024 April’s Fool, let us know!
+If you have any ideas for the next April’s Fool, let us know!
 
 
 ## Do you have a known bug list? How can I report a bug?
