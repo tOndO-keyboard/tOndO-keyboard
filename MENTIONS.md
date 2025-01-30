@@ -21,3 +21,5 @@
 [Instalki pl - 5 aplikacji na Androida, których nie możesz przegapić [Aplikacje tygodnia #282]](https://www.instalki.pl/news/software/5-aplikacji-na-androida-ktorych-nie-mozesz-przegapic-aplikacje-tygodnia-282/)
 
 [Nomicken Blogspot - Why QWERTY keyboard layout will always be mainstream. Taking tOndO keyboard as an example](https://nomicken-blogspot-com.translate.goog/2023/05/tOndO.html?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=it&_x_tr_pto=wapp)
+
+[Tout Sur Google - Les nouvelles applications Android à ne pas manquer – Mars 2024](https://www.toutsurgoogle.com/nouvelles-applications-android-a-ne-pas-manquer/#htoc-trueshot111111111111)
