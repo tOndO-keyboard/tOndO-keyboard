@@ -33,14 +33,17 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.util.Consumer;
 
-import com.unity3d.player.UnityPlayer;
-
 import java.text.BreakIterator;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
+
+import io.flutter.embedding.android.FlutterView;
+import io.flutter.embedding.engine.FlutterEngine;
+import io.flutter.embedding.engine.dart.DartExecutor;
+import io.flutter.plugin.common.MethodChannel;
 
 public class KeyboardActionListener extends InputMethodService
 {
@@ -79,7 +82,11 @@ public class KeyboardActionListener extends InputMethodService
 	private static final String[] sCommonSeparators =
 			new String[]{".", ";", ",", "?", "!", "-", "'", "\""};
 
-	protected UnityPlayer mUnityPlayer;
+	private static final String CHANNEL = "com.foschia.tondokeyboard/keyboard";
+	private FlutterEngine flutterEngine;
+	private FlutterView flutterView;
+	private MethodChannel methodChannel;
+
 	private float keyboardProportion = 1.5f;
 	private View currentView;
 	private Vibrator vibrator;
@@ -136,7 +143,7 @@ public class KeyboardActionListener extends InputMethodService
 			Utils.DebugLog(Utils.LogType.WARNING, "onStartInputView started but currentView is null");
 		}
 
-		if (mUnityPlayer == null)
+		/*if (mUnityPlayer == null)
 		{
 			mUnityPlayer = new UnityPlayer(this);
 			int glesMode = mUnityPlayer.getSettings().getInt("gles_mode", 1);
@@ -147,7 +154,7 @@ public class KeyboardActionListener extends InputMethodService
 		{
 			Utils.DebugLog(Utils.LogType.WARNING, "onStartInputView interrupted as mUnityPlayer is null");
 			return;
-		}
+		}*/
 
 		eSharedPreferences = new EncryptedSharedPreferences(this);
 		Boolean barOnBottom = eSharedPreferences.getBoolean("TopBarWentBottom", false);
@@ -157,8 +164,6 @@ public class KeyboardActionListener extends InputMethodService
 			tondoBilling = new TondoBilling(getBaseContext(), eSharedPreferences);
 			tondoBilling.InitializeAndStartBilling();
 		}
-
-		//To Do: maybe we should set this directly by unity adding a new method to the interface
 
 		boolean useDarkTheme = useDarkTheme(eSharedPreferences);
 		if (currentView != null)
@@ -183,7 +188,6 @@ public class KeyboardActionListener extends InputMethodService
 				Window window = dialog.getWindow();
 				if (window != null)
 				{
-					//To Do: maybe we should set this directly by unity adding a new method to the interface
 					if (useDarkTheme)
 					{
 						window.setNavigationBarColor(getResources().getColor(barOnBottom ? R.color.KeyboarActionBarDirectionalBackgroundDark : R.color.KeyboardBackgroundDark));
@@ -218,6 +222,8 @@ public class KeyboardActionListener extends InputMethodService
 			}
 		}
 
+		initFlutter();
+
 		FrameLayout currentLayout = null;
 		if (currentView != null)
 		{
@@ -228,33 +234,40 @@ public class KeyboardActionListener extends InputMethodService
 			Utils.DebugLog(Utils.LogType.WARNING, "Cannot find current frame layout");
 		}
 
+		/*
 		View playerView = mUnityPlayer.getView();
 		if (playerView == null)
 		{
 			Utils.DebugLog(Utils.LogType.WARNING, "Player view is null");
 		}
+		*/
 
 
 		if (!restarting)
 		{
-			ViewGroup playerParentView = (ViewGroup) playerView.getParent();
-			if (currentLayout != null && playerView != null)
+			ViewGroup flutterParentView = (ViewGroup) flutterView.getParent();
+			if (currentLayout != null && flutterView != null)
 			{
-				if (playerParentView != null)
+				if (flutterParentView != null)
 				{
-					playerParentView.removeView(playerView);
+					flutterParentView.removeView(flutterView);
 				}
 				WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams(currentLayout.getWidth(), currentLayout.getHeight());
-				currentLayout.addView(playerView, 0, layoutParams);
+				currentLayout.addView(flutterView, 0, layoutParams);
 				setFrameLayoutParams(currentLayout);
 			}
 		}
 
-		mUnityPlayer.resume();
-		mUnityPlayer.windowFocusChanged(true);
+		//mUnityPlayer.resume();
+		//mUnityPlayer.windowFocusChanged(true);
+
 
 		String precedingCharacter = GetPrecedingCharacter(1);
-		UnityPlayer.UnitySendMessage("Native Interface", "OnStartInputView", precedingCharacter);
+		//UnityPlayer.UnitySendMessage("Native Interface", "OnStartInputView", precedingCharacter);
+
+		if (methodChannel != null) {
+			methodChannel.invokeMethod("onInputStarted", null);
+		}
 
 		int inputType = info.inputType & InputType.TYPE_MASK_CLASS;
 		boolean numericalInputNeeded = inputType == InputType.TYPE_CLASS_NUMBER ||
@@ -266,9 +279,135 @@ public class KeyboardActionListener extends InputMethodService
 		int result = numericalInputNeeded ? NUMERICAL_INPUT : TEXT_INPUT;
 		if (passwordInputNeeded) result |= PASSWORD_INPUT;
 
-		UnityPlayer.UnitySendMessage("Native Interface", "OnSetInputType", String.valueOf(result));
+		//UnityPlayer.UnitySendMessage("Native Interface", "OnSetInputType", String.valueOf(result));
 
 		Utils.DebugLog(Utils.LogType.INFO, "onStartInputView completed.");
+	}
+
+	private void initFlutter()
+	{
+		// Initialize Flutter Engine
+		flutterEngine = new FlutterEngine(this);
+		flutterEngine.getDartExecutor().executeDartEntrypoint(
+				DartExecutor.DartEntrypoint.createDefault()
+		);
+
+		// Create Flutter View
+		flutterView = new FlutterView(this);
+		flutterView.attachToFlutterEngine(flutterEngine);
+
+		// Setup Method Channel for communication between Flutter and native
+		methodChannel = new MethodChannel(flutterEngine.getDartExecutor().getBinaryMessenger(), CHANNEL);
+		methodChannel.setMethodCallHandler((call, result) -> {
+			switch (call.method) {
+				case "commitText":
+					String text = call.argument("text");
+					CommitString(text, false);
+					result.success(null);
+					break;
+				case "deleteText":
+					CommitBackspace();
+					result.success(null);
+					break;
+				case "getSuggestionsLanguage":
+					String language = GetSuggestionsLanguage();
+					result.success(language);
+					break;
+				case "getPrecedingCharacter":
+					String precedingCharacter = GetPrecedingCharacter(1);
+					result.success(precedingCharacter);
+					break;
+				case "getFollowingCharacter":
+					String followingCharacter = GetFollowingCharacter(1);
+					result.success(followingCharacter);
+					break;
+				case "getInputType":
+					int inputType = getInputType();
+					result.success(inputType);
+					break;
+				case "getDoneActionFlag":
+					int doneActionFlag = GetDoneActionFlag();
+					result.success(doneActionFlag);
+					break;
+				case "openSystemKeyboardChooser":
+					OpenSystemKeyboardChooser();
+					result.success(null);
+					break;
+				case "openKeyboardOptions":
+					OpenKeyboardOptions();
+					result.success(null);
+					break;
+				case "hideKeyboard":
+					HideKeyboard();
+					result.success(null);
+					break;
+				case "vibrate":
+					long milliseconds = call.argument("milliseconds");
+					Vibrate(milliseconds);
+					result.success(null);
+					break;
+				case "moveCursor":
+					int entity = call.argument("entity");
+					String direction = call.argument("direction");
+					moveCursor(entity, Direction.valueOf(direction));
+					result.success(null);
+					break;
+				case "copy":
+					Copy();
+					result.success(null);
+					break;
+				case "paste":
+					Paste();
+					result.success(null);
+					break;
+				case "cut":
+					Cut();
+					result.success(null);
+					break;
+				case "selectAll":
+					SelectAll();
+					result.success(null);
+					break;
+				case "undo":
+					Undo();
+					result.success(null);
+					break;
+				case "redo":
+					Redo();
+					result.success(null);
+					break;
+				case "updateProportions":
+					float proportion = call.argument("proportion");
+					UpdateProportions(proportion);
+					result.success(null);
+					break;
+				case "replaceCaretWord":
+					String newWord = call.argument("newWord");
+					replaceCaretWord(newWord);
+					result.success(null);
+					break;
+				case "commitEmoji":
+					String emoji = call.argument("emoji");
+					CommitEmoji(emoji);
+					result.success(null);
+					break;
+				case "replaceLastCharacterWith":
+					String s = call.argument("s");
+					ReplaceLastCharacterWith(s);
+					result.success(null);
+					break;
+				case "commitBackspace":
+					CommitBackspace();
+					result.success(null);
+					break;
+				case "commitDone":
+					CommitDone();
+					result.success(null);
+					break;
+				default:
+					result.notImplemented();
+			}
+		});
 	}
 
 	private boolean useDarkTheme(EncryptedSharedPreferences eSharedPreferences)
@@ -292,6 +431,7 @@ public class KeyboardActionListener extends InputMethodService
 
 		super.onConfigurationChanged(newConfig);
 
+        /*
 		if (mUnityPlayer == null)
 		{
 			Utils.DebugLog(Utils.LogType.WARNING, "onConfigurationChanged interrupted as mUnityPlayer is null");
@@ -300,6 +440,7 @@ public class KeyboardActionListener extends InputMethodService
 
 		mUnityPlayer.configurationChanged(newConfig);
 		UnityPlayer.UnitySendMessage("Native Interface", "OnConfigurationChanged", "");
+        */
 	}
 
 	private String orientationToString(int orientation)
@@ -324,6 +465,7 @@ public class KeyboardActionListener extends InputMethodService
 	{
 		Utils.DebugLog(Utils.LogType.INFO, "onLowMemory called");
 
+        /*
 		if (mUnityPlayer == null)
 		{
 			Utils.DebugLog(Utils.LogType.WARNING, "onLowMemory called but mUnityPlayer is null");
@@ -332,6 +474,8 @@ public class KeyboardActionListener extends InputMethodService
 		{
 			mUnityPlayer.lowMemory();
 		}
+        */
+
 		super.onLowMemory();
 	}
 
@@ -340,6 +484,7 @@ public class KeyboardActionListener extends InputMethodService
 	{
 		Utils.DebugLog(Utils.LogType.INFO, "onTrimMemory called with level: " + level);
 
+        /*
 		if (mUnityPlayer == null)
 		{
 			Utils.DebugLog(Utils.LogType.WARNING, "onTrimMemory called but mUnityPlayer is null");
@@ -362,6 +507,8 @@ public class KeyboardActionListener extends InputMethodService
 					break;
 			}
 		}
+        */
+
 		super.onTrimMemory(level);
 	}
 
@@ -370,6 +517,7 @@ public class KeyboardActionListener extends InputMethodService
 	{
 		Utils.DebugLog(Utils.LogType.INFO, "onWindowHidden called");
 
+        /*
 		if (mUnityPlayer == null)
 		{
 			Utils.DebugLog(Utils.LogType.WARNING, "onWindowHidden called but mUnityPlayer is null");
@@ -378,6 +526,7 @@ public class KeyboardActionListener extends InputMethodService
 		{
 			mUnityPlayer.pause();
 		}
+        */
 	}
 
 	@Override
@@ -385,6 +534,11 @@ public class KeyboardActionListener extends InputMethodService
 	{
 		Utils.DebugLog(Utils.LogType.INFO, "onDestroy called");
 
+		if (flutterEngine != null) {
+			flutterEngine.destroy();
+		}
+
+        /*
 		if (mUnityPlayer == null)
 		{
 			Utils.DebugLog(Utils.LogType.WARNING, "onDestroy called but mUnityPlayer is null");
@@ -393,6 +547,7 @@ public class KeyboardActionListener extends InputMethodService
 		{
 			mUnityPlayer.destroy();
 		}
+        */
 
 		super.onDestroy();
 	}
@@ -425,7 +580,7 @@ public class KeyboardActionListener extends InputMethodService
 	{
 		super.onUpdateSelection(oldSelStart, oldSelEnd, newSelStart, newSelEnd, candidatesStart, candidatesEnd);
 		String precedingCharacter = GetPrecedingCharacter(1);
-		UnityPlayer.UnitySendMessage("Native Interface", "OnCursorPositionChanged", precedingCharacter);
+		//UnityPlayer.UnitySendMessage("Native Interface", "OnCursorPositionChanged", precedingCharacter);
 	}
 
 	/*@Override
@@ -655,7 +810,7 @@ public class KeyboardActionListener extends InputMethodService
 		{
 			TerminateStringSessionIfAny();
 			inputConnection.commitText(s, 1);
-			UnityPlayer.UnitySendMessage("Native Interface", "OnEditingWordChange", getCaretWord());
+			//UnityPlayer.UnitySendMessage("Native Interface", "OnEditingWordChange", getCaretWord());
 		}
 	}
 
@@ -690,7 +845,7 @@ public class KeyboardActionListener extends InputMethodService
 	{
 		InputConnection inputConnection = getCurrentInputConnection();
 		inputConnection.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_DEL));
-		UnityPlayer.UnitySendMessage("Native Interface", "OnEditingWordChange", getCaretWord());
+		//UnityPlayer.UnitySendMessage("Native Interface", "OnEditingWordChange", getCaretWord());
 	}
 
 	public void CommitDone()
@@ -719,7 +874,7 @@ public class KeyboardActionListener extends InputMethodService
 
 			inputConnection.commitText("\n", 1);
 			//inputConnection.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
-			UnityPlayer.UnitySendMessage("Native Interface", "OnEditingWordChange", getCaretWord());
+			//UnityPlayer.UnitySendMessage("Native Interface", "OnEditingWordChange", getCaretWord());
 		}
 	}
 

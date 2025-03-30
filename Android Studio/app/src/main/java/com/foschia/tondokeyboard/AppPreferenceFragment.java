@@ -17,7 +17,7 @@ public abstract class AppPreferenceFragment extends PreferenceFragmentCompat
 
 		// Set the default white background in the view so as to avoid transparency
 		view.setBackgroundColor(
-				ContextCompat.getColor(getContext(), R.color.background_material_light));
+				ContextCompat.getColor(getContext(), android.R.color.white));
 
 	}
 }

@@ -8,6 +8,7 @@ import android.view.MenuItem;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 
 public class SettingsActivity extends AppCompatActivity
 {
@@ -47,7 +48,7 @@ public class SettingsActivity extends AppCompatActivity
 		actionBar.setTitle(Html.fromHtml("<font color='" + actionBarColor + "'>" + actionBarTitle + "</font>"));
 
 		//changing action bar back button color
-		final Drawable upArrow = getResources().getDrawable(R.drawable.abc_ic_ab_back_material);
+		final Drawable upArrow = ResourcesCompat.getDrawable(getResources(), R.drawable.baseline_arrow_back_24, null);
 		upArrow.setColorFilter(getResources().getColor(R.color.White), PorterDuff.Mode.SRC_ATOP);
 		getSupportActionBar().setHomeAsUpIndicator(upArrow);
 	}

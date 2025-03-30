@@ -13,8 +13,6 @@ import android.util.Log;
 
 import androidx.annotation.Keep;
 
-import com.unity3d.player.UnityPlayer;
-
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -57,7 +55,7 @@ public class UnityInterface
 		{
 			this.mClipboardManager.addPrimaryClipChangedListener(() ->
 			{
-				UnityPlayer.UnitySendMessage("NativeInterface", "OnClipboardChanged", GetClipboardContent());
+				//UnityPlayer.UnitySendMessage("NativeInterface", "OnClipboardChanged", GetClipboardContent());
 			});
 		}
 	}

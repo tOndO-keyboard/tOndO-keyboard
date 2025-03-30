@@ -9,7 +9,7 @@ android {
         release {
         }
     }
-    compileSdkVersion 33
+    compileSdkVersion 34
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -17,8 +17,8 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 33
+        minSdkVersion 26
+        targetSdkVersion 34
 
         versionCode 15
         versionName ""
@@ -53,6 +53,9 @@ android {
                 debugSymbolLevel 'SYMBOL_TABLE'
             }
         }
+        profile {
+            initWith debug
+        }
     }
     namespace 'com.foschia.tondokeyboard'
 }
@@ -60,13 +63,15 @@ android {
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation project(':unityLibrary')
-    implementation fileTree(dir: project(':unityLibrary').getProjectDir().toString() + ('\\libs'), include: ['*.jar'])
     implementation 'androidx.preference:preference:1.1.1'
     implementation 'com.google.android.material:material:1.4.0'
-    implementation 'com.android.billingclient:billing:5.1.0'
+    implementation 'com.android.billingclient:billing:6.2.0'
     implementation 'com.google.guava:guava:31.1-android'
-
+    
+    // Flutter module dependencies
+    debugImplementation 'com.foschia.flutter_ui:flutter_debug:1.0'
+    profileImplementation 'com.foschia.flutter_ui:flutter_profile:1.0'
+    releaseImplementation 'com.foschia.flutter_ui:flutter_release:1.0'
 }
 
 android.applicationVariants.all { variant ->
@@ -82,5 +87,17 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.3.1'
+    }
+}
+
+String storageUrl = System.env.FLUTTER_STORAGE_BASE_URL ?: "https://storage.googleapis.com"
+repositories {
+    google()
+    mavenCentral()
+    maven {
+        url 'C:\\Users\\Marco Mandia\\Workspaces\\tOndO Workspaces\\Tondo\\Public Projects\\flutter_ui\\build\\host\\outputs\\repo'
+    }
+    maven {
+        url "$storageUrl/download.flutter.io"
     }
 }
