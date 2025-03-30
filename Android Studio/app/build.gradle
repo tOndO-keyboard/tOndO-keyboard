@@ -95,7 +95,7 @@ repositories {
     google()
     mavenCentral()
     maven {
-        url 'C:\\Users\\Marco Mandia\\Workspaces\\tOndO Workspaces\\Tondo\\Public Projects\\flutter_ui\\build\\host\\outputs\\repo'
+        url '..\\..\\flutter_ui\\build\\host\\outputs\\repo'
     }
     maven {
         url "$storageUrl/download.flutter.io"
