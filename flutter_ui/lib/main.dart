@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
     // Start auto-increment timer
-    Future.delayed(const Duration(seconds: 5), _incrementAutoCounter);
+    Future.delayed(const Duration(seconds: 1), _incrementAutoCounter);
   }
 
   void _incrementAutoCounter() {
@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
       _autoCounter++;
     });
     // Schedule next increment
-    Future.delayed(const Duration(seconds: 5), _incrementAutoCounter);
+    Future.delayed(const Duration(seconds: 1), _incrementAutoCounter);
   }
 
   void _incrementCounter() {
@@ -110,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             const SizedBox(height: 20),
-            const Text('Auto-incrementing counter (every 5 seconds):'),
+            const Text('Auto-incrementing counter (every second):'),
             Text(
               '$_autoCounter',
               style: Theme.of(context).textTheme.headlineMedium,

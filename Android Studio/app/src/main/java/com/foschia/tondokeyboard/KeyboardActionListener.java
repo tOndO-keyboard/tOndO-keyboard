@@ -254,6 +254,7 @@ public class KeyboardActionListener extends InputMethodService
 				}
 				WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams(currentLayout.getWidth(), currentLayout.getHeight());
 				currentLayout.addView(flutterView, 0, layoutParams);
+				
 				setFrameLayoutParams(currentLayout);
 			}
 		}
@@ -284,17 +285,28 @@ public class KeyboardActionListener extends InputMethodService
 		Utils.DebugLog(Utils.LogType.INFO, "onStartInputView completed.");
 	}
 
-	private void initFlutter()
-	{
-		// Initialize Flutter Engine
-		flutterEngine = new FlutterEngine(this);
-		flutterEngine.getDartExecutor().executeDartEntrypoint(
-				DartExecutor.DartEntrypoint.createDefault()
-		);
+	private void initFlutter() {
+		// Initialize Flutter Engine if not already initialized
+		if (flutterEngine == null) {
+			flutterEngine = new FlutterEngine(this);
+			
+			// Pre-warm the Flutter engine
+			flutterEngine.getLifecycleChannel().appIsResumed();
+			
+			// Execute Dart entrypoint
+			flutterEngine.getDartExecutor().executeDartEntrypoint(
+					DartExecutor.DartEntrypoint.createDefault()
+			);
+		}
 
-		// Create Flutter View
-		flutterView = new FlutterView(this);
-		flutterView.attachToFlutterEngine(flutterEngine);
+		// Create and attach Flutter View if not already created
+		if (flutterView == null) {
+			flutterView = new FlutterView(this);
+			flutterView.attachToFlutterEngine(flutterEngine);
+		}
+
+		flutterEngine.getLifecycleChannel().appIsResumed();
+
 
 		// Setup Method Channel for communication between Flutter and native
 		methodChannel = new MethodChannel(flutterEngine.getDartExecutor().getBinaryMessenger(), CHANNEL);
@@ -516,7 +528,9 @@ public class KeyboardActionListener extends InputMethodService
 	public void onWindowHidden()
 	{
 		Utils.DebugLog(Utils.LogType.INFO, "onWindowHidden called");
-
+		if (flutterEngine != null) {
+			flutterEngine.getLifecycleChannel().appIsPaused();
+		}
         /*
 		if (mUnityPlayer == null)
 		{
@@ -530,12 +544,28 @@ public class KeyboardActionListener extends InputMethodService
 	}
 
 	@Override
+	public void onWindowShown()
+	{
+		Utils.DebugLog(Utils.LogType.INFO, "onWindowShown called");
+		if (flutterEngine != null) {
+			flutterEngine.getLifecycleChannel().appIsResumed();
+		}
+		super.onWindowShown();
+	}
+
+	@Override
 	public void onDestroy()
 	{
 		Utils.DebugLog(Utils.LogType.INFO, "onDestroy called");
 
 		if (flutterEngine != null) {
+			flutterEngine.getLifecycleChannel().appIsDetached();
 			flutterEngine.destroy();
+			flutterEngine = null;
+		}
+		if (flutterView != null) {
+			flutterView.detachFromFlutterEngine();
+			flutterView = null;
 		}
 
         /*
@@ -1101,4 +1131,3 @@ public class KeyboardActionListener extends InputMethodService
 		startActivity(intent);
 	}
 }
-
