@@ -7,6 +7,8 @@
     </style>
 
     <style name="SettingsTheme" parent="Base.Theme.AppCompat.Light">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
         <item name="colorPrimary">@color/DarkGreen</item>
         <item name="colorAccent">@color/DarkGreen</item>
         <item name="colorSecondary">@color/DarkGreen</item>

@@ -17,6 +17,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.view.WindowInsets;
 import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.ExtractedText;
@@ -226,6 +227,30 @@ public class KeyboardActionListener extends InputMethodService
 		if (currentLayout == null)
 		{
 			Utils.DebugLog(Utils.LogType.WARNING, "Cannot find current frame layout");
+		}
+
+		// This handles insets for edge-to-edge display on newer Android versions.
+		// It is crucial for Android 15 (SDK 35) and forward.
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) // Use API 30 as the minimum for this code
+		{
+			if (currentView != null) {
+				currentView.setOnApplyWindowInsetsListener((view, insets) -> {
+					// Get the system bar insets, which include the navigation bar.
+					android.graphics.Insets systemBarInsets = insets.getInsets(WindowInsets.Type.systemBars());
+
+					// Apply the bottom inset as padding to the bottom of the view.
+					// This pushes the keyboard content up so it's not hidden by the nav bar.
+					view.setPadding(
+							view.getPaddingLeft(),
+							view.getPaddingTop(),
+							view.getPaddingRight(),
+							systemBarInsets.bottom
+					);
+
+					// We have consumed the insets, so return the "empty" version.
+					return WindowInsets.CONSUMED;
+				});
+			}
 		}
 
 		View playerView = mUnityPlayer.getView();
