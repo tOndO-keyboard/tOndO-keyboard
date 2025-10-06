@@ -1,2 +1,4 @@
 *.ini
 *.DS_Store
+Android Studio/app/release/output-metadata.json
+Android Studio/app/release/baselineProfiles
