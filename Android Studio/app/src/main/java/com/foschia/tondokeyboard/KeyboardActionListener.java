@@ -1,14 +1,12 @@
 package com.foschia.tondokeyboard;
 
 import android.app.Activity;
-import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.inputmethodservice.InputMethodService;
-import android.os.Build;
 import android.os.Vibrator;
 import android.text.InputType;
 import android.util.DisplayMetrics;
@@ -16,8 +14,6 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowInsets;
 import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.ExtractedText;
@@ -166,56 +162,11 @@ public class KeyboardActionListener extends InputMethodService
 		{
 			if (useDarkTheme)
 			{
-				currentView.setBackgroundColor(barOnBottom ? getResources().getColor(R.color.KeyboardBackgroundDark) : getResources().getColor(R.color.KeyboardActionBarBackgroundDark));
+				currentView.setBackgroundColor(barOnBottom ? getResources().getColor(R.color.KeyboardActionBarBackgroundDark) : getResources().getColor(R.color.KeyboardBackgroundDark));
 			}
 			else
 			{
-				currentView.setBackgroundColor(barOnBottom ? getResources().getColor(R.color.KeyboardBackgroundLight) : getResources().getColor(R.color.KeyboardActionBarBackgroundLight));
-			}
-		}
-		//this set navigation bar background colour to the same colour as keyboard background but sometimes keyboard get stuck under the navigation bar
-		//currentView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
-
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-		{
-			Dialog dialog = getWindow();
-			if (dialog != null)
-			{
-				Window window = dialog.getWindow();
-				if (window != null)
-				{
-					//To Do: maybe we should set this directly by unity adding a new method to the interface
-					if (useDarkTheme)
-					{
-						window.setNavigationBarColor(getResources().getColor(barOnBottom ? R.color.KeyboarActionBarDirectionalBackgroundDark : R.color.KeyboardBackgroundDark));
-					}
-					else
-					{
-						window.setNavigationBarColor(getResources().getColor(barOnBottom ? R.color.KeyboarActionBarDirectionalBackgroundLight : R.color.KeyboardBackgroundLight));
-					}
-
-					View decorView = window.getDecorView();
-					if (decorView != null)
-					{
-						int flags = decorView.getSystemUiVisibility();
-						if (barOnBottom)
-						{
-							flags &= ~View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR;
-						}
-						else
-						{
-							if (useDarkTheme)
-							{
-								flags &= ~View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR;
-							}
-							else
-							{
-								flags |= View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR;
-							}
-						}
-						decorView.setSystemUiVisibility(flags);
-					}
-				}
+				currentView.setBackgroundColor(barOnBottom ? getResources().getColor(R.color.KeyboardActionBarBackgroundLight): getResources().getColor(R.color.KeyboardBackgroundLight));
 			}
 		}
 
@@ -229,28 +180,19 @@ public class KeyboardActionListener extends InputMethodService
 			Utils.DebugLog(Utils.LogType.WARNING, "Cannot find current frame layout");
 		}
 
-		// This handles insets for edge-to-edge display on newer Android versions.
-		// It is crucial for Android 15 (SDK 35) and forward.
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) // Use API 30 as the minimum for this code
-		{
-			if (currentView != null) {
-				currentView.setOnApplyWindowInsetsListener((view, insets) -> {
-					// Get the system bar insets, which include the navigation bar.
-					android.graphics.Insets systemBarInsets = insets.getInsets(WindowInsets.Type.systemBars());
+		if (currentView != null) {
+			androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(currentView, (view, windowInsets) -> {
+				androidx.core.graphics.Insets insets = windowInsets.getInsets(androidx.core.view.WindowInsetsCompat.Type.systemBars());
 
-					// Apply the bottom inset as padding to the bottom of the view.
-					// This pushes the keyboard content up so it's not hidden by the nav bar.
-					view.setPadding(
-							view.getPaddingLeft(),
-							view.getPaddingTop(),
-							view.getPaddingRight(),
-							systemBarInsets.bottom
-					);
+				view.setPadding(
+						view.getPaddingLeft(),
+						view.getPaddingTop(),
+						view.getPaddingRight(),
+						insets.bottom
+				);
 
-					// We have consumed the insets, so return the "empty" version.
-					return WindowInsets.CONSUMED;
-				});
-			}
+				return windowInsets;
+			});
 		}
 
 		View playerView = mUnityPlayer.getView();
