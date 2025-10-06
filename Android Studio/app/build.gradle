@@ -21,7 +21,7 @@ android {
         minSdk 21
         targetSdk 36
 
-        versionCode 17
+        versionCode 18
         versionName ""
     }
     buildTypes {
@@ -41,7 +41,7 @@ android {
         release {
             buildConfigField "Boolean", "DEBUG_MODE", "false"
 
-            versionNameSuffix "1.0.6"
+            versionNameSuffix "1.0.7"
 
             setProperty("archivesBaseName", "tOndO_keyboard_" + versionNameSuffix)
 
