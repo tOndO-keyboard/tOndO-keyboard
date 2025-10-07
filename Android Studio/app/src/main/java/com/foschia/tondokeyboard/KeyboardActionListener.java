@@ -7,6 +7,7 @@ import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.inputmethodservice.InputMethodService;
+import android.os.Build;
 import android.os.Vibrator;
 import android.text.InputType;
 import android.util.DisplayMetrics;
@@ -14,6 +15,7 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.ExtractedText;
@@ -90,6 +92,21 @@ public class KeyboardActionListener extends InputMethodService
 	public View getCurrentView()
 	{
 		return currentView;
+	}
+
+	@Override
+	public void onCreate() {
+		super.onCreate();
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+			final Window window = getWindow().getWindow();
+			if (window != null) {
+				window.getContext().setTheme(R.style.AppTheme);
+				View decorView = window.getDecorView();
+				int flags = decorView.getSystemUiVisibility();
+				window.setNavigationBarContrastEnforced(false);
+				decorView.setSystemUiVisibility(flags | View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);
+			}
+		}
 	}
 
 	@Override
