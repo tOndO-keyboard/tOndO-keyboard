@@ -101,3 +101,23 @@ repositories {
         url "$storageUrl/download.flutter.io"
     }
 }
+
+def flutterModulePath = "../../flutter_ui"
+
+task buildFlutterAar(type: Exec) {
+
+    workingDir flutterModulePath
+    if (System.properties['os.name'].toLowerCase().contains('windows')) {
+        commandLine 'cmd', '/c', 'flutter', 'build', 'aar'
+    } else {
+        commandLine 'flutter', 'build', 'aar'
+    }
+
+    inputs.dir "${flutterModulePath}/lib"
+    inputs.file "${flutterModulePath}/pubspec.yaml"
+
+    outputs.dir "${flutterModulePath}/build/host/outputs/repo"
+}
+
+preBuild.dependsOn buildFlutterAar
+
