@@ -1,21 +1,25 @@
 # tOndO keyboard
 
 <a href="https://play.google.com/store/apps/details?id=com.foschia.tondokeyboard">
-<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
-alt="Get it on Google Play" align="center" height="80" /></a>
-
+<img src=".github/google_play_badge.png"
+alt="Get it on Google Play" align="center" height="54" /></a>
+&nbsp;
 <a href="https://github.com/tOndO-keyboard/tOndO-keyboard/releases">
-<img src="https://user-images.githubusercontent.com/69304392/148696068-0cfea65d-b18f-4685-82b5-329a330b1c0d.png"
-alt="Get it on GitHub" align="center" height="80" /></a>
+<img src=".github/github_badge.png"
+alt="Get it on GitHub" align="center" height="54" /></a>
 &nbsp;
 <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/tOndO-keyboard/tOndO-keyboard/releases">
-<img src="https://github.com/ImranR98/Obtainium/blob/main/assets/graphics/badge_obtainium.png"
+<img src=".github/obtainium_badge.png"
 alt="Get it on Obtainium" align="center" height="54" /></a>
-
 <!-- hopefully coming soon
+&nbsp;
 <a href="https://f-droid.org/packages/com.foschia.tondokeyboard">
-<img src="https://f-droid.org/badge/get-it-on.png"
-alt="Get it on F-Droid" align="center" height="80" /></a>
+<img src=".github/f_droid_badge.png"
+alt="Get it on F-Droid" align="center" height="54" /></a>
+&nbsp;
+<a href="https://apt.izzysoft.de/fdroid/index/apk/com.foschia.tondokeyboard">
+<img src=".github/izzy_on_droid_badge.png"
+alt="Get it on IzzyOnDroid" align="center" height="54" /></a>
 -->
 
 
