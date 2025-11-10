@@ -1,0 +1,9 @@
+The design of tOndO keyboard allows you to write quickly and without errors.
+
+Thanks to its QWERTY-like layout you will know right away where all the letters are.
+
+Its 6 round buttons (Tondi) allows you to write precisely even without looking.
+
+Its compact design maximizes screen visible area.
+
+[Emoji artwork is provided by Google Fonts Noto Emoji, released by fonts.google.com on github.com/googlefonts/noto-emoji, licensed under Apache License 2.0.]
