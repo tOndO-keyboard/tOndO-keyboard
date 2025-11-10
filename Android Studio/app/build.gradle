@@ -6,6 +6,10 @@ static def versionCodeDate() {
 }
 
 android {
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
+    }
     signingConfigs {
         release {
         }
