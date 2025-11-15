@@ -258,7 +258,7 @@ It was made in collaboration with our friend of [Collettivo Mandra](https://www.
 
 ## Web mentions
 
-[Here is](MENTIONS.md) a list of videos and articles that spoke about tOndO.
+[Here](MENTIONS.md) is a list of videos and articles that spoke about tOndO.
 
 
 ## Licenses
