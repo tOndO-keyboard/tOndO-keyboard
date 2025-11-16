@@ -10,6 +10,8 @@
 
 [Nextpit - Here they are: Our top 5 Android and iOS apps of the week](https://www.nextpit.com/apps-of-the-week-12-2022)
 
+[Monitor - Naš izbor na Androidu](https://www.monitor.si/clanek/nas-izbor-na-androidu/215796)
+
 [El Androide Feliz - 10 nuevas apps para Android recién salidas del horno](https://elandroidefeliz.com/10-nuevas-apps-para-android-recien-salidas-del-horno-mayo-2023/)
 
 [El Androide Feliz - 10 joyas ocultas para Android que deberías probar (Octubre ‘24)](https://elandroidefeliz.com/10-joyas-ocultas-para-android-que-deberias-probar-octubre-24/)
@@ -23,3 +25,7 @@
 [Nomicken Blogspot - Why QWERTY keyboard layout will always be mainstream. Taking tOndO keyboard as an example](https://nomicken-blogspot-com.translate.goog/2023/05/tOndO.html?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=it&_x_tr_pto=wapp)
 
 [Tout Sur Google - Les nouvelles applications Android à ne pas manquer – Mars 2024](https://www.toutsurgoogle.com/nouvelles-applications-android-a-ne-pas-manquer/#htoc-trueshot111111111111)
+
+[Bizarní mobilní klávesnice mění klávesy za joysticky. Naučit se s ní pracovat trvá tři týdny ](https://mobilmania.zive.cz/clanky/bizarni-mobilni-klavesnice-meni-klavesy-za-joysticky-naucit-se-s-ni-pracovat-trva-tri-tydny/sc-3-a-1363727/default.aspx)
+
+[tOndO؛ کیبوردی که تایپ کردن را به بازی تبدیل کرده!](https://jib.store/blog/tondo-touch-joystick-keyboard)
