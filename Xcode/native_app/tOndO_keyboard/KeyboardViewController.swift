@@ -3,14 +3,17 @@
 //  tOndO_keyboard
 //
 //  Created by user on 08/01/22.
-//  Copyright © 2022 WEACW. All rights reserved.
+//  Copyright 2022 WEACW. All rights reserved.
 //
 
 import UIKit
+import Flutter
 
 class KeyboardViewController: UIInputViewController {
 
     @IBOutlet var nextKeyboardButton: UIButton!
+    private var flutterEngine: FlutterEngine?
+    private var flutterViewController: FlutterViewController?
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -36,18 +39,26 @@ class KeyboardViewController: UIInputViewController {
         self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
         
+        // Setup Flutter
+        flutterEngine = FlutterEngine(name: "tOndO Keyboard Flutter Engine")
+        flutterEngine?.run()
         
-        UnityEmbeddedSwift.showUnity()
-        
-        let uView = UnityEmbeddedSwift.getUnityView()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
-            self.view.addSubview(uView!)
+        flutterViewController = FlutterViewController(engine: flutterEngine!, nibName: nil, bundle: nil)
+        if let flutterView = flutterViewController?.view {
+            flutterView.frame = self.view.bounds
+            flutterView.translatesAutoresizingMaskIntoConstraints = false
+            self.view.addSubview(flutterView)
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
-                self.view.sendSubviewToBack(uView!)
-            })
-        })
+            // Setup constraints
+            NSLayoutConstraint.activate([
+                flutterView.topAnchor.constraint(equalTo: self.view.topAnchor),
+                flutterView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+                flutterView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+                flutterView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+            ])
+            
+            self.view.sendSubviewToBack(flutterView)
+        }
     }
     
     override func viewWillLayoutSubviews() {
