@@ -3,18 +3,22 @@ package com.foschia.tondokeyboard;
 import android.app.Activity;
 import android.content.Context;
 
+import androidx.annotation.NonNull;
+
 import com.android.billingclient.api.AcknowledgePurchaseParams;
 import com.android.billingclient.api.AcknowledgePurchaseResponseListener;
 import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.BillingClientStateListener;
 import com.android.billingclient.api.BillingFlowParams;
 import com.android.billingclient.api.BillingResult;
+import com.android.billingclient.api.PendingPurchasesParams;
 import com.android.billingclient.api.ProductDetails;
 import com.android.billingclient.api.ProductDetailsResponseListener;
 import com.android.billingclient.api.Purchase;
 import com.android.billingclient.api.PurchasesResponseListener;
 import com.android.billingclient.api.PurchasesUpdatedListener;
 import com.android.billingclient.api.QueryProductDetailsParams;
+import com.android.billingclient.api.QueryProductDetailsResult;
 import com.android.billingclient.api.QueryPurchasesParams;
 import com.google.common.collect.ImmutableList;
 
@@ -58,9 +62,14 @@ public class TondoBilling
 
 		if (billingClient == null)
 		{
+			// Create the params object for enabling pending purchases
+			PendingPurchasesParams pendingPurchasesParams = PendingPurchasesParams.newBuilder()
+					.enableOneTimeProducts()
+					.build();
+
 			billingClient = BillingClient.newBuilder(context)
 					.setListener(purchasesUpdatedListener)
-					.enablePendingPurchases()
+					.enablePendingPurchases(pendingPurchasesParams)
 					.build();
 		}
 
@@ -178,10 +187,17 @@ public class TondoBilling
 				queryProductDetailsParams,
 				new ProductDetailsResponseListener()
 				{
-					public void onProductDetailsResponse(BillingResult billingResult, List<ProductDetails> productDetailsList)
-					{
+					@Override
+					public void onProductDetailsResponse(@NonNull BillingResult billingResult, @NonNull QueryProductDetailsResult queryProductDetailsResult) {
 						Utils.DebugLog(Utils.LogType.INFO, "TondoBilling - onProductDetailsResponse");
-						SetProductDetailsList(productDetailsList);
+
+						// Extract the product details list from the result object
+						List<ProductDetails> productDetailsList = queryProductDetailsResult.getProductDetailsList();
+
+						// Check if the list is not null before using it
+						if (productDetailsList != null) {
+							SetProductDetailsList(productDetailsList);
+						}
 					}
 				}
 		);

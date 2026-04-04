@@ -1,0 +1,2 @@
+- Patched Unity CVE-2025-59489 vulnerability;
+- Minor fix for Android 3-button navigation bar color.

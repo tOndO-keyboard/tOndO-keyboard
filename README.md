@@ -1,21 +1,25 @@
 # tOndO keyboard
 
 <a href="https://play.google.com/store/apps/details?id=com.foschia.tondokeyboard">
-<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
-alt="Download from Google Play" align="center" height="80" /></a>
-
-<!-- hopefully coming soon
-<a href="https://f-droid.org/packages/com.foschia.tondokeyboard">
-<img src="https://f-droid.org/badge/get-it-on.png"
-alt="Get it on F-Droid" align="center" height="80" /></a>
-
+<img src=".github/google_play_badge.png"
+alt="Get it on Google Play" align="center" height="54" /></a>
+&nbsp;
 <a href="https://github.com/tOndO-keyboard/tOndO-keyboard/releases">
-<img src="https://user-images.githubusercontent.com/69304392/148696068-0cfea65d-b18f-4685-82b5-329a330b1c0d.png"
-alt="Download from GitHub releases" align="center" height="80" /></a>
-
-<a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/tOndO-keyboard/tOndO-keyboard/">
-<img src="https://github.com/ImranR98/Obtainium/blob/main/assets/graphics/badge_obtainium.png"
+<img src=".github/github_badge.png"
+alt="Get it on GitHub" align="center" height="54" /></a>
+&nbsp;
+<a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/tOndO-keyboard/tOndO-keyboard/releases">
+<img src=".github/obtainium_badge.png"
 alt="Get it on Obtainium" align="center" height="54" /></a>
+<!-- hopefully coming soon
+&nbsp;
+<a href="https://f-droid.org/packages/com.foschia.tondokeyboard">
+<img src=".github/f_droid_badge.png"
+alt="Get it on F-Droid" align="center" height="54" /></a>
+&nbsp;
+<a href="https://apt.izzysoft.de/fdroid/index/apk/com.foschia.tondokeyboard">
+<img src=".github/izzy_on_droid_badge.png"
+alt="Get it on IzzyOnDroid" align="center" height="54" /></a>
 -->
 
 
@@ -53,7 +57,7 @@ A few other input methods experimented with non-standard layouts, but we thought
 
 ## Who developed it?
 
-tOndO keyboard is designed and developed by Riccardo Foschi ([@rikkarlo](https://github.com/rikkarlo)) and Marco Mandia ([@marcomandy](https://github.com/marcomandy)) as a side project. Just Funny Games (now [Funny Tales](https://funnytales.us/)) gave us a hand.
+tOndO keyboard is designed and developed by Riccardo Foschi ([@rikkarlo](https://github.com/Riccardo-Foschi)) and Marco Mandia ([@marcomandy](https://github.com/marcomandy)) as a side project. Just Funny Games (now [Funny Tales](https://funnytales.us/)) gave us a hand.
 
 
 ## Wasn’t it just a meme for [r/badUIbattles](https://www.reddit.com/r/badUIbattles/)?
@@ -122,7 +126,7 @@ Anyway, if you are already familiar with a non-QWERTY layout and would like to u
 
 ## Do you know this other quirk input method? What tOndO was inspired from?
 
-We did probably try out every mobile input method and got inspiration from many of them: we already cited 8pen (that was brought back to life by [8vim](https://github.com/8VIM/8VIM) project) and [MessagEase](https://www.exideas.com) (of which we were long time users and which has been brought back on track by [Thumb-Key](https://github.com/dessalines/thumb-key)), we love [Gboard](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin) and [SwiftKey](https://swiftkey.com), we checked out Katakana keyboard, [Minuum](http://minuum.com/), [Keyboard 69 (Nintype)](https://apps.apple.com/us/app/nintype/id796959534), [NovaKey](https://github.com/vcantu/NovaKey), [Multiling O Keyboard](https://play.google.com/store/apps/details?id=kl.ime.oh), [Typewise](https://www.typewise.app/), [Flit Keyboard](https://sites.google.com/site/flitkeyboard), [HERO keyboard](https://herokeyboard.com)…
+We did probably try out every mobile input method and got inspiration from many of them: we already cited 8pen (that was brought back to life by [8vim](https://github.com/8VIM/8VIM) project) and [MessagEase](https://www.exideas.com) (of which we were long time users and which has been brought back on track by [Thumb-Key](https://github.com/dessalines/thumb-key)), we love [Gboard](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin) and [SwiftKey](https://swiftkey.com), we checked out Katakana keyboard, [Minuum](http://minuum.com/), [Keyboard 69 (Nintype)](https://apps.apple.com/us/app/nintype/id796959534), [NovaKey](https://github.com/vcantu/NovaKey), [Multiling O Keyboard](https://play.google.com/store/apps/details?id=kl.ime.oh), [Typewise](https://www.typewise.app/), [Flit Keyboard](https://sites.google.com/site/flitkeyboard), [HERO keyboard](https://herokeyboard.com), [QWERTY mini](https://play.google.com/store/apps/details?id=com.kkeyboard.qtstd)…
 
 
 ## Why does an ominous pop-up appear when I enable tOndO keyboard from Android settings?
@@ -254,7 +258,7 @@ It was made in collaboration with our friend of [Collettivo Mandra](https://www.
 
 ## Web mentions
 
-[Here is](MENTIONS.md) a list of videos and articles that spoke about tOndO.
+[Here](MENTIONS.md) is a list of videos and articles that spoke about tOndO.
 
 
 ## Licenses
