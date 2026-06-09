@@ -123,6 +123,22 @@ Layouts like Dvorak are optimized for 10 fingers and their advantages writing on
 
 Anyway, if you are already familiar with a non-QWERTY layout and would like to use it also on tOndO, each letter in the keyboard is customizable so that anyone can create its own layout. Custom layout can be easily exported and imported just copying and pasting the customization code: if you created a layout you are proud of and feel like to share it, please do it on [tOndO Subreddit](https://www.reddit.com/r/tOndOkeyboard).
 
+## How do the keyboard customization code and the diacriticizers customization code work? 
+
+Both codes are plain-text character lists and can be copied and pasted elsewhere to create a backup or easily shared with other tOndO users.
+You can revert to the original versions of the customization codes at any time, so you can experiment without the risk of making your keyboard irreversibly unusable. However, remember to back up your customization code before resetting it if you don’t want to lose it.
+
+The keyboard customization code is divided into 3 blocks of 6 lines each: the first for the main keyboard, the second for the numeric keyboard, and the third for the symbol keyboard.
+Each row in each block contains the letters of a button: the first row is the top-left button, the second the top-center button, the third the top-right button, the fourth the bottom-left button, the fifth the bottom-center button, and the sixth the bottom-right button.
+Each character in each row represents a character on the button: the first character is the character in the center of the button, the second character is the symbol at 9 o'clock on the button, and so on in a counterclockwise direction.
+Note: The button in the top left and the button in the top right each have a small niche that shows alternative characters for the character just typed (diacriticizers) and therefore have one character less.
+If you haven't purchased the Pro Version, you can change up to 6 characters from the original keyboard customization code.
+
+The diacriticizers customization code has one line for each character for which you want to display alternative or accented forms (see the chapter [How do I type ñ or ß or any other accented letter or diacritic glyph?](#how-do-i-type-ñ-or-ß-or-any-other-accented-letter-or-diacritic-glyph) to learn how diacriticizers work).
+The first character on each line is the character for which you want to display alternative forms in the diacriticizers, followed by a space (Note that this character, unlike all others in the customization codes, is case-insensitive; therefore, for example, to display alternative forms for “A”, you do not need a separate line for both "A" and “a”).
+The next six characters are the alternative forms to be displayed in the top-left button, followed by a space and then the six characters to be displayed in the top-right button.
+The numbers at the end of each line (separated by spaces) indicate the position of the character in the two preceding blocks that will appear by default first in the diacriticizer niche.
+
 
 ## Do you know this other quirk input method? What tOndO was inspired from?
 
