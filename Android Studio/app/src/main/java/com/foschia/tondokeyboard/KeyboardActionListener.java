@@ -32,7 +32,6 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.util.Consumer;
 
-import com.unity3d.player.UnityPlayer;
 
 import java.text.BreakIterator;
 import java.text.SimpleDateFormat;
@@ -78,9 +77,9 @@ public class KeyboardActionListener extends InputMethodService
 	private static final String[] sCommonSeparators =
 			new String[]{".", ";", ",", "?", "!", "-", "'", "\""};
 
-	protected UnityPlayer mUnityPlayer;
 	private float keyboardProportion = 1.5f;
-	private View currentView;
+	private LinearLayout currentView;
+	private KeyboardRootView keyboardView;
 	private Vibrator vibrator;
 
 	private EncryptedSharedPreferences eSharedPreferences;
@@ -116,24 +115,26 @@ public class KeyboardActionListener extends InputMethodService
 
 		initACRA();
 
-		LayoutInflater layoutInflater = getLayoutInflater();
-		if (layoutInflater == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "onCreateInputView interrupted as layoutInflater is null");
-			return null;
-		}
-
-		currentView = layoutInflater.inflate(R.layout.input, null);
-		if (currentView == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "onCreateInputView interrupted as currentView is null");
-			return null;
-		}
-
+		if (eSharedPreferences == null) eSharedPreferences = new EncryptedSharedPreferences(this);
 		if (vibrator == null) vibrator = (Vibrator) this.getSystemService(VIBRATOR_SERVICE);
 
-		UnityInterface.getInstance().init(this);
+		NativeInterface.getInstance().init(this);
 		Localization.Instance.init(this);
+
+		// The wrapper only carries the background colour and the bottom system bar inset.
+		// The keyboard itself is a fully native view tree.
+		currentView = new LinearLayout(this);
+		currentView.setOrientation(LinearLayout.VERTICAL);
+		keyboardView = new KeyboardRootView(this);
+		currentView.addView(keyboardView, new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+
+		androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(currentView, (view, windowInsets) -> {
+			androidx.core.graphics.Insets insets = windowInsets.getInsets(androidx.core.view.WindowInsetsCompat.Type.systemBars());
+			view.setPadding(view.getPaddingLeft(), view.getPaddingTop(), view.getPaddingRight(), insets.bottom);
+			return windowInsets;
+		});
+
+		setFrameLayoutParams(keyboardView);
 
 		Utils.DebugLog(Utils.LogType.INFO, "onCreateInputView completed");
 
@@ -145,26 +146,14 @@ public class KeyboardActionListener extends InputMethodService
 	{
 		Utils.DebugLog(Utils.LogType.INFO, "onStartInputView started");
 
-		if (currentView == null)
+		if (currentView == null || keyboardView == null)
 		{
-			Utils.DebugLog(Utils.LogType.WARNING, "onStartInputView started but currentView is null");
-		}
-
-		if (mUnityPlayer == null)
-		{
-			mUnityPlayer = new UnityPlayer(this);
-			int glesMode = mUnityPlayer.getSettings().getInt("gles_mode", 1);
-			boolean trueColor8888 = false;
-			mUnityPlayer.init(glesMode, trueColor8888);
-		}
-		if (mUnityPlayer == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "onStartInputView interrupted as mUnityPlayer is null");
+			Utils.DebugLog(Utils.LogType.WARNING, "onStartInputView interrupted as the keyboard view is null");
 			return;
 		}
 
 		eSharedPreferences = new EncryptedSharedPreferences(this);
-		Boolean barOnBottom = eSharedPreferences.getBoolean("TopBarWentBottom", false);
+		boolean barOnBottom = eSharedPreferences.getBoolean("TopBarWentBottom", false);
 
 		if (tondoBilling == null)
 		{
@@ -172,73 +161,14 @@ public class KeyboardActionListener extends InputMethodService
 			tondoBilling.InitializeAndStartBilling();
 		}
 
-		//To Do: maybe we should set this directly by unity adding a new method to the interface
-
 		boolean useDarkTheme = useDarkTheme(eSharedPreferences);
-		if (currentView != null)
-		{
-			if (useDarkTheme)
-			{
-				currentView.setBackgroundColor(barOnBottom ? getResources().getColor(R.color.KeyboardActionBarBackgroundDark) : getResources().getColor(R.color.KeyboardBackgroundDark));
-			}
-			else
-			{
-				currentView.setBackgroundColor(barOnBottom ? getResources().getColor(R.color.KeyboardActionBarBackgroundLight): getResources().getColor(R.color.KeyboardBackgroundLight));
-			}
-		}
+		keyboardView.applyTheme(useDarkTheme, eSharedPreferences.getBoolean("DynamicColors", false));
+		currentView.setBackgroundColor(keyboardView.getWindowBackgroundColor(barOnBottom));
 
-		FrameLayout currentLayout = null;
-		if (currentView != null)
-		{
-			currentLayout = (FrameLayout) currentView.findViewById(R.id.frame_layout);
-		}
-		if (currentLayout == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "Cannot find current frame layout");
-		}
-
-		if (currentView != null) {
-			androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(currentView, (view, windowInsets) -> {
-				androidx.core.graphics.Insets insets = windowInsets.getInsets(androidx.core.view.WindowInsetsCompat.Type.systemBars());
-
-				view.setPadding(
-						view.getPaddingLeft(),
-						view.getPaddingTop(),
-						view.getPaddingRight(),
-						insets.bottom
-				);
-
-				return windowInsets;
-			});
-		}
-
-		View playerView = mUnityPlayer.getView();
-		if (playerView == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "Player view is null");
-		}
-
-
-		if (!restarting)
-		{
-			ViewGroup playerParentView = (ViewGroup) playerView.getParent();
-			if (currentLayout != null && playerView != null)
-			{
-				if (playerParentView != null)
-				{
-					playerParentView.removeView(playerView);
-				}
-				WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams(currentLayout.getWidth(), currentLayout.getHeight());
-				currentLayout.addView(playerView, 0, layoutParams);
-				setFrameLayoutParams(currentLayout);
-			}
-		}
-
-		mUnityPlayer.resume();
-		mUnityPlayer.windowFocusChanged(true);
+		setFrameLayoutParams(keyboardView);
 
 		String precedingCharacter = GetPrecedingCharacter(1);
-		UnityPlayer.UnitySendMessage("Native Interface", "OnStartInputView", precedingCharacter);
+		NativeInterface.getInstance().dispatchStartInputView(precedingCharacter);
 
 		int inputType = info.inputType & InputType.TYPE_MASK_CLASS;
 		boolean numericalInputNeeded = inputType == InputType.TYPE_CLASS_NUMBER ||
@@ -250,7 +180,7 @@ public class KeyboardActionListener extends InputMethodService
 		int result = numericalInputNeeded ? NUMERICAL_INPUT : TEXT_INPUT;
 		if (passwordInputNeeded) result |= PASSWORD_INPUT;
 
-		UnityPlayer.UnitySendMessage("Native Interface", "OnSetInputType", String.valueOf(result));
+		NativeInterface.getInstance().dispatchSetInputType(result);
 
 		Utils.DebugLog(Utils.LogType.INFO, "onStartInputView completed.");
 	}
@@ -276,14 +206,9 @@ public class KeyboardActionListener extends InputMethodService
 
 		super.onConfigurationChanged(newConfig);
 
-		if (mUnityPlayer == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "onConfigurationChanged interrupted as mUnityPlayer is null");
-			return;
-		}
-
-		mUnityPlayer.configurationChanged(newConfig);
-		UnityPlayer.UnitySendMessage("Native Interface", "OnConfigurationChanged", "");
+		if (keyboardView == null) return;
+		setFrameLayoutParams(keyboardView);
+		NativeInterface.getInstance().dispatchConfigurationChanged();
 	}
 
 	private String orientationToString(int orientation)
@@ -304,80 +229,18 @@ public class KeyboardActionListener extends InputMethodService
 	}
 
 	@Override
-	public void onLowMemory()
-	{
-		Utils.DebugLog(Utils.LogType.INFO, "onLowMemory called");
-
-		if (mUnityPlayer == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "onLowMemory called but mUnityPlayer is null");
-		}
-		else
-		{
-			mUnityPlayer.lowMemory();
-		}
-		super.onLowMemory();
-	}
-
-	@Override
-	public void onTrimMemory(int level)
-	{
-		Utils.DebugLog(Utils.LogType.INFO, "onTrimMemory called with level: " + level);
-
-		if (mUnityPlayer == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "onTrimMemory called but mUnityPlayer is null");
-		}
-		else
-		{
-			switch (level)
-			{
-				case TRIM_MEMORY_RUNNING_MODERATE:
-				case TRIM_MEMORY_RUNNING_LOW:
-					break;
-
-				case TRIM_MEMORY_RUNNING_CRITICAL:
-				case TRIM_MEMORY_UI_HIDDEN:
-				case TRIM_MEMORY_BACKGROUND:
-				case TRIM_MEMORY_MODERATE:
-				case TRIM_MEMORY_COMPLETE:
-				default:
-					mUnityPlayer.lowMemory();
-					break;
-			}
-		}
-		super.onTrimMemory(level);
-	}
-
-	@Override
 	public void onWindowHidden()
 	{
 		Utils.DebugLog(Utils.LogType.INFO, "onWindowHidden called");
-
-		if (mUnityPlayer == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "onWindowHidden called but mUnityPlayer is null");
-		}
-		else
-		{
-			mUnityPlayer.pause();
-		}
+		super.onWindowHidden();
+		NativeInterface.getInstance().dispatchWindowHidden();
 	}
 
 	@Override
 	public void onDestroy()
 	{
 		Utils.DebugLog(Utils.LogType.INFO, "onDestroy called");
-
-		if (mUnityPlayer == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "onDestroy called but mUnityPlayer is null");
-		}
-		else
-		{
-			mUnityPlayer.destroy();
-		}
-
+		NativeInterface.getInstance().dispatchWindowHidden();
 		super.onDestroy();
 	}
 
@@ -409,7 +272,7 @@ public class KeyboardActionListener extends InputMethodService
 	{
 		super.onUpdateSelection(oldSelStart, oldSelEnd, newSelStart, newSelEnd, candidatesStart, candidatesEnd);
 		String precedingCharacter = GetPrecedingCharacter(1);
-		UnityPlayer.UnitySendMessage("Native Interface", "OnCursorPositionChanged", precedingCharacter);
+		NativeInterface.getInstance().dispatchCursorPositionChanged(precedingCharacter);
 	}
 
 	/*@Override
@@ -488,11 +351,10 @@ public class KeyboardActionListener extends InputMethodService
 			Utils.DebugLog(Utils.LogType.WARNING, "setFrameLayoutParams interrupted as currentView is null");
 			return;
 		}
-		FrameLayout layout = currentView.findViewById(R.id.frame_layout);
-		setFrameLayoutParams(layout);
+		setFrameLayoutParams(keyboardView);
 	}
 
-	private void setFrameLayoutParams(FrameLayout layout)
+	private void setFrameLayoutParams(View layout)
 	{
 		Utils.DebugLog(Utils.LogType.INFO, "setFrameLayoutParams(layout) started. keyboardProportion: " + keyboardProportion);
 
@@ -560,6 +422,7 @@ public class KeyboardActionListener extends InputMethodService
 
 		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(keyboardWidth, keyboardHeight);
 		layout.setLayoutParams(params);
+		if (layout instanceof KeyboardRootView) ((KeyboardRootView) layout).setLandscapeMode(orientation == Configuration.ORIENTATION_LANDSCAPE);
 
 		Utils.DebugLog(Utils.LogType.INFO, "setFrameLayoutParams(layout) completed." +
 				"orientation: " + orientationToString(orientation) +
@@ -639,7 +502,7 @@ public class KeyboardActionListener extends InputMethodService
 		{
 			TerminateStringSessionIfAny();
 			inputConnection.commitText(s, 1);
-			UnityPlayer.UnitySendMessage("Native Interface", "OnEditingWordChange", getCaretWord());
+			NativeInterface.getInstance().dispatchEditingWordChange(getCaretWord());
 		}
 	}
 
@@ -674,7 +537,7 @@ public class KeyboardActionListener extends InputMethodService
 	{
 		InputConnection inputConnection = getCurrentInputConnection();
 		inputConnection.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_DEL));
-		UnityPlayer.UnitySendMessage("Native Interface", "OnEditingWordChange", getCaretWord());
+			NativeInterface.getInstance().dispatchEditingWordChange(getCaretWord());
 	}
 
 	public void CommitDone()
@@ -703,7 +566,7 @@ public class KeyboardActionListener extends InputMethodService
 
 			inputConnection.commitText("\n", 1);
 			//inputConnection.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
-			UnityPlayer.UnitySendMessage("Native Interface", "OnEditingWordChange", getCaretWord());
+			NativeInterface.getInstance().dispatchEditingWordChange(getCaretWord());
 		}
 	}
 

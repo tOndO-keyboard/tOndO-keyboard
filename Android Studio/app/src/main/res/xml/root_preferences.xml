@@ -33,6 +33,13 @@
             app:useSimpleSummaryProvider="true" />
 
         <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:isPreferenceVisible="@bool/dynamic_colors_available"
+            app:key="DynamicColors"
+            app:summary="@string/preferences_summary_dynamic_colors"
+            app:title="@string/preferences_title_dynamic_colors" />
+
+        <SwitchPreferenceCompat
             app:defaultValue="true"
             app:key="ShowPopupPreview"
             app:title="@string/preferences_title_show_popup" />

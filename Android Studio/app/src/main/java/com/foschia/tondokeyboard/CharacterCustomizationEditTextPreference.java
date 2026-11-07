@@ -51,7 +51,7 @@ public class CharacterCustomizationEditTextPreference extends EditTextPreference
 			eSharedPreferences = new EncryptedSharedPreferences(getContext());
 		}
 
-		return eSharedPreferences.getEncryptedBoolean(UnityInterface.PURCHASED_PRO_PREFERENCES_KEY, false);
+		return eSharedPreferences.getEncryptedBoolean(NativeInterface.PURCHASED_PRO_PREFERENCES_KEY, false);
 	}
 
 	// we need this just to force update the edit text,

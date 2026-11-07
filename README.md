@@ -88,25 +88,11 @@ We believe the record could be challenged quite easily with a little bit of trai
 
 ## Why is there only an Android version? When will it land on iOS?
 
-tOndO's front-end was developed in Unity.
+tOndO started as a Unity prototype, and the Unity player used a lot of memory, which is a problem on iOS: the system has a [very strict policy on memory allocation for app extensions](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionCreation.html) (such as input methods).
 
-On iOS, [due to a known bug](https://issuetracker.unity3d.com/issues/ios-uaal-after-unloading-a-unity-scene-memory-remains-allocated-depending-on-how-much-memory-was-used-in-the-scene), Unity occupies a lot more memory than necessary and the system has a [very strict policy on memory allocation for app extensions](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionCreation.html) (such as input methods).
-
-As we never managed to decrement memory usage (or to increment memory availability) the only alternative seems to start developing the front-end from scratch using something different.
+The Android keyboard has since been rewritten as a fully native view tree, and the Unity project has been removed from the repository. An iOS version would need to be written from scratch in Swift.
 
 We currently do not have an ETA for releasing on iOS, even if we consider it to be a priority.
-
-
-## Why Unity?
-
-Marco has a few years of experience in developing with Unity.
-
-Unity is not the ideal framework to develop such a lightweight project though, but the initial idea was to only prototype in Unity then move to something else.
-
-Against all expectations, it was possible to include the Unity project exported as a library into an Android input method quite easily and so, the prototype ended up in production.
-
-Unity would also allow developing a cross-platform front-end, but that's revealed to be useless, as explained in the previous answer. 
-
 
 
 ![tOndO UI evolution animation](.github/UI_evolution.gif)
@@ -202,9 +188,7 @@ Pro version is there if you want to say thank you, and support future developmen
 
 ## How can I build it on my own?
 
-Just open the Android Studio folder as an Android Studio Project and run it. The Unity exported library is already included in the project, but if you need to export it again, you can open Unity folder as a Unity Project (with Unity 2019.4.34f1) and export it in the androidBuild folder.
-
-There also is a Xcode project folder: it also already includes the Unity exported library, but at the current stage it only contains the project structure and can only be launched in debug mode.
+Just open the Android Studio folder as an Android Studio Project and run it. Alternatively, `tools/build.sh` builds the debug APK and installs it on a connected device.
 
 
 ## What is your current roadmap?

@@ -2,7 +2,7 @@
 
 buildscript {
     repositories {
-        jcenter()
+        mavenCentral()
         maven {
             url 'https://maven.google.com/'
             name 'Google'
@@ -19,25 +19,7 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
-        flatDir {
-            dirs 'libs'
-            dirs "${project(':unityLibrary').projectDir}/libs"
-        }
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
-    }
-    subprojects {
-        afterEvaluate { project ->
-            if (project.hasProperty('android')) {
-                project.android {
-                    if (namespace == null) {
-                        namespace 'com.unity3d.player'
-                    }
-                }
-            }
-        }
+        google()
+        mavenCentral()
     }
 }
