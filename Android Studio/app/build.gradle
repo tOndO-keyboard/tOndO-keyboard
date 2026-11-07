@@ -67,12 +67,11 @@ dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-stdlib'
     implementation 'androidx.appcompat:appcompat:1.7.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation project(':unityLibrary')
-    implementation fileTree(dir: project(':unityLibrary').getProjectDir().toString() + ('\\libs'), include: ['*.jar'])
     implementation 'androidx.preference:preference:1.2.1'
     implementation 'com.google.android.material:material:1.13.0'
     implementation 'com.android.billingclient:billing:8.0.0'
     implementation 'com.google.guava:guava:33.5.0-android'
+    testImplementation 'junit:junit:4.13.2'
 
 }
 
