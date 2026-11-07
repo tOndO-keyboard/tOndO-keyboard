@@ -162,7 +162,7 @@ public class KeyboardActionListener extends InputMethodService
 		}
 
 		boolean useDarkTheme = useDarkTheme(eSharedPreferences);
-		keyboardView.applyTheme(useDarkTheme);
+		keyboardView.applyTheme(useDarkTheme, eSharedPreferences.getBoolean("DynamicColors", false));
 		currentView.setBackgroundColor(keyboardView.getWindowBackgroundColor(barOnBottom));
 
 		setFrameLayoutParams(keyboardView);

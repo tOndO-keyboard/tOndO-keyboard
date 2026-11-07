@@ -106,8 +106,13 @@ public class KeyboardRootView extends FrameLayout implements KeyboardCanvasView.
 
 	public void applyTheme(boolean dark)
 	{
+		applyTheme(dark, false);
+	}
+
+	public void applyTheme(boolean dark, boolean dynamicColors)
+	{
 		this.dark = dark;
-		Palette p = dark ? Palette.DARK : Palette.LIGHT;
+		Palette p = dynamicColors ? Palette.dynamic(getContext(), dark) : dark ? Palette.DARK : Palette.LIGHT;
 		canvas.setPalette(p);
 		emojiView.applyTheme();
 		macrosView.applyTheme();

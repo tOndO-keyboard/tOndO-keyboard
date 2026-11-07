@@ -22,6 +22,8 @@
     <string name="preferences_pro_version_title">Unlock the Pro version</string>
     <string name="preferences_pro_version_summary">\nUnlimited number of changes in the keyboard customization code;\n\nEnable CTRL+A to select all;\n\nMore emojis available in the recently used category;\n\nPossibility of pinning a larger number of clipboards.</string>
     <string name="preferences_base_settings_category_title">Base settings</string>
+    <string name="preferences_title_dynamic_colors">Material You colors</string>
+    <string name="preferences_summary_dynamic_colors">Use colors from the system wallpaper palette (Android 12+)</string>
     <string name="preferences_title_show_popup">Show pop-ups</string>
     <string name="preferences_title_disable_automatic_capitalization">Disable automatic capitalization</string>
     <string name="preferences_title_action_bar_on_bottom">Action bar on bottom</string>

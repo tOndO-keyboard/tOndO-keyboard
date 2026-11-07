@@ -22,6 +22,8 @@
     <string name="preferences_title_enable_suggestion">Attiva i suggerimenti</string>
     <string name="preferences_title_suggestion_language">Lingua dei suggerimenti</string>
     <string name="suggestion_language_default_value">it_IT</string>
+    <string name="preferences_title_dynamic_colors">Colori Material You</string>
+    <string name="preferences_summary_dynamic_colors">Usa i colori della tavolozza dello sfondo di sistema (Android 12+)</string>
     <string name="preferences_title_show_popup">Mostra i pop-up</string>
     <string name="preferences_title_disable_automatic_capitalization">Disabilita le maiuscole automatiche</string>
     <string name="preferences_title_action_bar_on_bottom">Barra delle azioni in basso</string>
