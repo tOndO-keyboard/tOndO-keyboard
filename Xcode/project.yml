@@ -1,0 +1,84 @@
+# XcodeGen spec (https://github.com/yonaskolb/XcodeGen, MIT): run `xcodegen generate` in this folder
+# to create tOndO.xcodeproj. The project file is generated, so it never needs merging by hand.
+name: tOndO
+options:
+  bundleIdPrefix: com.foschia
+  deploymentTarget:
+    iOS: "15.0"
+settings:
+  base:
+    DEVELOPMENT_TEAM: ""
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+
+targets:
+  # Builds tondo/core into TondoCore.xcframework with Gradle before compiling Swift.
+  TondoCoreFramework:
+    type: aggregate
+    buildScripts:
+      - name: Build TondoCore (Kotlin Multiplatform)
+        script: |
+          cd "$SRCROOT/../tondo"
+          ./gradlew :core:assembleTondoCoreReleaseXCFramework
+        basedOnDependencyAnalysis: false
+
+  TondoKeyboard:
+    type: app-extension
+    platform: iOS
+    sources:
+      - TondoKeyboard
+      - Shared
+      - path: ../tondo/assets
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - target: TondoCoreFramework
+      - framework: ../tondo/core/build/XCFrameworks/release/TondoCore.xcframework
+        embed: false
+    entitlements:
+      path: TondoKeyboard/TondoKeyboard.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.foschia.tondokeyboard]
+    info:
+      path: TondoKeyboard/Info.plist
+      properties:
+        CFBundleDisplayName: tOndO keyboard
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.keyboard-service
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).KeyboardViewController
+          NSExtensionAttributes:
+            IsASCIICapable: false
+            PrefersRightToLeft: false
+            PrimaryLanguage: mul
+            # Needed for clipboard notes, haptic feedback and sharing settings with the app.
+            RequestsOpenAccess: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.foschia.tondokeyboard.keyboard
+
+  tOndO:
+    type: application
+    platform: iOS
+    sources:
+      - TondoApp
+      - Shared
+    dependencies:
+      - target: TondoKeyboard
+      - target: TondoCoreFramework
+      - framework: ../tondo/core/build/XCFrameworks/release/TondoCore.xcframework
+        embed: false
+    entitlements:
+      path: TondoApp/TondoApp.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.foschia.tondokeyboard]
+    info:
+      path: TondoApp/Info.plist
+      properties:
+        CFBundleDisplayName: tOndO keyboard
+        UILaunchScreen: {}
+        CFBundleURLTypes:
+          - CFBundleURLSchemes: [tondokeyboard]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.foschia.tondokeyboard

@@ -2,12 +2,8 @@
 
 buildscript {
     repositories {
-        jcenter()
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
         google()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.13.0'
@@ -19,25 +15,7 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
-        flatDir {
-            dirs 'libs'
-            dirs "${project(':unityLibrary').projectDir}/libs"
-        }
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
-    }
-    subprojects {
-        afterEvaluate { project ->
-            if (project.hasProperty('android')) {
-                project.android {
-                    if (namespace == null) {
-                        namespace 'com.unity3d.player'
-                    }
-                }
-            }
-        }
+        google()
+        mavenCentral()
     }
 }

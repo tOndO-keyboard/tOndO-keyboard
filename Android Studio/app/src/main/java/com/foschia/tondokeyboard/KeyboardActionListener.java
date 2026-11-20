@@ -32,7 +32,9 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.util.Consumer;
 
-import com.unity3d.player.UnityPlayer;
+import com.foschia.tondo.android.TondoKeyboardView;
+import com.foschia.tondo.core.DoneAction;
+import com.foschia.tondo.core.KeyboardEngine;
 
 import java.text.BreakIterator;
 import java.text.SimpleDateFormat;
@@ -78,7 +80,7 @@ public class KeyboardActionListener extends InputMethodService
 	private static final String[] sCommonSeparators =
 			new String[]{".", ";", ",", "?", "!", "-", "'", "\""};
 
-	protected UnityPlayer mUnityPlayer;
+	private TondoKeyboardView keyboardView;
 	private float keyboardProportion = 1.5f;
 	private View currentView;
 	private Vibrator vibrator;
@@ -132,8 +134,14 @@ public class KeyboardActionListener extends InputMethodService
 
 		if (vibrator == null) vibrator = (Vibrator) this.getSystemService(VIBRATOR_SERVICE);
 
-		UnityInterface.getInstance().init(this);
 		Localization.Instance.init(this);
+		keyboardView = TondoInterface.getInstance().init(this);
+		FrameLayout frameLayout = currentView.findViewById(R.id.frame_layout);
+		if (frameLayout != null)
+		{
+			frameLayout.addView(keyboardView, new FrameLayout.LayoutParams(
+					FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT));
+		}
 
 		Utils.DebugLog(Utils.LogType.INFO, "onCreateInputView completed");
 
@@ -148,19 +156,6 @@ public class KeyboardActionListener extends InputMethodService
 		if (currentView == null)
 		{
 			Utils.DebugLog(Utils.LogType.WARNING, "onStartInputView started but currentView is null");
-		}
-
-		if (mUnityPlayer == null)
-		{
-			mUnityPlayer = new UnityPlayer(this);
-			int glesMode = mUnityPlayer.getSettings().getInt("gles_mode", 1);
-			boolean trueColor8888 = false;
-			mUnityPlayer.init(glesMode, trueColor8888);
-		}
-		if (mUnityPlayer == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "onStartInputView interrupted as mUnityPlayer is null");
-			return;
 		}
 
 		eSharedPreferences = new EncryptedSharedPreferences(this);
@@ -212,33 +207,7 @@ public class KeyboardActionListener extends InputMethodService
 			});
 		}
 
-		View playerView = mUnityPlayer.getView();
-		if (playerView == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "Player view is null");
-		}
-
-
-		if (!restarting)
-		{
-			ViewGroup playerParentView = (ViewGroup) playerView.getParent();
-			if (currentLayout != null && playerView != null)
-			{
-				if (playerParentView != null)
-				{
-					playerParentView.removeView(playerView);
-				}
-				WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams(currentLayout.getWidth(), currentLayout.getHeight());
-				currentLayout.addView(playerView, 0, layoutParams);
-				setFrameLayoutParams(currentLayout);
-			}
-		}
-
-		mUnityPlayer.resume();
-		mUnityPlayer.windowFocusChanged(true);
-
-		String precedingCharacter = GetPrecedingCharacter(1);
-		UnityPlayer.UnitySendMessage("Native Interface", "OnStartInputView", precedingCharacter);
+		if (currentLayout != null) setFrameLayoutParams(currentLayout);
 
 		int inputType = info.inputType & InputType.TYPE_MASK_CLASS;
 		boolean numericalInputNeeded = inputType == InputType.TYPE_CLASS_NUMBER ||
@@ -250,7 +219,12 @@ public class KeyboardActionListener extends InputMethodService
 		int result = numericalInputNeeded ? NUMERICAL_INPUT : TEXT_INPUT;
 		if (passwordInputNeeded) result |= PASSWORD_INPUT;
 
-		UnityPlayer.UnitySendMessage("Native Interface", "OnSetInputType", String.valueOf(result));
+		KeyboardEngine engine = TondoInterface.getInstance().getEngine();
+		if (engine != null)
+		{
+			engine.onStartInput(new com.foschia.tondo.core.EditorInfo(
+					GetPrecedingCharacter(1), result, DoneAction.Companion.from(GetDoneActionFlag()), GetNightModeOn()));
+		}
 
 		Utils.DebugLog(Utils.LogType.INFO, "onStartInputView completed.");
 	}
@@ -276,14 +250,8 @@ public class KeyboardActionListener extends InputMethodService
 
 		super.onConfigurationChanged(newConfig);
 
-		if (mUnityPlayer == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "onConfigurationChanged interrupted as mUnityPlayer is null");
-			return;
-		}
-
-		mUnityPlayer.configurationChanged(newConfig);
-		UnityPlayer.UnitySendMessage("Native Interface", "OnConfigurationChanged", "");
+		KeyboardEngine engine = TondoInterface.getInstance().getEngine();
+		if (engine != null) engine.onConfigurationChanged();
 	}
 
 	private String orientationToString(int orientation)
@@ -308,14 +276,7 @@ public class KeyboardActionListener extends InputMethodService
 	{
 		Utils.DebugLog(Utils.LogType.INFO, "onLowMemory called");
 
-		if (mUnityPlayer == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "onLowMemory called but mUnityPlayer is null");
-		}
-		else
-		{
-			mUnityPlayer.lowMemory();
-		}
+		if (keyboardView != null) keyboardView.trimMemory();
 		super.onLowMemory();
 	}
 
@@ -324,28 +285,7 @@ public class KeyboardActionListener extends InputMethodService
 	{
 		Utils.DebugLog(Utils.LogType.INFO, "onTrimMemory called with level: " + level);
 
-		if (mUnityPlayer == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "onTrimMemory called but mUnityPlayer is null");
-		}
-		else
-		{
-			switch (level)
-			{
-				case TRIM_MEMORY_RUNNING_MODERATE:
-				case TRIM_MEMORY_RUNNING_LOW:
-					break;
-
-				case TRIM_MEMORY_RUNNING_CRITICAL:
-				case TRIM_MEMORY_UI_HIDDEN:
-				case TRIM_MEMORY_BACKGROUND:
-				case TRIM_MEMORY_MODERATE:
-				case TRIM_MEMORY_COMPLETE:
-				default:
-					mUnityPlayer.lowMemory();
-					break;
-			}
-		}
+		if (keyboardView != null && level >= TRIM_MEMORY_RUNNING_CRITICAL) keyboardView.trimMemory();
 		super.onTrimMemory(level);
 	}
 
@@ -354,14 +294,8 @@ public class KeyboardActionListener extends InputMethodService
 	{
 		Utils.DebugLog(Utils.LogType.INFO, "onWindowHidden called");
 
-		if (mUnityPlayer == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "onWindowHidden called but mUnityPlayer is null");
-		}
-		else
-		{
-			mUnityPlayer.pause();
-		}
+		KeyboardEngine engine = TondoInterface.getInstance().getEngine();
+		if (engine != null) engine.onHidden();
 	}
 
 	@Override
@@ -369,14 +303,8 @@ public class KeyboardActionListener extends InputMethodService
 	{
 		Utils.DebugLog(Utils.LogType.INFO, "onDestroy called");
 
-		if (mUnityPlayer == null)
-		{
-			Utils.DebugLog(Utils.LogType.WARNING, "onDestroy called but mUnityPlayer is null");
-		}
-		else
-		{
-			mUnityPlayer.destroy();
-		}
+		KeyboardEngine engine = TondoInterface.getInstance().getEngine();
+		if (engine != null) engine.onHidden();
 
 		super.onDestroy();
 	}
@@ -408,8 +336,8 @@ public class KeyboardActionListener extends InputMethodService
 	public void onUpdateSelection(int oldSelStart, int oldSelEnd, int newSelStart, int newSelEnd, int candidatesStart, int candidatesEnd)
 	{
 		super.onUpdateSelection(oldSelStart, oldSelEnd, newSelStart, newSelEnd, candidatesStart, candidatesEnd);
-		String precedingCharacter = GetPrecedingCharacter(1);
-		UnityPlayer.UnitySendMessage("Native Interface", "OnCursorPositionChanged", precedingCharacter);
+		KeyboardEngine engine = TondoInterface.getInstance().getEngine();
+		if (engine != null) engine.onCursorPositionChanged(GetPrecedingCharacter(1));
 	}
 
 	/*@Override
@@ -639,8 +567,15 @@ public class KeyboardActionListener extends InputMethodService
 		{
 			TerminateStringSessionIfAny();
 			inputConnection.commitText(s, 1);
-			UnityPlayer.UnitySendMessage("Native Interface", "OnEditingWordChange", getCaretWord());
+			notifyEditingWord();
 		}
+	}
+
+	private void notifyEditingWord()
+	{
+		KeyboardEngine engine = TondoInterface.getInstance().getEngine();
+		if (engine != null && eSharedPreferences != null && eSharedPreferences.getBoolean("EnableSuggestions", false))
+			engine.onEditingWordChanged(getCaretWord());
 	}
 
 	public void TerminateStringSessionIfAny()
@@ -674,7 +609,7 @@ public class KeyboardActionListener extends InputMethodService
 	{
 		InputConnection inputConnection = getCurrentInputConnection();
 		inputConnection.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_DEL));
-		UnityPlayer.UnitySendMessage("Native Interface", "OnEditingWordChange", getCaretWord());
+		notifyEditingWord();
 	}
 
 	public void CommitDone()
@@ -703,7 +638,7 @@ public class KeyboardActionListener extends InputMethodService
 
 			inputConnection.commitText("\n", 1);
 			//inputConnection.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
-			UnityPlayer.UnitySendMessage("Native Interface", "OnEditingWordChange", getCaretWord());
+			notifyEditingWord();
 		}
 	}
 

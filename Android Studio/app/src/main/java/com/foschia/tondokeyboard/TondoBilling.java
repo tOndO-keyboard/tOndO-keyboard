@@ -252,7 +252,7 @@ public class TondoBilling
 			shoppingPreferenceCategory.EnableShopButton(!proWasPurchased);
 		}
 
-		eSharedPreferences.putEncrypted(UnityInterface.PURCHASED_PRO_PREFERENCES_KEY, proWasPurchased);
+		eSharedPreferences.putEncrypted(TondoInterface.PURCHASED_PRO_PREFERENCES_KEY, proWasPurchased);
 	}
 
 	private Boolean WasProPurchased(List<Purchase> purchases)

@@ -1,4 +1,6 @@
 include ':app'
 
-include ':unityLibrary'
-project(':unityLibrary').projectDir = new File('..\\Unity\\androidBuild\\unityLibrary')
+// The keyboard UI and logic live in the shared Kotlin Multiplatform project (../tondo),
+// which replaces the Unity exported library (unityLibrary). It is consumed as a composite build:
+// "com.foschia.tondo:android" is substituted with the :android project of ../tondo.
+includeBuild('../tondo')

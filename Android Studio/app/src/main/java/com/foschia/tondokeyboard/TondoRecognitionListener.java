@@ -9,29 +9,29 @@ import java.util.ArrayList;
 public class TondoRecognitionListener implements RecognitionListener
 {
 
-	private final UnityInterface unityInterface;
+	private final TondoInterface tondoInterface;
 
-	public TondoRecognitionListener(UnityInterface unityInterface)
+	public TondoRecognitionListener(TondoInterface tondoInterface)
 	{
-		this.unityInterface = unityInterface;
+		this.tondoInterface = tondoInterface;
 	}
 
 	@Override
 	public void onReadyForSpeech(Bundle params)
 	{
-		unityInterface.TriggerOnReadyForSpeech();
+		tondoInterface.TriggerOnReadyForSpeech();
 	}
 
 	@Override
 	public void onBeginningOfSpeech()
 	{
-		unityInterface.TriggerStartOfSpeech();
+		tondoInterface.TriggerStartOfSpeech();
 	}
 
 	@Override
 	public void onRmsChanged(float rmsdB)
 	{
-		unityInterface.SendAudioLevel(rmsdB);
+		tondoInterface.SendAudioLevel(rmsdB);
 	}
 
 	@Override
@@ -43,13 +43,13 @@ public class TondoRecognitionListener implements RecognitionListener
 	@Override
 	public void onEndOfSpeech()
 	{
-		unityInterface.TriggerEndOfSpeech();
+		tondoInterface.TriggerEndOfSpeech();
 	}
 
 	@Override
 	public void onError(int error)
 	{
-		unityInterface.SendSpeechError(error);
+		tondoInterface.SendSpeechError(error);
 	}
 
 	@Override
@@ -57,7 +57,7 @@ public class TondoRecognitionListener implements RecognitionListener
 	{
 		ArrayList<String> data = results
 				.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
-		unityInterface.SendSpeechData(data);
+		tondoInterface.SendSpeechData(data);
 	}
 
 	@Override
@@ -65,7 +65,7 @@ public class TondoRecognitionListener implements RecognitionListener
 	{
 		ArrayList<String> data = partialResults
 				.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
-		unityInterface.SendSpeechPartialData(data);
+		tondoInterface.SendSpeechPartialData(data);
 	}
 
 	@Override

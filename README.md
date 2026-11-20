@@ -88,13 +88,13 @@ We believe the record could be challenged quite easily with a little bit of trai
 
 ## Why is there only an Android version? When will it land on iOS?
 
-tOndO's front-end was developed in Unity.
+tOndO's front-end was originally developed in Unity.
 
 On iOS, [due to a known bug](https://issuetracker.unity3d.com/issues/ios-uaal-after-unloading-a-unity-scene-memory-remains-allocated-depending-on-how-much-memory-was-used-in-the-scene), Unity occupies a lot more memory than necessary and the system has a [very strict policy on memory allocation for app extensions](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionCreation.html) (such as input methods).
 
-As we never managed to decrement memory usage (or to increment memory availability) the only alternative seems to start developing the front-end from scratch using something different.
+For this reason the front-end has been rewritten as a shared [Kotlin Multiplatform](https://kotlinlang.org/docs/multiplatform.html) library that runs both in the Android input method and in an iOS keyboard extension, with a tiny native painter on each platform. See [MIGRATION.md](MIGRATION.md) for the details.
 
-We currently do not have an ETA for releasing on iOS, even if we consider it to be a priority.
+The iOS version still has to be built and tested on real devices, so we do not have an ETA yet, even if we consider it to be a priority.
 
 
 ## Why Unity?
@@ -105,7 +105,7 @@ Unity is not the ideal framework to develop such a lightweight project though, b
 
 Against all expectations, it was possible to include the Unity project exported as a library into an Android input method quite easily and so, the prototype ended up in production.
 
-Unity would also allow developing a cross-platform front-end, but that's revealed to be useless, as explained in the previous answer. 
+That "something else" finally arrived: the keyboard now lives in `tondo/`, a Kotlin Multiplatform project shared by Android and iOS. The `Unity` folder is kept only as a reference for the previous implementation.
 
 
 
@@ -202,9 +202,11 @@ Pro version is there if you want to say thank you, and support future developmen
 
 ## How can I build it on my own?
 
-Just open the Android Studio folder as an Android Studio Project and run it. The Unity exported library is already included in the project, but if you need to export it again, you can open Unity folder as a Unity Project (with Unity 2019.4.34f1) and export it in the androidBuild folder.
+The project is made of three folders:
 
-There also is a Xcode project folder: it also already includes the Unity exported library, but at the current stage it only contains the project structure and can only be launched in debug mode.
+* `tondo`: the shared keyboard (Kotlin Multiplatform): logic, layout and design of the keyboard, plus the Android view. `./gradlew :core:jvmTest` runs the tests and renders previews of the keyboard in `tondo/core/build/previews`.
+* `Android Studio`: the Android app (input method, settings, billing). Open it as an Android Studio project and run it: the `tondo` project is included automatically as a composite build.
+* `Xcode`: the iOS keyboard extension and its container app. See [Xcode/README.md](Xcode/README.md) (requires a Mac and XcodeGen).
 
 
 ## What is your current roadmap?
@@ -286,7 +288,7 @@ See repo's [LICENSE](/LICENSE) file.
 
 
 * Emoji artwork is provided by Google Fonts Noto Emoji, released by fonts.google.com on [github.com/googlefonts/noto-emoji](https://github.com/googlefonts/noto-emoji),  licensed under Apache License 2.0.
-* Suggestions library WeCantSpell.Hunspell, licensed under an MPL, LGPL, and GPL tri-license and available at [github.com/aarondandy/WeCantSpell.Hunspell](https://github.com/aarondandy/WeCantSpell.Hunspell). Dictionaries licensed under GNU GPL.
+* Hunspell dictionaries used for suggestions, licensed under GNU GPL. (The Unity version used the suggestions library WeCantSpell.Hunspell, licensed under an MPL, LGPL, and GPL tri-license, available at [github.com/aarondandy/WeCantSpell.Hunspell](https://github.com/aarondandy/WeCantSpell.Hunspell).)
 * Diff counter customization code Diff Match and Patch under the Apache License Version 2.0, relased by Google on [github.com/google/diff-match-patch](https://github.com/google/diff-match-patch).
 
 
