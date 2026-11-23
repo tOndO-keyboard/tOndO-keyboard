@@ -166,7 +166,7 @@ extension KeyboardViewController: KeyboardHost {
     func performCtrl(action: CtrlAction) {
         let proxy = textDocumentProxy
         switch action {
-        case .copyText:
+        case .theCopyText:
             if let s = proxy.selectedText { UIPasteboard.general.string = s }
         case .cutText:
             if let s = proxy.selectedText { UIPasteboard.general.string = s; proxy.deleteBackward() }

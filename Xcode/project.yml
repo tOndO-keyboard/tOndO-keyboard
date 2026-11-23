@@ -12,10 +12,9 @@ settings:
     MARKETING_VERSION: "1.0.0"
     CURRENT_PROJECT_VERSION: "1"
 
-targets:
+aggregateTargets:
   # Builds tondo/core into TondoCore.xcframework with Gradle before compiling Swift.
   TondoCoreFramework:
-    type: aggregate
     buildScripts:
       - name: Build TondoCore (Kotlin Multiplatform)
         script: |
@@ -23,6 +22,7 @@ targets:
           ./gradlew :core:assembleTondoCoreReleaseXCFramework
         basedOnDependencyAnalysis: false
 
+targets:
   TondoKeyboard:
     type: app-extension
     platform: iOS
