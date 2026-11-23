@@ -10,6 +10,7 @@ final class KeyboardViewController: UIInputViewController {
     private var engine: KeyboardEngine!
     private var keyboardView: TondoKeyboardView!
     private var heightConstraint: NSLayoutConstraint?
+    private var keyboardViewHeightConstraint: NSLayoutConstraint?
     private var proportion: CGFloat = 1.5
     private lazy var haptics = UIImpactFeedbackGenerator(style: .light)
 
@@ -19,12 +20,17 @@ final class KeyboardViewController: UIInputViewController {
         keyboardView = TondoKeyboardView(engine: engine)
         keyboardView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(keyboardView)
+        // iOS first lays the extension out at full-screen size. A fixed height keeps the drawing
+        // buffer at keyboard size from the first frame instead of allocating full-screen ones.
+        let keyboardHeight = keyboardView.heightAnchor.constraint(equalToConstant: 0)
+        keyboardViewHeightConstraint = keyboardHeight
         NSLayoutConstraint.activate([
             keyboardView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             keyboardView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            keyboardView.topAnchor.constraint(equalTo: view.topAnchor),
             keyboardView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            keyboardHeight,
         ])
+        updateHeight()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -85,6 +91,7 @@ final class KeyboardViewController: UIInputViewController {
         let screenHeight = UIScreen.main.bounds.height
         // Same rule as KeyboardActionListener.setFrameLayoutParams on Android.
         let height = min(width / proportion, screenHeight / 1.82)
+        keyboardViewHeightConstraint?.constant = height
         if let c = heightConstraint {
             c.constant = height
         } else {
